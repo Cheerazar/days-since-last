@@ -1,0 +1,23 @@
+# Day counts are baked into the static build (page text and OG images), so a
+# nightly redeploy keeps them honest. Set VERCEL_DEPLOY_HOOK in repo secrets
+# to a Vercel deploy hook URL (Project Settings → Git → Deploy Hooks).
+name: Nightly rebuild
+
+on:
+  schedule:
+    - cron: '17 9 * * *' # 09:17 UTC ≈ 2:17am PT, after any late games end
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel deploy hook
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "VERCEL_DEPLOY_HOOK secret is not set" >&2
+            exit 1
+          fi
+          curl -fsS -X POST "$HOOK"

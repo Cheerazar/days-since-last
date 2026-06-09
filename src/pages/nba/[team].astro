@@ -1,0 +1,351 @@
+---
+import Base from '../../layouts/Base.astro';
+import {
+  league,
+  byDrought,
+  clockStartMs,
+  daysSince,
+  neverWon,
+  formatDate,
+  type Team,
+} from '../../lib/droughts';
+import { factsFor } from '../../lib/facts';
+
+export function getStaticPaths() {
+  return league.teams.map((team) => ({ params: { team: team.slug }, props: { team } }));
+}
+
+const { team } = Astro.props as { team: Team };
+const sorted = byDrought(league.teams);
+const rank = sorted.findIndex((t) => t.slug === team.slug) + 1;
+const isChamp = rank === sorted.length;
+const never = neverWon(team);
+const start = clockStartMs(team);
+const d = daysSince(start);
+const facts = isChamp ? [] : factsFor(team);
+
+const context = never
+  ? `Counting since their first NBA game, ${formatDate(team.firstNbaGame!)}${team.firstGameAs ? `, as the ${team.firstGameAs}` : ''}.`
+  : `Won ${formatDate(team.lastTitle!.date)}${team.lastTitle!.asName ? ` as the ${team.lastTitle!.asName}` : ''} — beat the ${team.lastTitle!.opponent}, ${team.lastTitle!.series}.`;
+
+const title = never
+  ? `${team.name} — days without a championship, ever`
+  : `${team.name} — days since their last championship`;
+const description = never
+  ? `The ${team.shortName} have never won an NBA title. The clock has been running since ${formatDate(team.firstNbaGame!)}.`
+  : `${context} The counter is still running.`;
+const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
+---
+
+<Base title={title} description={description} ogImage={ogImage}>
+  <div class="page" style={`--ac:${team.accent};--ac2:${team.secondary}`}>
+    <nav class="top">
+      <a href="/">← ALL 30 TEAMS</a>
+      <span class="league">NBA · DROUGHT №{rank}</span>
+    </nav>
+
+    <main class="jumbo">
+      <div class="id">
+        <span class="badge">{team.abbr}</span>
+        <h1>{team.name}</h1>
+      </div>
+
+      <p class="eyebrow">
+        {never ? 'DAYS WITHOUT A CHAMPIONSHIP — EVER' : 'DAYS SINCE LAST CHAMPIONSHIP'}
+      </p>
+
+      <div class="counter seg" data-since={start}>
+        <span class="ghost" aria-hidden="true" data-ghost>{'8'.repeat(String(d).length)}</span>
+        <span class="digits" data-d>{d}</span>
+      </div>
+
+      <div class="clock" data-since={start}>
+        <span class="cell"><span class="cv seg"><span class="digits" data-h>00</span></span><span class="cl">HOURS</span></span>
+        <span class="cell"><span class="cv seg"><span class="digits" data-m>00</span></span><span class="cl">MINUTES</span></span>
+        <span class="cell"><span class="cv seg"><span class="digits" data-s>00</span></span><span class="cl">SECONDS</span></span>
+      </div>
+
+      <p class="context">
+        {context}
+        {never && team.firstGameNote && <span class="note">{team.firstGameNote}</span>}
+      </p>
+
+      {isChamp && <p class="champnote">REIGNING CHAMPIONS. THE FLAG FLIES UNTIL SOMEBODY TAKES IT.</p>}
+    </main>
+
+    {
+      facts.length > 0 && (
+        <section class="panel">
+          <h2>IN THE MEANTIME…</h2>
+          <ul>
+            {facts.map((f) => (
+              <li>{f}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <section class="panel">
+      <h2>BANNERS ({team.titleYears.length})</h2>
+      {
+        team.titleYears.length > 0 ? (
+          <div class="years">
+            {team.titleYears.map((y) => (
+              <span class="year">{y}</span>
+            ))}
+          </div>
+        ) : (
+          <p class="none">This space intentionally left blank.</p>
+        )
+      }
+      {team.abaTitles && team.abaTitles.length > 0 && (
+        <p class="fine">ABA titles in {team.abaTitles.join(', ')} don't hang in this rafter — the NBA doesn't count them.</p>
+      )}
+      {team.lineage && <p class="fine">{team.lineage}</p>}
+    </section>
+
+    <section class="share">
+      <button id="share">SHARE THE PAIN</button>
+    </section>
+
+    <footer class="foot">
+      <a href="/">dayssincelast — every NBA drought, live</a>
+    </footer>
+  </div>
+</Base>
+
+<script>
+  const btn = document.getElementById('share');
+  btn?.addEventListener('click', async () => {
+    const data = { title: document.title, url: location.href };
+    if (navigator.share) {
+      await navigator.share(data).catch(() => {});
+      return;
+    }
+    await navigator.clipboard.writeText(location.href);
+    const old = btn.textContent;
+    btn.textContent = 'LINK COPIED';
+    setTimeout(() => (btn.textContent = old), 1600);
+  });
+</script>
+
+<style>
+  .page {
+    min-height: 100vh;
+    background:
+      radial-gradient(1100px 600px at 50% -10%, color-mix(in srgb, var(--ac) 14%, transparent), transparent 70%),
+      var(--bg);
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 1.2rem 1.25rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    color: var(--dim);
+  }
+
+  .top a:hover {
+    color: var(--text);
+  }
+
+  .jumbo {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 5vw, 3.5rem) 1.25rem 0;
+    text-align: center;
+  }
+
+  .id {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .badge {
+    display: grid;
+    place-items: center;
+    width: 3.4rem;
+    height: 2.8rem;
+    border-radius: 9px;
+    background: var(--ac);
+    color: #0a0c10;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.15rem;
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 6vw, 3.2rem);
+    text-transform: uppercase;
+  }
+
+  .eyebrow {
+    margin: clamp(1.6rem, 4vw, 2.6rem) 0 1rem;
+    color: var(--dim);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.45em;
+  }
+
+  .counter {
+    font-size: clamp(3.4rem, 16vw, 9.5rem);
+    color: var(--ac);
+    text-shadow:
+      0 0 30px color-mix(in srgb, var(--ac) 65%, transparent),
+      0 0 90px color-mix(in srgb, var(--ac) 30%, transparent);
+  }
+
+  .clock {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1rem, 4vw, 2.2rem);
+    margin-top: 1.4rem;
+  }
+
+  .cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    align-items: center;
+  }
+
+  .cv {
+    font-size: clamp(1.3rem, 4.5vw, 2rem);
+    color: color-mix(in srgb, var(--ac) 80%, white 10%);
+    text-shadow: 0 0 16px color-mix(in srgb, var(--ac) 45%, transparent);
+  }
+
+  .cl {
+    color: var(--dim);
+    font-size: 0.6rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+  }
+
+  .context {
+    margin: 2rem auto 0;
+    max-width: 36rem;
+    color: #aab6c4;
+    font-size: 0.98rem;
+  }
+
+  .note {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--dim);
+  }
+
+  .champnote {
+    margin: 1.4rem auto 0;
+    color: #ffd98a;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+  }
+
+  .panel {
+    max-width: 680px;
+    margin: 2.4rem auto 0;
+    padding: 1.3rem 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--panel);
+  }
+
+  .panel h2 {
+    font-size: 0.95rem;
+    letter-spacing: 0.18em;
+    color: var(--dim);
+  }
+
+  .panel ul {
+    margin: 0.9rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    text-align: left;
+    font-size: 0.98rem;
+  }
+
+  .panel li::before {
+    content: '— ';
+    color: var(--ac);
+  }
+
+  .years {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+  }
+
+  .year {
+    padding: 0.3rem 0.65rem;
+    border: 1px solid #5c4a1f;
+    border-radius: 8px;
+    background: #1d160d;
+    color: #ffd98a;
+    font-family: 'Anton', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+  }
+
+  .none {
+    margin: 0.9rem 0 0;
+    color: var(--dim);
+    font-style: italic;
+  }
+
+  .fine {
+    margin: 1rem 0 0;
+    color: var(--dim);
+    font-size: 0.8rem;
+  }
+
+  .panel,
+  .share {
+    text-align: center;
+  }
+
+  .share {
+    margin-top: 2.2rem;
+  }
+
+  #share {
+    padding: 0.85rem 1.6rem;
+    border: 1px solid var(--ac);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--text);
+    font-family: 'Anton', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  #share:hover {
+    background: color-mix(in srgb, var(--ac) 18%, transparent);
+  }
+
+  .foot {
+    margin-top: 3rem;
+    padding: 1.5rem 1.25rem 3rem;
+    text-align: center;
+    color: var(--dim);
+    font-size: 0.8rem;
+  }
+
+  .foot a:hover {
+    color: var(--text);
+  }
+</style>

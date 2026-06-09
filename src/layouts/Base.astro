@@ -1,0 +1,154 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+}
+
+const { title, description, ogImage } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#07090c" />
+    <meta property="og:site_name" content="Days Since Last" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImage && <meta name="twitter:card" content="summary_large_image" />}
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+    <link
+      rel="preload"
+      href="/fonts/DSEG7Classic-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <slot />
+    <script>
+      // One ticker drives every counter on the page. Each [data-since] holds
+      // an epoch-ms start; children tagged data-d/h/m/s receive the pieces.
+      const pad = (n: number) => String(n).padStart(2, '0');
+      const set = (el: Element | null, value: string) => {
+        if (el && el.textContent !== value) el.textContent = value;
+      };
+
+      function tick() {
+        const now = Date.now();
+        for (const root of document.querySelectorAll<HTMLElement>('[data-since]')) {
+          const ms = Math.max(0, now - Number(root.dataset.since));
+          const days = Math.floor(ms / 86_400_000);
+          const dEl = root.querySelector('[data-d]');
+          if (dEl) {
+            const text = String(days);
+            set(dEl, text);
+            const ghost = root.querySelector('[data-ghost]');
+            if (ghost && ghost.textContent?.length !== text.length) {
+              ghost.textContent = '8'.repeat(text.length);
+            }
+          }
+          const rem = ms % 86_400_000;
+          set(root.querySelector('[data-h]'), pad(Math.floor(rem / 3_600_000)));
+          set(root.querySelector('[data-m]'), pad(Math.floor(rem / 60_000) % 60));
+          set(root.querySelector('[data-s]'), pad(Math.floor(rem / 1_000) % 60));
+        }
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  @font-face {
+    font-family: 'DSEG7';
+    src:
+      url('/fonts/DSEG7Classic-Bold.woff2') format('woff2'),
+      url('/fonts/DSEG7Classic-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: 'Anton';
+    src: url('/fonts/Anton-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  :root {
+    --bg: #07090c;
+    --panel: #0d1117;
+    --line: #1c2430;
+    --text: #e8edf2;
+    --dim: #8b97a5;
+    --gold: #f5b62e;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    background: var(--bg);
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    color: var(--text);
+    font-family:
+      ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  .display {
+    font-family: 'Anton', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+
+  /* Seven-segment counter with a dim "all segments on" ghost behind it. */
+  .seg {
+    position: relative;
+    display: inline-flex;
+    font-family: 'DSEG7', monospace;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+
+  .seg .ghost {
+    position: absolute;
+    inset: 0;
+    opacity: 0.08;
+    user-select: none;
+  }
+
+  .seg .digits {
+    position: relative;
+  }
+</style>

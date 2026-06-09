@@ -1,0 +1,292 @@
+---
+import Base from '../layouts/Base.astro';
+import {
+  league,
+  byDrought,
+  clockStartMs,
+  daysSince,
+  neverWon,
+  yearOf,
+} from '../lib/droughts';
+
+const teams = byDrought(league.teams);
+const now = Date.now();
+const ogImage = new URL('/og/home.png', Astro.site).href;
+---
+
+<Base
+  title="Days Since Last Championship — every NBA drought, live"
+  description="All 30 NBA teams ranked by days since their last championship. Live-ticking counters, from a 75-year wait to the reigning champs."
+  ogImage={ogImage}
+>
+  <header class="hero">
+    <p class="eyebrow">THE NBA DROUGHT BOARD</p>
+    <h1>DAYS SINCE LAST<br />CHAMPIONSHIP</h1>
+    <p class="sub">All 30 teams, ranked by how long it's been. The clock doesn't lie.</p>
+  </header>
+
+  {
+    league.banner && (
+      <div class="banner">
+        <span class="dot" aria-hidden="true" />
+        <span>{league.banner}</span>
+      </div>
+    )
+  }
+
+  <main class="board">
+    <ol>
+      {
+        teams.map((t, i) => {
+          const start = clockStartMs(t);
+          const d = daysSince(start, now);
+          const isChamp = i === teams.length - 1;
+          return (
+            <li>
+              <a class="row" href={`/nba/${t.slug}/`} style={`--ac:${t.accent};--ac2:${t.secondary}`}>
+                <span class="rank">{i + 1}</span>
+                <span class="badge">{t.abbr}</span>
+                <span class="who">
+                  <span class="team">
+                    {t.name}
+                    {neverWon(t) && <em class="tag never">NEVER WON</em>}
+                    {isChamp && <em class="tag champ">REIGNING CHAMPS</em>}
+                  </span>
+                  <span class="meta">
+                    {neverWon(t)
+                      ? `In the league since ${yearOf(t.firstNbaGame!)}${t.firstGameAs ? ` (as the ${t.firstGameAs})` : ''}`
+                      : `Last title ${yearOf(t.lastTitle!.date)}${t.lastTitle!.asName ? ` (as the ${t.lastTitle!.asName})` : ''}`}
+                  </span>
+                </span>
+                <span class="count seg" data-since={start}>
+                  <span class="ghost" aria-hidden="true" data-ghost>
+                    {'8'.repeat(String(d).length)}
+                  </span>
+                  <span class="digits" data-d>
+                    {d}
+                  </span>
+                </span>
+                <span class="unit">DAYS</span>
+              </a>
+            </li>
+          );
+        })
+      }
+    </ol>
+  </main>
+
+  <footer class="foot">
+    <p>
+      Counters run from the night of the title-clinching game — or a franchise's first NBA game for
+      the never-have-wons. Franchise records follow official NBA history, relocations and all. Dates
+      verified against basketball-reference.com box scores.
+    </p>
+    <p class="more">NBA first. More leagues soon.</p>
+  </footer>
+</Base>
+
+<style>
+  .hero {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: clamp(3rem, 8vw, 5.5rem) 1.25rem 1.5rem;
+    text-align: center;
+  }
+
+  .eyebrow {
+    margin: 0 0 0.75rem;
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.45em;
+  }
+
+  h1 {
+    font-size: clamp(2.6rem, 9vw, 5.5rem);
+    line-height: 0.95;
+  }
+
+  .sub {
+    margin: 1.25rem auto 0;
+    max-width: 32rem;
+    color: var(--dim);
+    font-size: 1.05rem;
+  }
+
+  .banner {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    max-width: 880px;
+    margin: 1.5rem auto 0;
+    padding: 0.8rem 1.1rem;
+    border: 1px solid #3a2a10;
+    border-radius: 10px;
+    background: #161005;
+    color: #ffd98a;
+    font-size: 0.95rem;
+  }
+
+  .dot {
+    flex: none;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ff4747;
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    50% {
+      opacity: 0.25;
+    }
+  }
+
+  .board {
+    max-width: 880px;
+    margin: 2rem auto 0;
+    padding: 0 1.25rem;
+  }
+
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 2rem 3.1rem 1fr auto auto;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.85rem 1.1rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--panel);
+    transition:
+      border-color 0.15s,
+      transform 0.15s;
+  }
+
+  .row:hover {
+    border-color: var(--ac);
+    transform: translateY(-1px);
+  }
+
+  .rank {
+    color: var(--dim);
+    font-size: 0.85rem;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+
+  .badge {
+    display: grid;
+    place-items: center;
+    width: 3.1rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    background: var(--ac);
+    color: #0a0c10;
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+  }
+
+  .who {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+  }
+
+  .team {
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-style: normal;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    padding: 0.18rem 0.45rem;
+    border-radius: 99px;
+  }
+
+  .never {
+    color: #ff8d8d;
+    border: 1px solid #5c1f1f;
+    background: #1d0d0d;
+  }
+
+  .champ {
+    color: #ffd98a;
+    border: 1px solid #5c4a1f;
+    background: #1d160d;
+  }
+
+  .meta {
+    color: var(--dim);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .count {
+    font-size: clamp(1.05rem, 3.4vw, 1.55rem);
+    color: var(--ac);
+    text-shadow: 0 0 18px color-mix(in srgb, var(--ac) 55%, transparent);
+  }
+
+  .unit {
+    color: var(--dim);
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+  }
+
+  .foot {
+    max-width: 880px;
+    margin: 3rem auto 0;
+    padding: 1.5rem 1.25rem 3rem;
+    border-top: 1px solid var(--line);
+    color: var(--dim);
+    font-size: 0.85rem;
+  }
+
+  .more {
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    font-size: 0.72rem;
+  }
+
+  @media (max-width: 560px) {
+    .rank {
+      display: none;
+    }
+
+    .row {
+      grid-template-columns: 2.7rem 1fr auto auto;
+      gap: 0.65rem;
+      padding: 0.75rem 0.8rem;
+    }
+
+    .badge {
+      width: 2.7rem;
+      height: 2.2rem;
+      font-size: 0.85rem;
+    }
+
+    .meta {
+      white-space: normal;
+    }
+  }
+</style>
