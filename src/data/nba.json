@@ -10,8 +10,15 @@
       "abbr": "ATL",
       "accent": "#E03A3E",
       "secondary": "#C1D32F",
-      "titleYears": [1958],
-      "lastTitle": { "date": "1958-04-12", "opponent": "Boston Celtics", "series": "4–2", "asName": "St. Louis Hawks" },
+      "titleYears": [
+        1958
+      ],
+      "lastTitle": {
+        "date": "1958-04-12",
+        "opponent": "Boston Celtics",
+        "series": "4–2",
+        "asName": "St. Louis Hawks"
+      },
       "lineage": "Tri-Cities Blackhawks (1949–51) → Milwaukee Hawks (1951–55) → St. Louis Hawks (1955–68) → Atlanta Hawks (1968– )"
     },
     {
@@ -21,8 +28,32 @@
       "abbr": "BOS",
       "accent": "#007A33",
       "secondary": "#BA9653",
-      "titleYears": [1957, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1968, 1969, 1974, 1976, 1981, 1984, 1986, 2008, 2024],
-      "lastTitle": { "date": "2024-06-17", "opponent": "Dallas Mavericks", "series": "4–1", "asName": null }
+      "titleYears": [
+        1957,
+        1959,
+        1960,
+        1961,
+        1962,
+        1963,
+        1964,
+        1965,
+        1966,
+        1968,
+        1969,
+        1974,
+        1976,
+        1981,
+        1984,
+        1986,
+        2008,
+        2024
+      ],
+      "lastTitle": {
+        "date": "2024-06-17",
+        "opponent": "Dallas Mavericks",
+        "series": "4–1",
+        "asName": null
+      }
     },
     {
       "slug": "brooklyn-nets",
@@ -36,8 +67,15 @@
       "firstNbaGame": "1976-10-22",
       "firstGameAs": "New York Nets",
       "firstGameNote": "Won their first NBA game by a single point. It was all downhill from there.",
-      "finalsLosses": [2002, 2003],
-      "abaTitles": [1974, 1976]
+      "finalsLosses": [
+        2002,
+        2003
+      ],
+      "abaTitles": [
+        1974,
+        1976
+      ],
+      "accentLight": "#111111"
     },
     {
       "slug": "charlotte-hornets",
@@ -60,8 +98,20 @@
       "abbr": "CHI",
       "accent": "#CE1141",
       "secondary": "#000000",
-      "titleYears": [1991, 1992, 1993, 1996, 1997, 1998],
-      "lastTitle": { "date": "1998-06-14", "opponent": "Utah Jazz", "series": "4–2", "asName": null }
+      "titleYears": [
+        1991,
+        1992,
+        1993,
+        1996,
+        1997,
+        1998
+      ],
+      "lastTitle": {
+        "date": "1998-06-14",
+        "opponent": "Utah Jazz",
+        "series": "4–2",
+        "asName": null
+      }
     },
     {
       "slug": "cleveland-cavaliers",
@@ -70,8 +120,16 @@
       "abbr": "CLE",
       "accent": "#FDBB30",
       "secondary": "#860038",
-      "titleYears": [2016],
-      "lastTitle": { "date": "2016-06-19", "opponent": "Golden State Warriors", "series": "4–3", "asName": null }
+      "titleYears": [
+        2016
+      ],
+      "lastTitle": {
+        "date": "2016-06-19",
+        "opponent": "Golden State Warriors",
+        "series": "4–3",
+        "asName": null
+      },
+      "accentLight": "#860038"
     },
     {
       "slug": "dallas-mavericks",
@@ -80,8 +138,15 @@
       "abbr": "DAL",
       "accent": "#00538C",
       "secondary": "#B8C4CA",
-      "titleYears": [2011],
-      "lastTitle": { "date": "2011-06-12", "opponent": "Miami Heat", "series": "4–2", "asName": null }
+      "titleYears": [
+        2011
+      ],
+      "lastTitle": {
+        "date": "2011-06-12",
+        "opponent": "Miami Heat",
+        "series": "4–2",
+        "asName": null
+      }
     },
     {
       "slug": "denver-nuggets",
@@ -90,8 +155,16 @@
       "abbr": "DEN",
       "accent": "#FEC524",
       "secondary": "#0E2240",
-      "titleYears": [2023],
-      "lastTitle": { "date": "2023-06-12", "opponent": "Miami Heat", "series": "4–1", "asName": null }
+      "titleYears": [
+        2023
+      ],
+      "lastTitle": {
+        "date": "2023-06-12",
+        "opponent": "Miami Heat",
+        "series": "4–1",
+        "asName": null
+      },
+      "accentLight": "#0E2240"
     },
     {
       "slug": "detroit-pistons",
@@ -100,8 +173,17 @@
       "abbr": "DET",
       "accent": "#C8102E",
       "secondary": "#1D42BA",
-      "titleYears": [1989, 1990, 2004],
-      "lastTitle": { "date": "2004-06-15", "opponent": "Los Angeles Lakers", "series": "4–1", "asName": null }
+      "titleYears": [
+        1989,
+        1990,
+        2004
+      ],
+      "lastTitle": {
+        "date": "2004-06-15",
+        "opponent": "Los Angeles Lakers",
+        "series": "4–1",
+        "asName": null
+      }
     },
     {
       "slug": "golden-state-warriors",
@@ -110,9 +192,23 @@
       "abbr": "GSW",
       "accent": "#FFC72C",
       "secondary": "#1D428A",
-      "titleYears": [1947, 1956, 1975, 2015, 2017, 2018, 2022],
-      "lastTitle": { "date": "2022-06-16", "opponent": "Boston Celtics", "series": "4–2", "asName": null },
-      "lineage": "Philadelphia Warriors (1946–62) → San Francisco Warriors (1962–71) → Golden State Warriors (1971– )"
+      "titleYears": [
+        1947,
+        1956,
+        1975,
+        2015,
+        2017,
+        2018,
+        2022
+      ],
+      "lastTitle": {
+        "date": "2022-06-16",
+        "opponent": "Boston Celtics",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "Philadelphia Warriors (1946–62) → San Francisco Warriors (1962–71) → Golden State Warriors (1971– )",
+      "accentLight": "#1D428A"
     },
     {
       "slug": "houston-rockets",
@@ -121,8 +217,16 @@
       "abbr": "HOU",
       "accent": "#CE1141",
       "secondary": "#C4CED4",
-      "titleYears": [1994, 1995],
-      "lastTitle": { "date": "1995-06-14", "opponent": "Orlando Magic", "series": "4–0", "asName": null }
+      "titleYears": [
+        1994,
+        1995
+      ],
+      "lastTitle": {
+        "date": "1995-06-14",
+        "opponent": "Orlando Magic",
+        "series": "4–0",
+        "asName": null
+      }
     },
     {
       "slug": "indiana-pacers",
@@ -136,8 +240,16 @@
       "firstNbaGame": "1976-10-21",
       "firstGameAs": null,
       "firstGameNote": "Three-time ABA champions, still chasing a ring the NBA will count.",
-      "finalsLosses": [2000, 2025],
-      "abaTitles": [1970, 1972, 1973]
+      "finalsLosses": [
+        2000,
+        2025
+      ],
+      "abaTitles": [
+        1970,
+        1972,
+        1973
+      ],
+      "accentLight": "#002D62"
     },
     {
       "slug": "la-clippers",
@@ -160,9 +272,33 @@
       "abbr": "LAL",
       "accent": "#FDB927",
       "secondary": "#552583",
-      "titleYears": [1949, 1950, 1952, 1953, 1954, 1972, 1980, 1982, 1985, 1987, 1988, 2000, 2001, 2002, 2009, 2010, 2020],
-      "lastTitle": { "date": "2020-10-11", "opponent": "Miami Heat", "series": "4–2", "asName": null },
-      "lineage": "Minneapolis Lakers (1947–60) → Los Angeles Lakers (1960– )"
+      "titleYears": [
+        1949,
+        1950,
+        1952,
+        1953,
+        1954,
+        1972,
+        1980,
+        1982,
+        1985,
+        1987,
+        1988,
+        2000,
+        2001,
+        2002,
+        2009,
+        2010,
+        2020
+      ],
+      "lastTitle": {
+        "date": "2020-10-11",
+        "opponent": "Miami Heat",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "Minneapolis Lakers (1947–60) → Los Angeles Lakers (1960– )",
+      "accentLight": "#552583"
     },
     {
       "slug": "memphis-grizzlies",
@@ -185,8 +321,17 @@
       "abbr": "MIA",
       "accent": "#98002E",
       "secondary": "#F9A01B",
-      "titleYears": [2006, 2012, 2013],
-      "lastTitle": { "date": "2013-06-20", "opponent": "San Antonio Spurs", "series": "4–3", "asName": null }
+      "titleYears": [
+        2006,
+        2012,
+        2013
+      ],
+      "lastTitle": {
+        "date": "2013-06-20",
+        "opponent": "San Antonio Spurs",
+        "series": "4–3",
+        "asName": null
+      }
     },
     {
       "slug": "milwaukee-bucks",
@@ -195,8 +340,17 @@
       "abbr": "MIL",
       "accent": "#EEE1C6",
       "secondary": "#00471B",
-      "titleYears": [1971, 2021],
-      "lastTitle": { "date": "2021-07-20", "opponent": "Phoenix Suns", "series": "4–2", "asName": null }
+      "titleYears": [
+        1971,
+        2021
+      ],
+      "lastTitle": {
+        "date": "2021-07-20",
+        "opponent": "Phoenix Suns",
+        "series": "4–2",
+        "asName": null
+      },
+      "accentLight": "#00471B"
     },
     {
       "slug": "minnesota-timberwolves",
@@ -210,7 +364,8 @@
       "firstNbaGame": "1989-11-03",
       "firstGameAs": null,
       "firstGameNote": "Dropped their 1989 debut in Seattle.",
-      "finalsLosses": []
+      "finalsLosses": [],
+      "accentLight": "#236192"
     },
     {
       "slug": "new-orleans-pelicans",
@@ -233,8 +388,17 @@
       "abbr": "NYK",
       "accent": "#F58426",
       "secondary": "#006BB6",
-      "titleYears": [1970, 1973],
-      "lastTitle": { "date": "1973-05-10", "opponent": "Los Angeles Lakers", "series": "4–1", "asName": null }
+      "titleYears": [
+        1970,
+        1973
+      ],
+      "lastTitle": {
+        "date": "1973-05-10",
+        "opponent": "Los Angeles Lakers",
+        "series": "4–1",
+        "asName": null
+      },
+      "accentLight": "#006BB6"
     },
     {
       "slug": "oklahoma-city-thunder",
@@ -243,8 +407,16 @@
       "abbr": "OKC",
       "accent": "#007AC1",
       "secondary": "#EF3B24",
-      "titleYears": [1979, 2025],
-      "lastTitle": { "date": "2025-06-22", "opponent": "Indiana Pacers", "series": "4–3", "asName": null },
+      "titleYears": [
+        1979,
+        2025
+      ],
+      "lastTitle": {
+        "date": "2025-06-22",
+        "opponent": "Indiana Pacers",
+        "series": "4–3",
+        "asName": null
+      },
       "lineage": "Seattle SuperSonics (1967–2008) → Oklahoma City Thunder (2008– )"
     },
     {
@@ -259,7 +431,10 @@
       "firstNbaGame": "1989-11-04",
       "firstGameAs": null,
       "firstGameNote": "Lost their 1989 debut to the Nets.",
-      "finalsLosses": [1995, 2009]
+      "finalsLosses": [
+        1995,
+        2009
+      ]
     },
     {
       "slug": "philadelphia-76ers",
@@ -268,8 +443,17 @@
       "abbr": "PHI",
       "accent": "#006BB6",
       "secondary": "#ED174C",
-      "titleYears": [1955, 1967, 1983],
-      "lastTitle": { "date": "1983-05-31", "opponent": "Los Angeles Lakers", "series": "4–0", "asName": null },
+      "titleYears": [
+        1955,
+        1967,
+        1983
+      ],
+      "lastTitle": {
+        "date": "1983-05-31",
+        "opponent": "Los Angeles Lakers",
+        "series": "4–0",
+        "asName": null
+      },
       "lineage": "Syracuse Nationals (1949–63) → Philadelphia 76ers (1963– )"
     },
     {
@@ -284,7 +468,12 @@
       "firstNbaGame": "1968-10-18",
       "firstGameAs": null,
       "firstGameNote": "Beat the Sonics in their 1968 debut at the Madhouse on McDowell.",
-      "finalsLosses": [1976, 1993, 2021]
+      "finalsLosses": [
+        1976,
+        1993,
+        2021
+      ],
+      "accentLight": "#1D1160"
     },
     {
       "slug": "portland-trail-blazers",
@@ -293,8 +482,15 @@
       "abbr": "POR",
       "accent": "#E03A3E",
       "secondary": "#000000",
-      "titleYears": [1977],
-      "lastTitle": { "date": "1977-06-05", "opponent": "Philadelphia 76ers", "series": "4–2", "asName": null }
+      "titleYears": [
+        1977
+      ],
+      "lastTitle": {
+        "date": "1977-06-05",
+        "opponent": "Philadelphia 76ers",
+        "series": "4–2",
+        "asName": null
+      }
     },
     {
       "slug": "sacramento-kings",
@@ -303,8 +499,15 @@
       "abbr": "SAC",
       "accent": "#5A2D81",
       "secondary": "#63727A",
-      "titleYears": [1951],
-      "lastTitle": { "date": "1951-04-21", "opponent": "New York Knicks", "series": "4–3", "asName": "Rochester Royals" },
+      "titleYears": [
+        1951
+      ],
+      "lastTitle": {
+        "date": "1951-04-21",
+        "opponent": "New York Knicks",
+        "series": "4–3",
+        "asName": "Rochester Royals"
+      },
       "lineage": "Rochester Royals (1945–57) → Cincinnati Royals (1957–72) → Kansas City Kings (1972–85) → Sacramento Kings (1985– )"
     },
     {
@@ -314,8 +517,20 @@
       "abbr": "SAS",
       "accent": "#C4CED4",
       "secondary": "#000000",
-      "titleYears": [1999, 2003, 2005, 2007, 2014],
-      "lastTitle": { "date": "2014-06-15", "opponent": "Miami Heat", "series": "4–1", "asName": null }
+      "titleYears": [
+        1999,
+        2003,
+        2005,
+        2007,
+        2014
+      ],
+      "lastTitle": {
+        "date": "2014-06-15",
+        "opponent": "Miami Heat",
+        "series": "4–1",
+        "asName": null
+      },
+      "accentLight": "#000000"
     },
     {
       "slug": "toronto-raptors",
@@ -324,8 +539,15 @@
       "abbr": "TOR",
       "accent": "#CE1141",
       "secondary": "#000000",
-      "titleYears": [2019],
-      "lastTitle": { "date": "2019-06-13", "opponent": "Golden State Warriors", "series": "4–2", "asName": null }
+      "titleYears": [
+        2019
+      ],
+      "lastTitle": {
+        "date": "2019-06-13",
+        "opponent": "Golden State Warriors",
+        "series": "4–2",
+        "asName": null
+      }
     },
     {
       "slug": "utah-jazz",
@@ -339,7 +561,11 @@
       "firstNbaGame": "1974-10-17",
       "firstGameAs": "New Orleans Jazz",
       "firstGameNote": "Debuted at Madison Square Garden in 1974 — and lost by 15.",
-      "finalsLosses": [1997, 1998]
+      "finalsLosses": [
+        1997,
+        1998
+      ],
+      "accentLight": "#002B5E"
     },
     {
       "slug": "washington-wizards",
@@ -348,8 +574,15 @@
       "abbr": "WAS",
       "accent": "#E31837",
       "secondary": "#002B5E",
-      "titleYears": [1978],
-      "lastTitle": { "date": "1978-06-07", "opponent": "Seattle SuperSonics", "series": "4–3", "asName": "Washington Bullets" },
+      "titleYears": [
+        1978
+      ],
+      "lastTitle": {
+        "date": "1978-06-07",
+        "opponent": "Seattle SuperSonics",
+        "series": "4–3",
+        "asName": "Washington Bullets"
+      },
       "lineage": "Chicago Packers (1961–62) → Chicago Zephyrs (1962–63) → Baltimore Bullets (1963–73) → Washington Bullets (1974–97) → Washington Wizards (1997– )"
     }
   ]

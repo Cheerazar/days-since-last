@@ -13,6 +13,8 @@ export interface Team {
   shortName: string;
   abbr: string;
   accent: string;
+  /** Official-palette alternate for light backgrounds, where accent is too pale. */
+  accentLight?: string;
   secondary: string;
   titleYears: number[];
   lastTitle: LastTitle | null;

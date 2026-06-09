@@ -43,7 +43,11 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
           const isChamp = i === teams.length - 1;
           return (
             <li>
-              <a class="row" href={`/nba/${t.slug}/`} style={`--ac:${t.accent};--ac2:${t.secondary}`}>
+              <a
+                class="row"
+                href={`/nba/${t.slug}/`}
+                style={`--ac-d:${t.accent};--ac-l:${t.accentLight ?? t.accent};--ac2:${t.secondary}`}
+              >
                 <span class="rank">{i + 1}</span>
                 <span class="badge">{t.abbr}</span>
                 <span class="who">
@@ -120,10 +124,10 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
     max-width: 880px;
     margin: 1.5rem auto 0;
     padding: 0.8rem 1.1rem;
-    border: 1px solid #3a2a10;
+    border: 1px solid var(--gold-line);
     border-radius: 10px;
-    background: #161005;
-    color: #ffd98a;
+    background: var(--gold-bg);
+    color: var(--gold-text);
     font-size: 0.95rem;
   }
 
@@ -158,6 +162,7 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
   }
 
   .row {
+    --ac: var(--ac-d);
     display: grid;
     grid-template-columns: 2rem 3.1rem 1fr auto auto;
     align-items: center;
@@ -176,6 +181,10 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
     transform: translateY(-1px);
   }
 
+  :global(html[data-theme='light']) .row {
+    --ac: var(--ac-l);
+  }
+
   .rank {
     color: var(--dim);
     font-size: 0.85rem;
@@ -188,8 +197,9 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
     place-items: center;
     width: 3.1rem;
     height: 2.5rem;
+    border: 1px solid var(--line);
     border-radius: 8px;
-    background: var(--ac);
+    background: var(--ac-d);
     color: #0a0c10;
     font-family: 'Anton', sans-serif;
     font-size: 1rem;
@@ -221,15 +231,15 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
   }
 
   .never {
-    color: #ff8d8d;
-    border: 1px solid #5c1f1f;
-    background: #1d0d0d;
+    color: var(--red-text);
+    border: 1px solid var(--red-line);
+    background: var(--red-bg);
   }
 
   .champ {
-    color: #ffd98a;
-    border: 1px solid #5c4a1f;
-    background: #1d160d;
+    color: var(--gold-text);
+    border: 1px solid var(--gold-line);
+    background: var(--gold-bg);
   }
 
   .meta {
@@ -244,6 +254,10 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
     font-size: clamp(1.05rem, 3.4vw, 1.55rem);
     color: var(--ac);
     text-shadow: 0 0 18px color-mix(in srgb, var(--ac) 55%, transparent);
+  }
+
+  :global(html[data-theme='light']) .count {
+    text-shadow: 0 0 12px color-mix(in srgb, var(--ac) 22%, transparent);
   }
 
   .unit {

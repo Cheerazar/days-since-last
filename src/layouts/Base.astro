@@ -15,6 +15,18 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
+    <script is:inline>
+      // Runs before first paint so the chosen theme never flashes.
+      (() => {
+        let theme = 'dark';
+        try {
+          theme =
+            localStorage.getItem('theme') ??
+            (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        } catch {}
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -37,6 +49,19 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     />
   </head>
   <body>
+    <button id="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
+      <svg class="i-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.6" fill="currentColor"></circle>
+        <g stroke="currentColor" stroke-width="1.9" stroke-linecap="round">
+          <path d="M12 2.2v2.6M12 19.2v2.6M2.2 12h2.6M19.2 12h2.6M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"></path>
+        </g>
+      </svg>
+      <svg class="i-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
+        <path
+          d="M20.6 14.6A8.8 8.8 0 0 1 9.4 3.4a8.8 8.8 0 1 0 11.2 11.2Z"
+          fill="currentColor"></path>
+      </svg>
+    </button>
     <slot />
     <script>
       // One ticker drives every counter on the page. Each [data-since] holds
@@ -69,6 +94,17 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
 
       tick();
       setInterval(tick, 1000);
+
+      const toggle = document.getElementById('theme-toggle');
+      const themeColor = document.querySelector('meta[name="theme-color"]');
+      toggle?.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+        document.documentElement.dataset.theme = next;
+        try {
+          localStorage.setItem('theme', next);
+        } catch {}
+        themeColor?.setAttribute('content', next === 'light' ? '#f3f5f7' : '#07090c');
+      });
     </script>
   </body>
 </html>
@@ -96,7 +132,30 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     --line: #1c2430;
     --text: #e8edf2;
     --dim: #8b97a5;
+    --soft: #aab6c4;
     --gold: #f5b62e;
+    --gold-bg: #1d160d;
+    --gold-line: #5c4a1f;
+    --gold-text: #ffd98a;
+    --red-bg: #1d0d0d;
+    --red-line: #5c1f1f;
+    --red-text: #ff8d8d;
+  }
+
+  html[data-theme='light'] {
+    --bg: #f3f5f7;
+    --panel: #ffffff;
+    --line: #d9e0e8;
+    --text: #141b23;
+    --dim: #5d6a79;
+    --soft: #46535f;
+    --gold: #9a6e0a;
+    --gold-bg: #faf3e0;
+    --gold-line: #e3cf9a;
+    --gold-text: #8a6207;
+    --red-bg: #fdeeee;
+    --red-line: #f0c4c4;
+    --red-text: #b3261e;
   }
 
   * {
@@ -106,6 +165,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
   html {
     background: var(--bg);
     color-scheme: dark;
+  }
+
+  html[data-theme='light'] {
+    color-scheme: light;
   }
 
   body {
@@ -148,7 +211,48 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     user-select: none;
   }
 
+  html[data-theme='light'] .seg .ghost {
+    opacity: 0.12;
+  }
+
   .seg .digits {
     position: relative;
+  }
+
+  #theme-toggle {
+    position: fixed;
+    top: 0.85rem;
+    right: 1rem;
+    z-index: 50;
+    display: grid;
+    place-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: var(--panel);
+    color: var(--dim);
+    cursor: pointer;
+    transition:
+      color 0.15s,
+      border-color 0.15s;
+  }
+
+  #theme-toggle:hover {
+    color: var(--text);
+    border-color: var(--dim);
+  }
+
+  #theme-toggle .i-moon {
+    display: none;
+  }
+
+  html[data-theme='light'] #theme-toggle .i-sun {
+    display: none;
+  }
+
+  html[data-theme='light'] #theme-toggle .i-moon {
+    display: block;
   }
 </style>

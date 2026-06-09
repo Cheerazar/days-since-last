@@ -38,7 +38,10 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
 ---
 
 <Base title={title} description={description} ogImage={ogImage}>
-  <div class="page" style={`--ac:${team.accent};--ac2:${team.secondary}`}>
+  <div
+    class="page"
+    style={`--ac-d:${team.accent};--ac-l:${team.accentLight ?? team.accent};--ac2:${team.secondary}`}
+  >
     <nav class="top">
       <a href="/">← ALL 30 TEAMS</a>
       <span class="league">NBA · DROUGHT №{rank}</span>
@@ -132,10 +135,15 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
 
 <style>
   .page {
+    --ac: var(--ac-d);
     min-height: 100vh;
     background:
       radial-gradient(1100px 600px at 50% -10%, color-mix(in srgb, var(--ac) 14%, transparent), transparent 70%),
       var(--bg);
+  }
+
+  :global(html[data-theme='light']) .page {
+    --ac: var(--ac-l);
   }
 
   .top {
@@ -144,7 +152,8 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
     align-items: center;
     max-width: 880px;
     margin: 0 auto;
-    padding: 1.2rem 1.25rem;
+    /* extra right padding keeps the league label clear of the theme toggle */
+    padding: 1.2rem 4rem 1.2rem 1.25rem;
     font-size: 0.72rem;
     font-weight: 800;
     letter-spacing: 0.14em;
@@ -174,8 +183,9 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
     place-items: center;
     width: 3.4rem;
     height: 2.8rem;
+    border: 1px solid var(--line);
     border-radius: 9px;
-    background: var(--ac);
+    background: var(--ac-d);
     color: #0a0c10;
     font-family: 'Anton', sans-serif;
     font-size: 1.15rem;
@@ -202,6 +212,10 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
       0 0 90px color-mix(in srgb, var(--ac) 30%, transparent);
   }
 
+  :global(html[data-theme='light']) .counter {
+    text-shadow: 0 0 22px color-mix(in srgb, var(--ac) 25%, transparent);
+  }
+
   .clock {
     display: flex;
     justify-content: center;
@@ -222,6 +236,11 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
     text-shadow: 0 0 16px color-mix(in srgb, var(--ac) 45%, transparent);
   }
 
+  :global(html[data-theme='light']) .cv {
+    color: var(--ac);
+    text-shadow: 0 0 10px color-mix(in srgb, var(--ac) 20%, transparent);
+  }
+
   .cl {
     color: var(--dim);
     font-size: 0.6rem;
@@ -232,7 +251,7 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
   .context {
     margin: 2rem auto 0;
     max-width: 36rem;
-    color: #aab6c4;
+    color: var(--soft);
     font-size: 0.98rem;
   }
 
@@ -244,7 +263,7 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
 
   .champnote {
     margin: 1.4rem auto 0;
-    color: #ffd98a;
+    color: var(--gold-text);
     font-size: 0.8rem;
     font-weight: 800;
     letter-spacing: 0.18em;
@@ -290,10 +309,10 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
 
   .year {
     padding: 0.3rem 0.65rem;
-    border: 1px solid #5c4a1f;
+    border: 1px solid var(--gold-line);
     border-radius: 8px;
-    background: #1d160d;
-    color: #ffd98a;
+    background: var(--gold-bg);
+    color: var(--gold-text);
     font-family: 'Anton', sans-serif;
     font-size: 0.95rem;
     letter-spacing: 0.05em;
