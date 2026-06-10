@@ -116,7 +116,16 @@ describe('formatDate', () => {
 
 describe('league registry', () => {
   it('loads every league in display order', () => {
-    expect(leagues.map((l) => l.slug)).toEqual(['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl']);
+    expect(leagues.map((l) => l.slug)).toEqual([
+      'nfl',
+      'nba',
+      'mlb',
+      'nhl',
+      'mls',
+      'wnba',
+      'nwsl',
+      'pwhl',
+    ]);
   });
 
   it('finds leagues by slug', () => {

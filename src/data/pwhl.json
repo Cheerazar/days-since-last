@@ -1,0 +1,144 @@
+{
+  "league": "PWHL",
+  "slug": "pwhl",
+  "finalsName": "the Walter Cup Finals",
+  "updated": "2026-06-10",
+  "banner": "The Montréal Victoire won the 2026 Walter Cup on May 20, beating the Ottawa Charge 4–0 in Game 4 — the first Canadian team to lift the Cup.",
+  "teams": [
+    {
+      "slug": "boston-fleet",
+      "name": "Boston Fleet",
+      "shortName": "Fleet",
+      "abbr": "BOS",
+      "accent": "#B5E3D8",
+      "secondary": "#173F35",
+      "accentLight": "#173F35",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2024-01-03",
+      "firstGameAs": "PWHL Boston",
+      "firstGameNote": "Hosted the league's third-ever game on January 3, 2024 and lost 3–2 to Minnesota — then lost the first Walter Cup Final to them in five that spring.",
+      "finalsLosses": [
+        2024
+      ],
+      "lineage": "PWHL Boston (2024) → Boston Fleet (2024– )"
+    },
+    {
+      "slug": "minnesota-frost",
+      "name": "Minnesota Frost",
+      "shortName": "Frost",
+      "abbr": "MIN",
+      "accent": "#A77BCA",
+      "secondary": "#250E62",
+      "accentLight": "#250E62",
+      "titleYears": [
+        2024,
+        2025
+      ],
+      "lastTitle": {
+        "date": "2025-05-26",
+        "opponent": "Ottawa Charge",
+        "series": "3–1",
+        "asName": null
+      },
+      "lineage": "PWHL Minnesota (2024) → Minnesota Frost (2024– ); the inaugural 2024 Walter Cup was won as PWHL Minnesota"
+    },
+    {
+      "slug": "montreal-victoire",
+      "name": "Montréal Victoire",
+      "shortName": "Victoire",
+      "abbr": "MTL",
+      "accent": "#862633",
+      "secondary": "#4B4F54",
+      "titleYears": [
+        2026
+      ],
+      "lastTitle": {
+        "date": "2026-05-20",
+        "opponent": "Ottawa Charge",
+        "series": "3–1",
+        "asName": null
+      },
+      "lineage": "PWHL Montréal (2024) → Montréal Victoire (2024– )"
+    },
+    {
+      "slug": "new-york-sirens",
+      "name": "New York Sirens",
+      "shortName": "Sirens",
+      "abbr": "NY",
+      "accent": "#00BFB3",
+      "secondary": "#041E42",
+      "accentLight": "#041E42",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2024-01-01",
+      "firstGameAs": "PWHL New York",
+      "firstGameNote": "Won the first game in PWHL history 4–0 at Toronto on New Year's Day 2024 — Ella Shelton's league-first goal remains the franchise's most famous moment.",
+      "finalsLosses": [],
+      "lineage": "PWHL New York (2024) → New York Sirens (2024– )"
+    },
+    {
+      "slug": "ottawa-charge",
+      "name": "Ottawa Charge",
+      "shortName": "Charge",
+      "abbr": "OTT",
+      "accent": "#A6192E",
+      "secondary": "#4B4F54",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2024-01-02",
+      "firstGameAs": "PWHL Ottawa",
+      "firstGameNote": "Lost their January 2, 2024 opener 3–2 in overtime before a record 8,318 fans, then dropped back-to-back Walter Cup Finals in 2025 and 2026 — the second one ending on home ice.",
+      "finalsLosses": [
+        2025,
+        2026
+      ],
+      "lineage": "PWHL Ottawa (2024) → Ottawa Charge (2024– )"
+    },
+    {
+      "slug": "seattle-torrent",
+      "name": "Seattle Torrent",
+      "shortName": "Torrent",
+      "abbr": "SEA",
+      "accent": "#A5C9D6",
+      "secondary": "#1E4742",
+      "accentLight": "#1E4742",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2025-11-21",
+      "firstGameAs": null,
+      "firstGameNote": "Lost their November 21, 2025 debut 4–3 in overtime to Vancouver — Julia Gosling scored the first goal in franchise history, and the rivals up north still spoiled the night.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "toronto-sceptres",
+      "name": "Toronto Sceptres",
+      "shortName": "Sceptres",
+      "abbr": "TOR",
+      "accent": "#0067B9",
+      "secondary": "#0C2340",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2024-01-01",
+      "firstGameAs": "PWHL Toronto",
+      "firstGameNote": "Hosted the league's very first game on January 1, 2024 and lost 4–0 — a sold-out Mattamy crowd witnessed history, just none of it scored by the home team.",
+      "finalsLosses": [],
+      "lineage": "PWHL Toronto (2024) → Toronto Sceptres (2024– )"
+    },
+    {
+      "slug": "vancouver-goldeneyes",
+      "name": "Vancouver Goldeneyes",
+      "shortName": "Goldeneyes",
+      "abbr": "VAN",
+      "accent": "#F2A900",
+      "secondary": "#003B5C",
+      "accentLight": "#003B5C",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2025-11-21",
+      "firstGameAs": null,
+      "firstGameNote": "Beat Seattle 4–3 in overtime before a sold-out Pacific Coliseum on November 21, 2025 — the first PWHL team to win its debut on home ice; the Cup, however, went to Montréal.",
+      "finalsLosses": []
+    }
+  ]
+}

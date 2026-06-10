@@ -16,6 +16,7 @@ const EXPECTED_TEAM_COUNTS: Record<string, number> = {
   mls: 30,
   wnba: 15,
   nwsl: 16,
+  pwhl: 8,
 };
 
 describe('league registry shape', () => {
@@ -96,6 +97,7 @@ describe('reigning champions', () => {
       mls: 'inter-miami-cf',
       wnba: 'las-vegas-aces',
       nwsl: 'nj-ny-gotham-fc',
+      pwhl: 'montreal-victoire',
     });
   });
 
@@ -122,6 +124,7 @@ describe('anchor dates', () => {
     ['wnba', 'las-vegas-aces', '2025-10-10'],
     ['nwsl', 'nj-ny-gotham-fc', '2025-11-22'],
     ['mls', 'inter-miami-cf', '2025-12-06'],
+    ['pwhl', 'montreal-victoire', '2026-05-20'],
   ];
 
   it.each(ANCHORS)('%s/%s last title on %s', (leagueSlug, teamSlug, date) => {
