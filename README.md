@@ -48,6 +48,25 @@ triggers a redeploy every night so link previews never drift more than a day.
    URL as the `VERCEL_DEPLOY_HOOK` repository secret on GitHub so the nightly
    rebuild can fire.
 
+## Analytics
+
+Two layers, both cookieless (no consent banner needed):
+
+- **Vercel Web Analytics** — pageviews/referrers per team page. Enable it
+  under Project → Analytics in the Vercel dashboard; the beacon is already in
+  the layout (production builds only).
+- **Umami Cloud** — share-click events. The Share the Pain button fires a
+  `share` event with `team`, `league`, and `method` (native share vs. copy)
+  properties. To activate: create a site at [cloud.umami.is](https://cloud.umami.is),
+  copy its website ID, set `PUBLIC_UMAMI_WEBSITE_ID` as an environment
+  variable in Vercel (Project → Settings → Environment Variables), and
+  redeploy. The script is omitted from builds where the variable is unset, so
+  local builds never send events. Share counts per team appear under the
+  site's **Events** tab in Umami.
+
+Shared links carry `utm_source=share`, so share-driven arrivals are
+attributable in either dashboard.
+
 ## Data decisions
 
 - **Counters start at midnight ET of the clinching game's date** — "days since

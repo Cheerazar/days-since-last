@@ -122,12 +122,13 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
   const btn = document.getElementById('share');
 
   // Fires a custom event into whichever analytics provider is present
-  // (Vercel `va` and/or Plausible). Safe no-op when neither is loaded.
+  // (Umami, Vercel `va`, and/or Plausible). Safe no-op when none is loaded.
   // Vercel's base Pro tier keeps only 2 properties per event, so it gets
-  // the essential pair; Plausible gets the full set.
+  // the essential pair; the others get the full set.
   const track = (method: string) => {
     const team = btn?.dataset.team;
     try {
+      (window as any).umami?.track('share', { team, league: 'nba', method });
       (window as any).va?.('event', { name: 'share', data: { team, method } });
       (window as any).plausible?.('share', { props: { team, league: 'nba', method } });
     } catch {}
