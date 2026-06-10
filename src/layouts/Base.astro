@@ -70,6 +70,19 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
         />
       )
     }
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "WebSite", "@id": "https://dayssincelast.app/#website",
+          "url": "https://dayssincelast.app/", "name": "Days Since Last",
+          "creator": { "@id": "https://gunnariauvinen.com/#person" },
+          "publisher": { "@id": "https://gunnariauvinen.com/#person" } },
+        { "@type": "Person", "@id": "https://gunnariauvinen.com/#person",
+          "name": "Gunnari Auvinen", "url": "https://gunnariauvinen.com/",
+          "sameAs": ["https://www.linkedin.com/in/gunnariauvinen","https://github.com/cheerazar","https://dev.to/cheerazar","https://medium.com/@cheerazar"] }
+      ]
+    })} />
+    <meta name="author" content="Gunnari Auvinen" />
   </head>
   <body>
     <button id="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
