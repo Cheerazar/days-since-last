@@ -2,6 +2,8 @@
 
 By [Gunnari Auvinen](https://gunnariauvinen.com) — principal software engineer.
 
+[![CI](https://github.com/cheerazar/days-since-last/actions/workflows/ci.yml/badge.svg)](https://github.com/cheerazar/days-since-last/actions/workflows/ci.yml)
+
 Every team in every major American league, ranked by days since its last
 championship — live-ticking jumbotron counters, fan-pain facts, and per-team
 share cards. NFL, NBA, MLB, NHL, MLS, WNBA, NWSL.
@@ -20,6 +22,7 @@ of when the site was built.
 | `npm run dev`                    | Dev server at `localhost:4321`               |
 | `npm run build`                  | Build static site + OG images into `./dist/` |
 | `npm run preview`                | Serve the built site locally                 |
+| `npm test`                       | Run the Vitest suite                         |
 | `node scripts/validate-data.mjs` | Schema-check every league JSON               |
 
 ## The night a champion is crowned
