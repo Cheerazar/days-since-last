@@ -1,0 +1,647 @@
+{
+  "league": "MLB",
+  "slug": "mlb",
+  "finalsName": "the World Series",
+  "updated": "2026-06-10",
+  "teams": [
+    {
+      "slug": "arizona-diamondbacks",
+      "name": "Arizona Diamondbacks",
+      "shortName": "Diamondbacks",
+      "abbr": "ARI",
+      "accent": "#A71930",
+      "secondary": "#E3D4AD",
+      "titleYears": [
+        2001
+      ],
+      "lastTitle": {
+        "date": "2001-11-04",
+        "opponent": "New York Yankees",
+        "series": "4–3",
+        "asName": null
+      }
+    },
+    {
+      "slug": "athletics",
+      "name": "Athletics",
+      "shortName": "Athletics",
+      "abbr": "ATH",
+      "accent": "#EFB21E",
+      "secondary": "#003831",
+      "accentLight": "#003831",
+      "titleYears": [
+        1910,
+        1911,
+        1913,
+        1929,
+        1930,
+        1972,
+        1973,
+        1974,
+        1989
+      ],
+      "lastTitle": {
+        "date": "1989-10-28",
+        "opponent": "San Francisco Giants",
+        "series": "4–0",
+        "asName": "Oakland Athletics"
+      },
+      "lineage": "Philadelphia Athletics (1901–54) → Kansas City Athletics (1955–67) → Oakland Athletics (1968–2024) → Athletics (2025– )"
+    },
+    {
+      "slug": "atlanta-braves",
+      "name": "Atlanta Braves",
+      "shortName": "Braves",
+      "abbr": "ATL",
+      "accent": "#CE1141",
+      "secondary": "#13274F",
+      "titleYears": [
+        1914,
+        1957,
+        1995,
+        2021
+      ],
+      "lastTitle": {
+        "date": "2021-11-02",
+        "opponent": "Houston Astros",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "Boston Braves (1912–52) → Milwaukee Braves (1953–65) → Atlanta Braves (1966– )"
+    },
+    {
+      "slug": "baltimore-orioles",
+      "name": "Baltimore Orioles",
+      "shortName": "Orioles",
+      "abbr": "BAL",
+      "accent": "#DF4601",
+      "secondary": "#000000",
+      "titleYears": [
+        1966,
+        1970,
+        1983
+      ],
+      "lastTitle": {
+        "date": "1983-10-16",
+        "opponent": "Philadelphia Phillies",
+        "series": "4–1",
+        "asName": null
+      },
+      "lineage": "Milwaukee Brewers (1901) → St. Louis Browns (1902–53) → Baltimore Orioles (1954– )"
+    },
+    {
+      "slug": "boston-red-sox",
+      "name": "Boston Red Sox",
+      "shortName": "Red Sox",
+      "abbr": "BOS",
+      "accent": "#BD3039",
+      "secondary": "#0C2340",
+      "titleYears": [
+        1903,
+        1912,
+        1915,
+        1916,
+        1918,
+        2004,
+        2007,
+        2013,
+        2018
+      ],
+      "lastTitle": {
+        "date": "2018-10-28",
+        "opponent": "Los Angeles Dodgers",
+        "series": "4–1",
+        "asName": null
+      },
+      "lineage": "Boston Americans (1901–07) → Boston Red Sox (1908– )"
+    },
+    {
+      "slug": "chicago-cubs",
+      "name": "Chicago Cubs",
+      "shortName": "Cubs",
+      "abbr": "CHC",
+      "accent": "#0E3386",
+      "secondary": "#CC3433",
+      "titleYears": [
+        1907,
+        1908,
+        2016
+      ],
+      "lastTitle": {
+        "date": "2016-11-02",
+        "opponent": "Cleveland Indians",
+        "series": "4–3",
+        "asName": null
+      }
+    },
+    {
+      "slug": "chicago-white-sox",
+      "name": "Chicago White Sox",
+      "shortName": "White Sox",
+      "abbr": "CWS",
+      "accent": "#C4CED4",
+      "secondary": "#27251F",
+      "accentLight": "#27251F",
+      "titleYears": [
+        1906,
+        1917,
+        2005
+      ],
+      "lastTitle": {
+        "date": "2005-10-26",
+        "opponent": "Houston Astros",
+        "series": "4–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "cincinnati-reds",
+      "name": "Cincinnati Reds",
+      "shortName": "Reds",
+      "abbr": "CIN",
+      "accent": "#C6011F",
+      "secondary": "#000000",
+      "titleYears": [
+        1919,
+        1940,
+        1975,
+        1976,
+        1990
+      ],
+      "lastTitle": {
+        "date": "1990-10-20",
+        "opponent": "Oakland Athletics",
+        "series": "4–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "cleveland-guardians",
+      "name": "Cleveland Guardians",
+      "shortName": "Guardians",
+      "abbr": "CLE",
+      "accent": "#E31937",
+      "secondary": "#0C2340",
+      "titleYears": [
+        1920,
+        1948
+      ],
+      "lastTitle": {
+        "date": "1948-10-11",
+        "opponent": "Boston Braves",
+        "series": "4–2",
+        "asName": "Cleveland Indians"
+      },
+      "lineage": "Cleveland Blues/Bronchos/Naps (1901–14) → Cleveland Indians (1915–2021) → Cleveland Guardians (2022– )"
+    },
+    {
+      "slug": "colorado-rockies",
+      "name": "Colorado Rockies",
+      "shortName": "Rockies",
+      "abbr": "COL",
+      "accent": "#C4CED4",
+      "secondary": "#333366",
+      "accentLight": "#333366",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1993-04-05",
+      "firstGameAs": null,
+      "firstGameNote": "Dwight Gooden four-hit them in a 3–0 shutout at Shea Stadium; Denver's thin air has produced plenty of runs and zero rings.",
+      "finalsLosses": [
+        2007
+      ]
+    },
+    {
+      "slug": "detroit-tigers",
+      "name": "Detroit Tigers",
+      "shortName": "Tigers",
+      "abbr": "DET",
+      "accent": "#FA4616",
+      "secondary": "#0C2340",
+      "titleYears": [
+        1935,
+        1945,
+        1968,
+        1984
+      ],
+      "lastTitle": {
+        "date": "1984-10-14",
+        "opponent": "San Diego Padres",
+        "series": "4–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "houston-astros",
+      "name": "Houston Astros",
+      "shortName": "Astros",
+      "abbr": "HOU",
+      "accent": "#EB6E1F",
+      "secondary": "#002D62",
+      "titleYears": [
+        2017,
+        2022
+      ],
+      "lastTitle": {
+        "date": "2022-11-05",
+        "opponent": "Philadelphia Phillies",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "Houston Colt .45s (1962–64) → Houston Astros (1965– )"
+    },
+    {
+      "slug": "kansas-city-royals",
+      "name": "Kansas City Royals",
+      "shortName": "Royals",
+      "abbr": "KC",
+      "accent": "#004687",
+      "secondary": "#BD9B60",
+      "titleYears": [
+        1985,
+        2015
+      ],
+      "lastTitle": {
+        "date": "2015-11-01",
+        "opponent": "New York Mets",
+        "series": "4–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "los-angeles-angels",
+      "name": "Los Angeles Angels",
+      "shortName": "Angels",
+      "abbr": "LAA",
+      "accent": "#BA0021",
+      "secondary": "#003263",
+      "titleYears": [
+        2002
+      ],
+      "lastTitle": {
+        "date": "2002-10-27",
+        "opponent": "San Francisco Giants",
+        "series": "4–3",
+        "asName": "Anaheim Angels"
+      },
+      "lineage": "Los Angeles Angels (1961–65) → California Angels (1965–96) → Anaheim Angels (1997–2004) → Los Angeles Angels of Anaheim (2005–15) → Los Angeles Angels (2016– )"
+    },
+    {
+      "slug": "los-angeles-dodgers",
+      "name": "Los Angeles Dodgers",
+      "shortName": "Dodgers",
+      "abbr": "LAD",
+      "accent": "#005A9C",
+      "secondary": "#EF3E42",
+      "titleYears": [
+        1955,
+        1959,
+        1963,
+        1965,
+        1981,
+        1988,
+        2020,
+        2024,
+        2025
+      ],
+      "lastTitle": {
+        "date": "2025-11-01",
+        "opponent": "Toronto Blue Jays",
+        "series": "4–3",
+        "asName": null
+      },
+      "lineage": "Brooklyn Dodgers (–1957) → Los Angeles Dodgers (1958– )"
+    },
+    {
+      "slug": "miami-marlins",
+      "name": "Miami Marlins",
+      "shortName": "Marlins",
+      "abbr": "MIA",
+      "accent": "#00A3E0",
+      "secondary": "#EF3340",
+      "titleYears": [
+        1997,
+        2003
+      ],
+      "lastTitle": {
+        "date": "2003-10-25",
+        "opponent": "New York Yankees",
+        "series": "4–2",
+        "asName": "Florida Marlins"
+      },
+      "lineage": "Florida Marlins (1993–2011) → Miami Marlins (2012– )"
+    },
+    {
+      "slug": "milwaukee-brewers",
+      "name": "Milwaukee Brewers",
+      "shortName": "Brewers",
+      "abbr": "MIL",
+      "accent": "#FFC52F",
+      "secondary": "#12284B",
+      "accentLight": "#12284B",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1969-04-08",
+      "firstGameAs": "Seattle Pilots",
+      "firstGameNote": "Born as the Seattle Pilots, who beat the Angels 4–3 in their debut, went bankrupt after one season, and became the Brewers a week before Opening Day 1970.",
+      "finalsLosses": [
+        1982
+      ],
+      "lineage": "Seattle Pilots (1969) → Milwaukee Brewers (1970– )"
+    },
+    {
+      "slug": "minnesota-twins",
+      "name": "Minnesota Twins",
+      "shortName": "Twins",
+      "abbr": "MIN",
+      "accent": "#D31145",
+      "secondary": "#002B5C",
+      "titleYears": [
+        1924,
+        1987,
+        1991
+      ],
+      "lastTitle": {
+        "date": "1991-10-27",
+        "opponent": "Atlanta Braves",
+        "series": "4–3",
+        "asName": null
+      },
+      "lineage": "Washington Senators (1901–60) → Minnesota Twins (1961– )"
+    },
+    {
+      "slug": "new-york-mets",
+      "name": "New York Mets",
+      "shortName": "Mets",
+      "abbr": "NYM",
+      "accent": "#FF5910",
+      "secondary": "#002D72",
+      "titleYears": [
+        1969,
+        1986
+      ],
+      "lastTitle": {
+        "date": "1986-10-27",
+        "opponent": "Boston Red Sox",
+        "series": "4–3",
+        "asName": null
+      }
+    },
+    {
+      "slug": "new-york-yankees",
+      "name": "New York Yankees",
+      "shortName": "Yankees",
+      "abbr": "NYY",
+      "accent": "#FFFFFF",
+      "secondary": "#C4CED3",
+      "accentLight": "#0C2340",
+      "titleYears": [
+        1923,
+        1927,
+        1928,
+        1932,
+        1936,
+        1937,
+        1938,
+        1939,
+        1941,
+        1943,
+        1947,
+        1949,
+        1950,
+        1951,
+        1952,
+        1953,
+        1956,
+        1958,
+        1961,
+        1962,
+        1977,
+        1978,
+        1996,
+        1998,
+        1999,
+        2000,
+        2009
+      ],
+      "lastTitle": {
+        "date": "2009-11-04",
+        "opponent": "Philadelphia Phillies",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "Baltimore Orioles (1901–02) → New York Highlanders (1903–12) → New York Yankees (1913– )"
+    },
+    {
+      "slug": "philadelphia-phillies",
+      "name": "Philadelphia Phillies",
+      "shortName": "Phillies",
+      "abbr": "PHI",
+      "accent": "#E81828",
+      "secondary": "#002D72",
+      "titleYears": [
+        1980,
+        2008
+      ],
+      "lastTitle": {
+        "date": "2008-10-29",
+        "opponent": "Tampa Bay Rays",
+        "series": "4–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "pittsburgh-pirates",
+      "name": "Pittsburgh Pirates",
+      "shortName": "Pirates",
+      "abbr": "PIT",
+      "accent": "#FDB827",
+      "secondary": "#27251F",
+      "accentLight": "#27251F",
+      "titleYears": [
+        1909,
+        1925,
+        1960,
+        1971,
+        1979
+      ],
+      "lastTitle": {
+        "date": "1979-10-17",
+        "opponent": "Baltimore Orioles",
+        "series": "4–3",
+        "asName": null
+      }
+    },
+    {
+      "slug": "san-diego-padres",
+      "name": "San Diego Padres",
+      "shortName": "Padres",
+      "abbr": "SD",
+      "accent": "#FFC425",
+      "secondary": "#2F241D",
+      "accentLight": "#2F241D",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1969-04-08",
+      "firstGameAs": null,
+      "firstGameNote": "Dick Selma struck out 12 in a 2–1 win over Houston; the Padres then lost 110 games that season and have been chasing that opening high ever since.",
+      "finalsLosses": [
+        1984,
+        1998
+      ]
+    },
+    {
+      "slug": "san-francisco-giants",
+      "name": "San Francisco Giants",
+      "shortName": "Giants",
+      "abbr": "SF",
+      "accent": "#FD5A1E",
+      "secondary": "#EFD19F",
+      "titleYears": [
+        1905,
+        1921,
+        1922,
+        1933,
+        1954,
+        2010,
+        2012,
+        2014
+      ],
+      "lastTitle": {
+        "date": "2014-10-29",
+        "opponent": "Kansas City Royals",
+        "series": "4–3",
+        "asName": null
+      },
+      "lineage": "New York Giants (–1957) → San Francisco Giants (1958– )",
+      "asterisk": {
+        "label": "Pre-1903 world championships",
+        "years": [
+          1888,
+          1889
+        ]
+      }
+    },
+    {
+      "slug": "seattle-mariners",
+      "name": "Seattle Mariners",
+      "shortName": "Mariners",
+      "abbr": "SEA",
+      "accent": "#C4CED4",
+      "secondary": "#005C5C",
+      "accentLight": "#005C5C",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1977-04-06",
+      "firstGameAs": null,
+      "firstGameNote": "Shut out 7–0 by the Angels in front of 57,762 at the Kingdome — and they remain the only current MLB franchise that has never even reached a World Series.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "st-louis-cardinals",
+      "name": "St. Louis Cardinals",
+      "shortName": "Cardinals",
+      "abbr": "STL",
+      "accent": "#C41E3A",
+      "secondary": "#FEDB00",
+      "titleYears": [
+        1926,
+        1931,
+        1934,
+        1942,
+        1944,
+        1946,
+        1964,
+        1967,
+        1982,
+        2006,
+        2011
+      ],
+      "lastTitle": {
+        "date": "2011-10-28",
+        "opponent": "Texas Rangers",
+        "series": "4–3",
+        "asName": null
+      },
+      "asterisk": {
+        "label": "American Association championship as the St. Louis Browns (pre-1903)",
+        "years": [
+          1886
+        ]
+      }
+    },
+    {
+      "slug": "tampa-bay-rays",
+      "name": "Tampa Bay Rays",
+      "shortName": "Rays",
+      "abbr": "TB",
+      "accent": "#8FBCE6",
+      "secondary": "#F5D130",
+      "accentLight": "#092C5C",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1998-03-31",
+      "firstGameAs": "Tampa Bay Devil Rays",
+      "firstGameNote": "Fell behind Detroit 11–0 before losing 11–6 as the Devil Rays, the first of 99 losses in their debut season.",
+      "finalsLosses": [
+        2008,
+        2020
+      ],
+      "lineage": "Tampa Bay Devil Rays (1998–2007) → Tampa Bay Rays (2008– )"
+    },
+    {
+      "slug": "texas-rangers",
+      "name": "Texas Rangers",
+      "shortName": "Rangers",
+      "abbr": "TEX",
+      "accent": "#003278",
+      "secondary": "#C0111F",
+      "titleYears": [
+        2023
+      ],
+      "lastTitle": {
+        "date": "2023-11-01",
+        "opponent": "Arizona Diamondbacks",
+        "series": "4–1",
+        "asName": null
+      },
+      "lineage": "Washington Senators (1961–71) → Texas Rangers (1972– )"
+    },
+    {
+      "slug": "toronto-blue-jays",
+      "name": "Toronto Blue Jays",
+      "shortName": "Blue Jays",
+      "abbr": "TOR",
+      "accent": "#134A8E",
+      "secondary": "#E8291C",
+      "titleYears": [
+        1992,
+        1993
+      ],
+      "lastTitle": {
+        "date": "1993-10-23",
+        "opponent": "Philadelphia Phillies",
+        "series": "4–2",
+        "asName": null
+      }
+    },
+    {
+      "slug": "washington-nationals",
+      "name": "Washington Nationals",
+      "shortName": "Nationals",
+      "abbr": "WSH",
+      "accent": "#AB0003",
+      "secondary": "#14225A",
+      "titleYears": [
+        2019
+      ],
+      "lastTitle": {
+        "date": "2019-10-30",
+        "opponent": "Houston Astros",
+        "series": "4–3",
+        "asName": null
+      },
+      "lineage": "Montreal Expos (1969–2004) → Washington Nationals (2005– )"
+    }
+  ]
+}

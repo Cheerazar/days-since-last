@@ -1,0 +1,300 @@
+{
+  "league": "NWSL",
+  "slug": "nwsl",
+  "finalsName": "the NWSL Championship",
+  "updated": "2026-06-10",
+  "teams": [
+    {
+      "slug": "angel-city-fc",
+      "name": "Angel City FC",
+      "shortName": "Angel City",
+      "abbr": "LA",
+      "accent": "#FFB3AB",
+      "secondary": "#212322",
+      "accentLight": "#212322",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2022-04-29",
+      "firstGameAs": null,
+      "firstGameNote": "Won a star-studded 2022 debut 2–1 over the Courage; four seasons on, the confetti budget remains untouched.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "bay-fc",
+      "name": "Bay FC",
+      "shortName": "Bay FC",
+      "abbr": "BAY",
+      "accent": "#FAACA8",
+      "secondary": "#0C2032",
+      "accentLight": "#0C2032",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2024-03-17",
+      "firstGameAs": null,
+      "firstGameNote": "Won 1–0 at Angel City in their 2024 debut — still the high-water mark by the Bay.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "boston-legacy-fc",
+      "name": "Boston Legacy FC",
+      "shortName": "Legacy",
+      "abbr": "BOS",
+      "accent": "#00B140",
+      "secondary": "#0B0B0B",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2026-03-14",
+      "firstGameAs": null,
+      "firstGameNote": "Drew 30,207 to Gillette Stadium for their 2026 debut, then lost 1–0 to the reigning champs.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "chicago-stars-fc",
+      "name": "Chicago Stars FC",
+      "shortName": "Stars",
+      "abbr": "CHI",
+      "accent": "#41B6E6",
+      "secondary": "#C8102E",
+      "accentLight": "#C8102E",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2013-04-14",
+      "firstGameAs": "Chicago Red Stars",
+      "firstGameNote": "Drew their 2013 opener 1–1 and have waited since day one of the league — two finals, two empty-handed flights home.",
+      "finalsLosses": [
+        2019,
+        2021
+      ],
+      "lineage": "Chicago Red Stars (2013–2024) → Chicago Stars FC (2025– )"
+    },
+    {
+      "slug": "denver-summit-fc",
+      "name": "Denver Summit FC",
+      "shortName": "Summit",
+      "abbr": "DEN",
+      "accent": "#E04E39",
+      "secondary": "#25422F",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2026-03-14",
+      "firstGameAs": null,
+      "firstGameNote": "Scored 20 minutes into their existence, then lost their 2026 debut 2–1 at Bay FC.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "houston-dash",
+      "name": "Houston Dash",
+      "shortName": "Dash",
+      "abbr": "HOU",
+      "accent": "#FF6B00",
+      "secondary": "#101820",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2014-04-12",
+      "firstGameAs": null,
+      "firstGameNote": "Had the equalizer in their 2014 debut waved off by an offside flag on the game's final touch — the Dash have been chasing level ever since.",
+      "finalsLosses": [],
+      "asterisk": {
+        "label": "Challenge Cup",
+        "years": [
+          2020
+        ]
+      }
+    },
+    {
+      "slug": "kansas-city-current",
+      "name": "Kansas City Current",
+      "shortName": "Current",
+      "abbr": "KC",
+      "accent": "#62CBC9",
+      "secondary": "#E31837",
+      "accentLight": "#E31837",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2021-05-15",
+      "firstGameAs": "Kansas City NWSL",
+      "firstGameNote": "Opened with a 0–0 draw in 2021, lost the 2022 final, then turned a record-smashing 2025 Shield season into a playoff exit.",
+      "finalsLosses": [
+        2022
+      ],
+      "asterisk": {
+        "label": "NWSL Shield",
+        "years": [
+          2025
+        ]
+      },
+      "lineage": "Expansion club (2021, as Kansas City NWSL) built on Utah Royals player assets; FC Kansas City's 2014–15 titles stayed with the defunct club."
+    },
+    {
+      "slug": "nj-ny-gotham-fc",
+      "name": "NJ/NY Gotham FC",
+      "shortName": "Gotham",
+      "abbr": "NJY",
+      "accent": "#9BCBEB",
+      "secondary": "#000000",
+      "accentLight": "#000000",
+      "titleYears": [
+        2023,
+        2025
+      ],
+      "lastTitle": {
+        "date": "2025-11-22",
+        "opponent": "Washington Spirit",
+        "series": "1–0",
+        "asName": null
+      },
+      "lineage": "Sky Blue FC (2013–2020) → NJ/NY Gotham FC (2021– )"
+    },
+    {
+      "slug": "north-carolina-courage",
+      "name": "North Carolina Courage",
+      "shortName": "Courage",
+      "abbr": "NC",
+      "accent": "#AD9659",
+      "secondary": "#01426A",
+      "titleYears": [
+        2018,
+        2019
+      ],
+      "lastTitle": {
+        "date": "2019-10-27",
+        "opponent": "Chicago Red Stars",
+        "series": "4–0",
+        "asName": null
+      },
+      "lineage": "Founded 2017 with the roster of the 2016 champion Western New York Flash, but the Flash's title and records officially stayed behind in New York."
+    },
+    {
+      "slug": "orlando-pride",
+      "name": "Orlando Pride",
+      "shortName": "Pride",
+      "abbr": "ORL",
+      "accent": "#633492",
+      "secondary": "#FDE192",
+      "titleYears": [
+        2024
+      ],
+      "lastTitle": {
+        "date": "2024-11-23",
+        "opponent": "Washington Spirit",
+        "series": "1–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "portland-thorns-fc",
+      "name": "Portland Thorns FC",
+      "shortName": "Thorns",
+      "abbr": "POR",
+      "accent": "#EF3340",
+      "secondary": "#010101",
+      "titleYears": [
+        2013,
+        2017,
+        2022
+      ],
+      "lastTitle": {
+        "date": "2022-10-29",
+        "opponent": "Kansas City Current",
+        "series": "2–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "racing-louisville-fc",
+      "name": "Racing Louisville FC",
+      "shortName": "Racing",
+      "abbr": "LOU",
+      "accent": "#C5B4E3",
+      "secondary": "#2E1A47",
+      "accentLight": "#2E1A47",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2021-05-15",
+      "firstGameAs": null,
+      "firstGameNote": "Opened club history with a 0–0 draw in 2021; Louisville is still waiting on a first trip to the final.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "san-diego-wave-fc",
+      "name": "San Diego Wave FC",
+      "shortName": "Wave",
+      "abbr": "SD",
+      "accent": "#00C1D4",
+      "secondary": "#041E42",
+      "accentLight": "#041E42",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2022-05-01",
+      "firstGameAs": null,
+      "firstGameNote": "Won their 2022 debut and a Shield in year two, but the November trophy keeps swimming away.",
+      "finalsLosses": [],
+      "asterisk": {
+        "label": "NWSL Shield",
+        "years": [
+          2023
+        ]
+      }
+    },
+    {
+      "slug": "seattle-reign-fc",
+      "name": "Seattle Reign FC",
+      "shortName": "Reign",
+      "abbr": "SEA",
+      "accent": "#B89D5A",
+      "secondary": "#292431",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2013-04-14",
+      "firstGameAs": null,
+      "firstGameNote": "Drew their 2013 opener and have since lost three finals and won three Shields — everything but the one trophy that counts.",
+      "finalsLosses": [
+        2014,
+        2015,
+        2023
+      ],
+      "asterisk": {
+        "label": "NWSL Shield",
+        "years": [
+          2014,
+          2015,
+          2022
+        ]
+      },
+      "lineage": "Seattle Reign FC (2013–2018) → Reign FC (2019) → OL Reign (2020–2023) → Seattle Reign FC (2024– )"
+    },
+    {
+      "slug": "utah-royals",
+      "name": "Utah Royals",
+      "shortName": "Royals",
+      "abbr": "UTA",
+      "accent": "#FFB81C",
+      "secondary": "#00263A",
+      "accentLight": "#00263A",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2018-03-24",
+      "firstGameAs": null,
+      "firstGameNote": "Scored three minutes into their 2018 debut, folded in 2020, and came back in 2024 — two eras, zero finals.",
+      "finalsLosses": [],
+      "lineage": "Utah Royals (2018–2020) → ceased operations, player assets to Kansas City Current → Utah Royals revived (2024– )"
+    },
+    {
+      "slug": "washington-spirit",
+      "name": "Washington Spirit",
+      "shortName": "Spirit",
+      "abbr": "WAS",
+      "accent": "#C8102E",
+      "secondary": "#000000",
+      "titleYears": [
+        2021
+      ],
+      "lastTitle": {
+        "date": "2021-11-20",
+        "opponent": "Chicago Red Stars",
+        "series": "2–1",
+        "asName": null
+      }
+    }
+  ]
+}

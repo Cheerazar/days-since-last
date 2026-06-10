@@ -1,10 +1,14 @@
-import nba from '../data/nba.json';
-
 export interface LastTitle {
   date: string;
   opponent: string;
   series: string;
   asName: string | null;
+}
+
+export interface Asterisk {
+  /** Predecessor-league label, e.g. "ABA", "AAFC". */
+  label: string;
+  years: number[];
 }
 
 export interface Team {
@@ -18,22 +22,44 @@ export interface Team {
   secondary: string;
   titleYears: number[];
   lastTitle: LastTitle | null;
-  firstNbaGame?: string;
+  firstGame?: string;
   firstGameAs?: string | null;
   firstGameNote?: string;
   finalsLosses?: number[];
-  abaTitles?: number[];
+  asterisk?: Asterisk;
   lineage?: string;
 }
 
 export interface League {
   league: string;
+  slug: string;
+  /** How the championship round is referred to, e.g. "the Finals", "the Super Bowl". */
+  finalsName: string;
   updated: string;
   banner?: string;
   teams: Team[];
 }
 
-export const league = nba as League;
+// Every JSON in src/data/ is a league. Drop a new file in and it appears in
+// the nav, homepage, routes, and OG images on the next build.
+const modules = import.meta.glob('../data/*.json', { eager: true }) as Record<
+  string,
+  { default: League }
+>;
+
+const LEAGUE_ORDER = ['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl'];
+
+export const leagues: League[] = Object.values(modules)
+  .map((m) => m.default)
+  .sort((a, b) => {
+    const ai = LEAGUE_ORDER.indexOf(a.slug);
+    const bi = LEAGUE_ORDER.indexOf(b.slug);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi) || a.slug.localeCompare(b.slug);
+  });
+
+export function getLeague(slug: string): League | undefined {
+  return leagues.find((l) => l.slug === slug);
+}
 
 // Counters run from midnight US Eastern on the date in question. Clinching
 // games end late evening ET, so day counts match how a fan would say it:
@@ -47,7 +73,7 @@ export function neverWon(team: Team): boolean {
 
 /** The ISO date a team's drought clock starts from. */
 export function clockStartIso(team: Team): string {
-  return team.lastTitle?.date ?? team.firstNbaGame!;
+  return team.lastTitle?.date ?? team.firstGame!;
 }
 
 export function clockStartMs(team: Team): number {
@@ -58,9 +84,21 @@ export function daysSince(epochMs: number, now: number = Date.now()): number {
   return Math.max(0, Math.floor((now - epochMs) / DAY_MS));
 }
 
-/** All teams, longest drought first. The reigning champion lands last. */
+/** All teams in a league, longest drought first. The reigning champion lands last. */
 export function byDrought(teams: Team[]): Team[] {
   return [...teams].sort((a, b) => clockStartMs(a) - clockStartMs(b));
+}
+
+/** The single longest-running drought across every league on the site. */
+export function worstDrought(): { league: League; team: Team } {
+  let worst: { league: League; team: Team } | null = null;
+  for (const league of leagues) {
+    const team = byDrought(league.teams)[0];
+    if (!worst || clockStartMs(team) < clockStartMs(worst.team)) {
+      worst = { league, team };
+    }
+  }
+  return worst!;
 }
 
 export function formatDate(iso: string): string {

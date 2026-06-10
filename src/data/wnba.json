@@ -1,0 +1,281 @@
+{
+  "league": "WNBA",
+  "slug": "wnba",
+  "finalsName": "the WNBA Finals",
+  "updated": "2026-06-10",
+  "teams": [
+    {
+      "slug": "atlanta-dream",
+      "name": "Atlanta Dream",
+      "shortName": "Dream",
+      "abbr": "ATL",
+      "accent": "#C8102E",
+      "secondary": "#373A36",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2008-05-17",
+      "firstGameAs": null,
+      "firstGameNote": "Lost their 2008 debut by 33 — the first of a league-record 17 straight losses to open the franchise.",
+      "finalsLosses": [
+        2010,
+        2011,
+        2013
+      ]
+    },
+    {
+      "slug": "chicago-sky",
+      "name": "Chicago Sky",
+      "shortName": "Sky",
+      "abbr": "CHI",
+      "accent": "#418FDE",
+      "secondary": "#FFCD00",
+      "titleYears": [
+        2021
+      ],
+      "lastTitle": {
+        "date": "2021-10-17",
+        "opponent": "Phoenix Mercury",
+        "series": "3–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "connecticut-sun",
+      "name": "Connecticut Sun",
+      "shortName": "Sun",
+      "abbr": "CON",
+      "accent": "#DC4405",
+      "secondary": "#0A2240",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1999-06-10",
+      "firstGameAs": "Orlando Miracle",
+      "firstGameNote": "Born as the Orlando Miracle in 1999; four Finals trips between two cities since, and still zero parades.",
+      "finalsLosses": [
+        2004,
+        2005,
+        2019,
+        2022
+      ],
+      "lineage": "Orlando Miracle (1999–2002) → Connecticut Sun (2003– )"
+    },
+    {
+      "slug": "dallas-wings",
+      "name": "Dallas Wings",
+      "shortName": "Wings",
+      "abbr": "DAL",
+      "accent": "#C4D600",
+      "secondary": "#0C2340",
+      "accentLight": "#0C2340",
+      "titleYears": [
+        2003,
+        2006,
+        2008
+      ],
+      "lastTitle": {
+        "date": "2008-10-05",
+        "opponent": "San Antonio Silver Stars",
+        "series": "3–0",
+        "asName": "Detroit Shock"
+      },
+      "lineage": "Detroit Shock (1998–2009) → Tulsa Shock (2010–15) → Dallas Wings (2016– )"
+    },
+    {
+      "slug": "golden-state-valkyries",
+      "name": "Golden State Valkyries",
+      "shortName": "Valkyries",
+      "abbr": "GSV",
+      "accent": "#AD96DC",
+      "secondary": "#B9975B",
+      "accentLight": "#010101",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2025-05-16",
+      "firstGameAs": null,
+      "firstGameNote": "Sold out Chase Center for their 2025 debut, then watched Kelsey Plum hang 37 on them for the Sparks.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "indiana-fever",
+      "name": "Indiana Fever",
+      "shortName": "Fever",
+      "abbr": "IND",
+      "accent": "#FFC633",
+      "secondary": "#002D62",
+      "accentLight": "#002D62",
+      "titleYears": [
+        2012
+      ],
+      "lastTitle": {
+        "date": "2012-10-21",
+        "opponent": "Minnesota Lynx",
+        "series": "3–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "las-vegas-aces",
+      "name": "Las Vegas Aces",
+      "shortName": "Aces",
+      "abbr": "LVA",
+      "accent": "#BA0C2F",
+      "secondary": "#85714D",
+      "titleYears": [
+        2022,
+        2023,
+        2025
+      ],
+      "lastTitle": {
+        "date": "2025-10-10",
+        "opponent": "Phoenix Mercury",
+        "series": "4–0",
+        "asName": null
+      },
+      "lineage": "Utah Starzz (1997–2002) → San Antonio Silver Stars (2003–13) → San Antonio Stars (2014–17) → Las Vegas Aces (2018– )"
+    },
+    {
+      "slug": "los-angeles-sparks",
+      "name": "Los Angeles Sparks",
+      "shortName": "Sparks",
+      "abbr": "LAS",
+      "accent": "#FDB927",
+      "secondary": "#552583",
+      "accentLight": "#552583",
+      "titleYears": [
+        2001,
+        2002,
+        2016
+      ],
+      "lastTitle": {
+        "date": "2016-10-20",
+        "opponent": "Minnesota Lynx",
+        "series": "3–2",
+        "asName": null
+      }
+    },
+    {
+      "slug": "minnesota-lynx",
+      "name": "Minnesota Lynx",
+      "shortName": "Lynx",
+      "abbr": "MIN",
+      "accent": "#78BE21",
+      "secondary": "#0C2340",
+      "accentLight": "#236192",
+      "titleYears": [
+        2011,
+        2013,
+        2015,
+        2017
+      ],
+      "lastTitle": {
+        "date": "2017-10-04",
+        "opponent": "Los Angeles Sparks",
+        "series": "3–2",
+        "asName": null
+      }
+    },
+    {
+      "slug": "new-york-liberty",
+      "name": "New York Liberty",
+      "shortName": "Liberty",
+      "abbr": "NYL",
+      "accent": "#6ECEB2",
+      "secondary": "#000000",
+      "accentLight": "#1D6F5C",
+      "titleYears": [
+        2024
+      ],
+      "lastTitle": {
+        "date": "2024-10-20",
+        "opponent": "Minnesota Lynx",
+        "series": "3–2",
+        "asName": null
+      }
+    },
+    {
+      "slug": "phoenix-mercury",
+      "name": "Phoenix Mercury",
+      "shortName": "Mercury",
+      "abbr": "PHO",
+      "accent": "#E56020",
+      "secondary": "#201747",
+      "titleYears": [
+        2007,
+        2009,
+        2014
+      ],
+      "lastTitle": {
+        "date": "2014-09-12",
+        "opponent": "Chicago Sky",
+        "series": "3–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "portland-fire",
+      "name": "Portland Fire",
+      "shortName": "Fire",
+      "abbr": "PDX",
+      "accent": "#D22630",
+      "secondary": "#F4A6B7",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2026-05-09",
+      "firstGameAs": null,
+      "firstGameNote": "The Rose City waited 24 years for the WNBA to come back, then Chicago crashed reopening night by 15.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "seattle-storm",
+      "name": "Seattle Storm",
+      "shortName": "Storm",
+      "abbr": "SEA",
+      "accent": "#FBE122",
+      "secondary": "#2C5234",
+      "accentLight": "#2C5234",
+      "titleYears": [
+        2004,
+        2010,
+        2018,
+        2020
+      ],
+      "lastTitle": {
+        "date": "2020-10-06",
+        "opponent": "Las Vegas Aces",
+        "series": "3–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "toronto-tempo",
+      "name": "Toronto Tempo",
+      "shortName": "Tempo",
+      "abbr": "TOR",
+      "accent": "#8A2D52",
+      "secondary": "#9CD2E3",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2026-05-08",
+      "firstGameAs": null,
+      "firstGameNote": "Canada's first WNBA team came up three points short of a debut win before Washington spoiled the party.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "washington-mystics",
+      "name": "Washington Mystics",
+      "shortName": "Mystics",
+      "abbr": "WAS",
+      "accent": "#C8102E",
+      "secondary": "#002B5C",
+      "titleYears": [
+        2019
+      ],
+      "lastTitle": {
+        "date": "2019-10-10",
+        "opponent": "Connecticut Sun",
+        "series": "3–2",
+        "asName": null
+      }
+    }
+  ]
+}

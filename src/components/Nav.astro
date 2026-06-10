@@ -1,0 +1,79 @@
+---
+import { leagues } from '../lib/droughts';
+
+interface Props {
+  /** Slug of the league being viewed, if any. */
+  current?: string;
+}
+
+const { current } = Astro.props;
+---
+
+<nav class="sitenav">
+  <a class="wordmark" href="/">DAYS SINCE LAST</a>
+  <div class="links">
+    {
+      leagues.map((l) => (
+        <a href={`/${l.slug}/`} class:list={[{ active: l.slug === current }]}>
+          {l.league}
+        </a>
+      ))
+    }
+  </div>
+</nav>
+
+<style>
+  .sitenav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1160px;
+    margin: 0 auto;
+    /* right padding keeps the league links clear of the fixed theme toggle */
+    padding: 1rem 4rem 1rem 1.25rem;
+  }
+
+  .wordmark {
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
+  }
+
+  .links {
+    display: flex;
+    gap: 0.35rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .links a {
+    padding: 0.35rem 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 99px;
+    color: var(--dim);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    transition:
+      color 0.15s,
+      border-color 0.15s;
+  }
+
+  .links a:hover {
+    color: var(--text);
+  }
+
+  .links a.active {
+    color: var(--text);
+    border-color: var(--line);
+    background: var(--panel);
+  }
+</style>

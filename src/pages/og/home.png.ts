@@ -1,16 +1,17 @@
 import type { APIRoute } from 'astro';
-import { league, byDrought, clockStartMs, daysSince } from '../../lib/droughts';
+import { leagues, worstDrought, clockStartMs, daysSince } from '../../lib/droughts';
 import { renderOgPng } from '../../lib/og';
 
 export const GET: APIRoute = async () => {
-  const longest = byDrought(league.teams)[0];
-  const days = daysSince(clockStartMs(longest));
+  const { league, team } = worstDrought();
+  const days = daysSince(clockStartMs(team));
+  const totalTeams = leagues.reduce((n, l) => n + l.teams.length, 0);
 
   const png = await renderOgPng({
-    badge: 'NBA',
-    title: 'Every team, ranked by drought',
+    badge: 'ALL',
+    title: 'Every league. Every drought.',
     number: String(days),
-    context: `The ${longest.shortName} have waited the longest. All 30 droughts inside, ticking live.`,
+    context: `The ${team.shortName} (${league.league}) have waited the longest. ${totalTeams} teams across ${leagues.length} league${leagues.length === 1 ? '' : 's'}, ticking live.`,
     accent: '#f5b62e',
     secondary: '#8b97a5',
   });

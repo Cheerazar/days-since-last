@@ -1,5 +1,7 @@
 {
   "league": "NBA",
+  "slug": "nba",
+  "finalsName": "the Finals",
   "updated": "2026-06-09",
   "banner": "The 2026 Finals are under way: either the Knicks end a 53-year wait, or the Spurs reset to zero.",
   "teams": [
@@ -64,18 +66,21 @@
       "secondary": "#707070",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "1976-10-22",
       "firstGameAs": "New York Nets",
       "firstGameNote": "Won their first NBA game by a single point. It was all downhill from there.",
       "finalsLosses": [
         2002,
         2003
       ],
-      "abaTitles": [
-        1974,
-        1976
-      ],
-      "accentLight": "#111111"
+      "accentLight": "#111111",
+      "firstGame": "1976-10-22",
+      "asterisk": {
+        "label": "ABA",
+        "years": [
+          1974,
+          1976
+        ]
+      }
     },
     {
       "slug": "charlotte-hornets",
@@ -86,10 +91,10 @@
       "secondary": "#1D1160",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "1988-11-04",
       "firstGameAs": null,
       "firstGameNote": "Lost their 1988 debut to Cleveland by 40.",
-      "finalsLosses": []
+      "finalsLosses": [],
+      "firstGame": "1988-11-04"
     },
     {
       "slug": "chicago-bulls",
@@ -237,19 +242,22 @@
       "secondary": "#002D62",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "1976-10-21",
       "firstGameAs": null,
       "firstGameNote": "Three-time ABA champions, still chasing a ring the NBA will count.",
       "finalsLosses": [
         2000,
         2025
       ],
-      "abaTitles": [
-        1970,
-        1972,
-        1973
-      ],
-      "accentLight": "#002D62"
+      "accentLight": "#002D62",
+      "firstGame": "1976-10-21",
+      "asterisk": {
+        "label": "ABA",
+        "years": [
+          1970,
+          1972,
+          1973
+        ]
+      }
     },
     {
       "slug": "la-clippers",
@@ -260,10 +268,10 @@
       "secondary": "#1D428A",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "1970-10-14",
       "firstGameAs": "Buffalo Braves",
       "firstGameNote": "Won their 1970 debut in Buffalo. Have never even reached the Finals since.",
-      "finalsLosses": []
+      "finalsLosses": [],
+      "firstGame": "1970-10-14"
     },
     {
       "slug": "los-angeles-lakers",
@@ -309,10 +317,10 @@
       "secondary": "#12173F",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "1995-11-03",
       "firstGameAs": "Vancouver Grizzlies",
       "firstGameNote": "Spoiled Portland's new arena in their 1995 debut.",
-      "finalsLosses": []
+      "finalsLosses": [],
+      "firstGame": "1995-11-03"
     },
     {
       "slug": "miami-heat",
@@ -361,11 +369,11 @@
       "secondary": "#0C2340",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "1989-11-03",
       "firstGameAs": null,
       "firstGameNote": "Dropped their 1989 debut in Seattle.",
       "finalsLosses": [],
-      "accentLight": "#236192"
+      "accentLight": "#236192",
+      "firstGame": "1989-11-03"
     },
     {
       "slug": "new-orleans-pelicans",
@@ -376,10 +384,10 @@
       "secondary": "#0C2340",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "2002-10-30",
       "firstGameAs": "New Orleans Hornets",
       "firstGameNote": "Beat the Jazz by 25 in their 2002 debut.",
-      "finalsLosses": []
+      "finalsLosses": [],
+      "firstGame": "2002-10-30"
     },
     {
       "slug": "new-york-knicks",
@@ -428,13 +436,13 @@
       "secondary": "#C4CED4",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "1989-11-04",
       "firstGameAs": null,
       "firstGameNote": "Lost their 1989 debut to the Nets.",
       "finalsLosses": [
         1995,
         2009
-      ]
+      ],
+      "firstGame": "1989-11-04"
     },
     {
       "slug": "philadelphia-76ers",
@@ -465,7 +473,6 @@
       "secondary": "#1D1160",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "1968-10-18",
       "firstGameAs": null,
       "firstGameNote": "Beat the Sonics in their 1968 debut at the Madhouse on McDowell.",
       "finalsLosses": [
@@ -473,7 +480,8 @@
         1993,
         2021
       ],
-      "accentLight": "#1D1160"
+      "accentLight": "#1D1160",
+      "firstGame": "1968-10-18"
     },
     {
       "slug": "portland-trail-blazers",
@@ -558,14 +566,14 @@
       "secondary": "#002B5E",
       "titleYears": [],
       "lastTitle": null,
-      "firstNbaGame": "1974-10-17",
       "firstGameAs": "New Orleans Jazz",
       "firstGameNote": "Debuted at Madison Square Garden in 1974 — and lost by 15.",
       "finalsLosses": [
         1997,
         1998
       ],
-      "accentLight": "#002B5E"
+      "accentLight": "#002B5E",
+      "firstGame": "1974-10-17"
     },
     {
       "slug": "washington-wizards",

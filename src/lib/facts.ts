@@ -1,4 +1,4 @@
-import { type Team, neverWon, clockStartIso, yearOf } from './droughts';
+import { type League, type Team, neverWon, clockStartIso, yearOf } from './droughts';
 
 // Things that have happened since a team last won. Labels read as items in
 // "Since then: X, Y, and Z."
@@ -28,16 +28,43 @@ const PRESIDENCIES: string[] = [
   '2001-01-20', '2009-01-20', '2017-01-20', '2021-01-20', '2025-01-20',
 ];
 
-// Sorted by birth date; the first one born after the title date is the punchline.
-const PEOPLE: Array<[string, string]> = [
-  ['1963-02-17', 'Michael Jordan'],
-  ['1984-12-30', 'LeBron James'],
-  ['1988-03-14', 'Stephen Curry'],
-  ['1999-02-28', 'Luka Dončić'],
-  ['2004-01-04', 'Victor Wembanyama'],
-];
+// Per-league icons, sorted by birth date; the first one born after the title
+// date is the punchline.
+const PEOPLE: Record<string, Array<[string, string]>> = {
+  nba: [
+    ['1963-02-17', 'Michael Jordan'],
+    ['1984-12-30', 'LeBron James'],
+    ['1988-03-14', 'Stephen Curry'],
+    ['1999-02-28', 'Luka Dončić'],
+    ['2004-01-04', 'Victor Wembanyama'],
+  ],
+  nfl: [
+    ['1977-08-03', 'Tom Brady'],
+    ['1995-09-17', 'Patrick Mahomes'],
+  ],
+  mlb: [
+    ['1974-06-26', 'Derek Jeter'],
+    ['1994-07-05', 'Shohei Ohtani'],
+  ],
+  nhl: [
+    ['1961-01-26', 'Wayne Gretzky'],
+    ['1997-01-13', 'Connor McDavid'],
+  ],
+  wnba: [
+    ['1972-07-07', 'Lisa Leslie'],
+    ['2002-01-22', 'Caitlin Clark'],
+  ],
+  mls: [
+    ['1982-03-04', 'Landon Donovan'],
+    ['1987-06-24', 'Lionel Messi'],
+  ],
+  nwsl: [
+    ['1989-07-02', 'Alex Morgan'],
+    ['2000-08-10', 'Sophia Smith'],
+  ],
+};
 
-/** Season end-year of the NBA season currently in progress (or just finished). */
+/** Season end-year of the season currently in progress (or just finished). */
 function currentSeasonEndYear(now: Date): number {
   return now.getUTCMonth() >= 9 ? now.getUTCFullYear() + 1 : now.getUTCFullYear();
 }
@@ -56,29 +83,34 @@ function listOut(labels: string[]): string {
   return `${labels.slice(0, -1).join(', ')}, and ${labels.at(-1)}`;
 }
 
+/** "the Super Bowl" → "Super Bowl", for mid-sentence use like "Super Bowl losses". */
+function finalsShort(league: League): string {
+  return league.finalsName.replace(/^the /, '');
+}
+
 /**
  * Fan-pain facts for a team page, computed from the drought start date.
  * Returns short sentences for the "In the meantime" panel.
  */
-export function factsFor(team: Team, now: Date = new Date()): string[] {
+export function factsFor(team: Team, league: League, now: Date = new Date()): string[] {
   const since = clockStartIso(team);
   const facts: string[] = [];
 
   if (neverWon(team)) {
-    facts.push(`The ${team.shortName} have never won it all. This clock has been running since their first NBA game.`);
-    if (team.abaTitles?.length) {
-      facts.push(`They did win ${team.abaTitles.length} ABA titles (${team.abaTitles.join(', ')}). The NBA doesn't count those. Neither does the pain.`);
+    facts.push(`The ${team.shortName} have never won it all. This clock has been running since their first ${league.league} game.`);
+    if (team.asterisk?.years.length) {
+      facts.push(`They did win ${team.asterisk.years.length} ${team.asterisk.label} titles (${team.asterisk.years.join(', ')}). The ${league.league} doesn't count those. Neither does the pain.`);
     }
     if (team.finalsLosses?.length) {
-      facts.push(`Closest calls: Finals losses in ${listOut(team.finalsLosses.map(String))}.`);
-    } else if (!team.abaTitles?.length) {
-      facts.push(`They have never even reached the Finals.`);
+      facts.push(`Closest calls: ${finalsShort(league)} losses in ${listOut(team.finalsLosses.map(String))}.`);
+    } else if (!team.asterisk?.years.length) {
+      facts.push(`They have never even reached ${league.finalsName}.`);
     }
   }
 
   const seasons = currentSeasonEndYear(now) - yearOf(since);
   if (seasons >= 2) {
-    facts.push(`That's ${seasons} NBA seasons of waiting.`);
+    facts.push(`That's ${seasons} ${league.league} seasons of waiting.`);
   }
 
   const eventsSince = EVENTS.filter(([d]) => d > since);
@@ -91,7 +123,7 @@ export function factsFor(team: Team, now: Date = new Date()): string[] {
     facts.push(`${presidencies} U.S. presidencies have started.`);
   }
 
-  const notYetBorn = PEOPLE.find(([dob]) => dob > since);
+  const notYetBorn = (PEOPLE[league.slug] ?? []).find(([dob]) => dob > since);
   if (notYetBorn) {
     const years = yearOf(notYetBorn[0]) - yearOf(since);
     facts.push(

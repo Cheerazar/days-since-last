@@ -1,0 +1,642 @@
+{
+  "league": "NHL",
+  "slug": "nhl",
+  "finalsName": "the Stanley Cup Final",
+  "updated": "2026-06-10",
+  "banner": "The 2026 Stanley Cup Final is tied 2–2: either the Hurricanes end a 20-year wait, or the Golden Knights reset a clock that barely started — Game 5 is June 11 in Raleigh.",
+  "teams": [
+    {
+      "slug": "anaheim-ducks",
+      "name": "Anaheim Ducks",
+      "shortName": "Ducks",
+      "abbr": "ANA",
+      "accent": "#F47A38",
+      "secondary": "#B9975B",
+      "titleYears": [
+        2007
+      ],
+      "lastTitle": {
+        "date": "2007-06-06",
+        "opponent": "Ottawa Senators",
+        "series": "4–1",
+        "asName": null
+      },
+      "lineage": "Mighty Ducks of Anaheim (1993–2006) → Anaheim Ducks (2006– )"
+    },
+    {
+      "slug": "boston-bruins",
+      "name": "Boston Bruins",
+      "shortName": "Bruins",
+      "abbr": "BOS",
+      "accent": "#FFB81C",
+      "secondary": "#000000",
+      "titleYears": [
+        1929,
+        1939,
+        1941,
+        1970,
+        1972,
+        2011
+      ],
+      "lastTitle": {
+        "date": "2011-06-15",
+        "opponent": "Vancouver Canucks",
+        "series": "4–3",
+        "asName": null
+      },
+      "accentLight": "#000000"
+    },
+    {
+      "slug": "buffalo-sabres",
+      "name": "Buffalo Sabres",
+      "shortName": "Sabres",
+      "abbr": "BUF",
+      "accent": "#FFB81C",
+      "secondary": "#003087",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": null,
+      "firstGameNote": "Beat Pittsburgh 2–1 in their 1970 debut; 'No Goal' in 1999 is still the closest they've come.",
+      "finalsLosses": [
+        1975,
+        1999
+      ],
+      "accentLight": "#003087",
+      "firstGame": "1970-10-10"
+    },
+    {
+      "slug": "calgary-flames",
+      "name": "Calgary Flames",
+      "shortName": "Flames",
+      "abbr": "CGY",
+      "accent": "#C8102E",
+      "secondary": "#F1BE48",
+      "titleYears": [
+        1989
+      ],
+      "lastTitle": {
+        "date": "1989-05-25",
+        "opponent": "Montreal Canadiens",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "Atlanta Flames (1972–80) → Calgary Flames (1980– )"
+    },
+    {
+      "slug": "carolina-hurricanes",
+      "name": "Carolina Hurricanes",
+      "shortName": "Hurricanes",
+      "abbr": "CAR",
+      "accent": "#CE1126",
+      "secondary": "#A4A9AD",
+      "titleYears": [
+        2006
+      ],
+      "lastTitle": {
+        "date": "2006-06-19",
+        "opponent": "Edmonton Oilers",
+        "series": "4–3",
+        "asName": null
+      },
+      "lineage": "Hartford Whalers (1979–97) → Carolina Hurricanes (1997– )"
+    },
+    {
+      "slug": "chicago-blackhawks",
+      "name": "Chicago Blackhawks",
+      "shortName": "Blackhawks",
+      "abbr": "CHI",
+      "accent": "#CF0A2C",
+      "secondary": "#FFD100",
+      "titleYears": [
+        1934,
+        1938,
+        1961,
+        2010,
+        2013,
+        2015
+      ],
+      "lastTitle": {
+        "date": "2015-06-15",
+        "opponent": "Tampa Bay Lightning",
+        "series": "4–2",
+        "asName": null
+      }
+    },
+    {
+      "slug": "colorado-avalanche",
+      "name": "Colorado Avalanche",
+      "shortName": "Avalanche",
+      "abbr": "COL",
+      "accent": "#6F263D",
+      "secondary": "#236192",
+      "titleYears": [
+        1996,
+        2001,
+        2022
+      ],
+      "lastTitle": {
+        "date": "2022-06-26",
+        "opponent": "Tampa Bay Lightning",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "Quebec Nordiques (1979–95) → Colorado Avalanche (1995– )"
+    },
+    {
+      "slug": "columbus-blue-jackets",
+      "name": "Columbus Blue Jackets",
+      "shortName": "Blue Jackets",
+      "abbr": "CBJ",
+      "accent": "#CE1126",
+      "secondary": "#A4A9AD",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": null,
+      "firstGameNote": "Lost their 2000 debut to Chicago; 25 years in, they have still never reached a conference final.",
+      "finalsLosses": [],
+      "firstGame": "2000-10-07"
+    },
+    {
+      "slug": "dallas-stars",
+      "name": "Dallas Stars",
+      "shortName": "Stars",
+      "abbr": "DAL",
+      "accent": "#006847",
+      "secondary": "#8F8F8C",
+      "titleYears": [
+        1999
+      ],
+      "lastTitle": {
+        "date": "1999-06-19",
+        "opponent": "Buffalo Sabres",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "Minnesota North Stars (1967–93) → Dallas Stars (1993– )"
+    },
+    {
+      "slug": "detroit-red-wings",
+      "name": "Detroit Red Wings",
+      "shortName": "Red Wings",
+      "abbr": "DET",
+      "accent": "#CE1126",
+      "secondary": "#FFFFFF",
+      "titleYears": [
+        1936,
+        1937,
+        1943,
+        1950,
+        1952,
+        1954,
+        1955,
+        1997,
+        1998,
+        2002,
+        2008
+      ],
+      "lastTitle": {
+        "date": "2008-06-04",
+        "opponent": "Pittsburgh Penguins",
+        "series": "4–2",
+        "asName": null
+      }
+    },
+    {
+      "slug": "edmonton-oilers",
+      "name": "Edmonton Oilers",
+      "shortName": "Oilers",
+      "abbr": "EDM",
+      "accent": "#FF4C00",
+      "secondary": "#041E42",
+      "titleYears": [
+        1984,
+        1985,
+        1987,
+        1988,
+        1990
+      ],
+      "lastTitle": {
+        "date": "1990-05-24",
+        "opponent": "Boston Bruins",
+        "series": "4–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "florida-panthers",
+      "name": "Florida Panthers",
+      "shortName": "Panthers",
+      "abbr": "FLA",
+      "accent": "#C8102E",
+      "secondary": "#B9975B",
+      "titleYears": [
+        2024,
+        2025
+      ],
+      "lastTitle": {
+        "date": "2025-06-17",
+        "opponent": "Edmonton Oilers",
+        "series": "4–2",
+        "asName": null
+      }
+    },
+    {
+      "slug": "los-angeles-kings",
+      "name": "Los Angeles Kings",
+      "shortName": "Kings",
+      "abbr": "LAK",
+      "accent": "#A2AAAD",
+      "secondary": "#000000",
+      "titleYears": [
+        2012,
+        2014
+      ],
+      "lastTitle": {
+        "date": "2014-06-13",
+        "opponent": "New York Rangers",
+        "series": "4–1",
+        "asName": null
+      },
+      "accentLight": "#000000"
+    },
+    {
+      "slug": "minnesota-wild",
+      "name": "Minnesota Wild",
+      "shortName": "Wild",
+      "abbr": "MIN",
+      "accent": "#A6192E",
+      "secondary": "#154734",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": null,
+      "firstGameNote": "Lost their 2000 debut in Anaheim; the State of Hockey watched the North Stars leave and has yet to see the Wild reach a Final.",
+      "finalsLosses": [],
+      "firstGame": "2000-10-06"
+    },
+    {
+      "slug": "montreal-canadiens",
+      "name": "Montreal Canadiens",
+      "shortName": "Canadiens",
+      "abbr": "MTL",
+      "accent": "#AF1E2D",
+      "secondary": "#192168",
+      "titleYears": [
+        1916,
+        1924,
+        1930,
+        1931,
+        1944,
+        1946,
+        1953,
+        1956,
+        1957,
+        1958,
+        1959,
+        1960,
+        1965,
+        1966,
+        1968,
+        1969,
+        1971,
+        1973,
+        1976,
+        1977,
+        1978,
+        1979,
+        1986,
+        1993
+      ],
+      "lastTitle": {
+        "date": "1993-06-09",
+        "opponent": "Los Angeles Kings",
+        "series": "4–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "nashville-predators",
+      "name": "Nashville Predators",
+      "shortName": "Predators",
+      "abbr": "NSH",
+      "accent": "#FFB81C",
+      "secondary": "#041E42",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": null,
+      "firstGameNote": "Blanked 1–0 by Florida in their 1998 debut; Smashville's lone Final ended with the Cup in Pittsburgh's hands in 2017.",
+      "finalsLosses": [
+        2017
+      ],
+      "accentLight": "#041E42",
+      "firstGame": "1998-10-10"
+    },
+    {
+      "slug": "new-jersey-devils",
+      "name": "New Jersey Devils",
+      "shortName": "Devils",
+      "abbr": "NJD",
+      "accent": "#CE1126",
+      "secondary": "#000000",
+      "titleYears": [
+        1995,
+        2000,
+        2003
+      ],
+      "lastTitle": {
+        "date": "2003-06-09",
+        "opponent": "Mighty Ducks of Anaheim",
+        "series": "4–3",
+        "asName": null
+      },
+      "lineage": "Kansas City Scouts (1974–76) → Colorado Rockies (1976–82) → New Jersey Devils (1982– )"
+    },
+    {
+      "slug": "new-york-islanders",
+      "name": "New York Islanders",
+      "shortName": "Islanders",
+      "abbr": "NYI",
+      "accent": "#F47D30",
+      "secondary": "#00539B",
+      "titleYears": [
+        1980,
+        1981,
+        1982,
+        1983
+      ],
+      "lastTitle": {
+        "date": "1983-05-17",
+        "opponent": "Edmonton Oilers",
+        "series": "4–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "new-york-rangers",
+      "name": "New York Rangers",
+      "shortName": "Rangers",
+      "abbr": "NYR",
+      "accent": "#0038A8",
+      "secondary": "#CE1126",
+      "titleYears": [
+        1928,
+        1933,
+        1940,
+        1994
+      ],
+      "lastTitle": {
+        "date": "1994-06-14",
+        "opponent": "Vancouver Canucks",
+        "series": "4–3",
+        "asName": null
+      }
+    },
+    {
+      "slug": "ottawa-senators",
+      "name": "Ottawa Senators",
+      "shortName": "Senators",
+      "abbr": "OTT",
+      "accent": "#DA1A32",
+      "secondary": "#B79257",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": null,
+      "firstGameNote": "Stunned the eventual-champion Canadiens in their 1992 debut, then won only nine more games all season.",
+      "finalsLosses": [
+        2007
+      ],
+      "firstGame": "1992-10-08",
+      "asterisk": {
+        "label": "Original Senators (separate franchise)",
+        "years": [
+          1920,
+          1921,
+          1923,
+          1927
+        ]
+      }
+    },
+    {
+      "slug": "philadelphia-flyers",
+      "name": "Philadelphia Flyers",
+      "shortName": "Flyers",
+      "abbr": "PHI",
+      "accent": "#F74902",
+      "secondary": "#000000",
+      "titleYears": [
+        1974,
+        1975
+      ],
+      "lastTitle": {
+        "date": "1975-05-27",
+        "opponent": "Buffalo Sabres",
+        "series": "4–2",
+        "asName": null
+      }
+    },
+    {
+      "slug": "pittsburgh-penguins",
+      "name": "Pittsburgh Penguins",
+      "shortName": "Penguins",
+      "abbr": "PIT",
+      "accent": "#FCB514",
+      "secondary": "#000000",
+      "titleYears": [
+        1991,
+        1992,
+        2009,
+        2016,
+        2017
+      ],
+      "lastTitle": {
+        "date": "2017-06-11",
+        "opponent": "Nashville Predators",
+        "series": "4–2",
+        "asName": null
+      },
+      "accentLight": "#000000"
+    },
+    {
+      "slug": "san-jose-sharks",
+      "name": "San Jose Sharks",
+      "shortName": "Sharks",
+      "abbr": "SJS",
+      "accent": "#006D75",
+      "secondary": "#EA7200",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": null,
+      "firstGameNote": "Lost their 1991 debut in Vancouver; their lone Final appearance, in 2016, lasted just six games.",
+      "finalsLosses": [
+        2016
+      ],
+      "firstGame": "1991-10-04"
+    },
+    {
+      "slug": "seattle-kraken",
+      "name": "Seattle Kraken",
+      "shortName": "Kraken",
+      "abbr": "SEA",
+      "accent": "#99D9D9",
+      "secondary": "#E9072B",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": null,
+      "firstGameNote": "Lost their 2021 debut in Vegas to a fellow expansion team that already had a Final on its résumé.",
+      "finalsLosses": [],
+      "accentLight": "#355464",
+      "firstGame": "2021-10-12"
+    },
+    {
+      "slug": "st-louis-blues",
+      "name": "St. Louis Blues",
+      "shortName": "Blues",
+      "abbr": "STL",
+      "accent": "#FCB514",
+      "secondary": "#002F87",
+      "titleYears": [
+        2019
+      ],
+      "lastTitle": {
+        "date": "2019-06-12",
+        "opponent": "Boston Bruins",
+        "series": "4–3",
+        "asName": null
+      },
+      "accentLight": "#002F87"
+    },
+    {
+      "slug": "tampa-bay-lightning",
+      "name": "Tampa Bay Lightning",
+      "shortName": "Lightning",
+      "abbr": "TBL",
+      "accent": "#FFFFFF",
+      "secondary": "#002868",
+      "titleYears": [
+        2004,
+        2020,
+        2021
+      ],
+      "lastTitle": {
+        "date": "2021-07-07",
+        "opponent": "Montreal Canadiens",
+        "series": "4–1",
+        "asName": null
+      },
+      "accentLight": "#002868"
+    },
+    {
+      "slug": "toronto-maple-leafs",
+      "name": "Toronto Maple Leafs",
+      "shortName": "Maple Leafs",
+      "abbr": "TOR",
+      "accent": "#FFFFFF",
+      "secondary": "#00205B",
+      "titleYears": [
+        1918,
+        1922,
+        1932,
+        1942,
+        1945,
+        1947,
+        1948,
+        1949,
+        1951,
+        1962,
+        1963,
+        1964,
+        1967
+      ],
+      "lastTitle": {
+        "date": "1967-05-02",
+        "opponent": "Montreal Canadiens",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "Toronto Arenas (1917–19) → Toronto St. Patricks (1919–27) → Toronto Maple Leafs (1927– )",
+      "accentLight": "#00205B"
+    },
+    {
+      "slug": "utah-mammoth",
+      "name": "Utah Mammoth",
+      "shortName": "Mammoth",
+      "abbr": "UTA",
+      "accent": "#6CACE4",
+      "secondary": "#010101",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": "Utah Hockey Club",
+      "firstGameNote": "Won their 2024 debut 5–2 over Chicago; the Coyotes' baggage stayed in Arizona, so this Cup clock starts from scratch.",
+      "finalsLosses": [],
+      "firstGame": "2024-10-08",
+      "lineage": "Utah Hockey Club (2024–25) → Utah Mammoth (2025– ); acquired the Arizona Coyotes' hockey assets in 2024, but the NHL counts Utah as a 2024 expansion franchise — Coyotes / original Winnipeg Jets (1972–2024) records remain with the inactive Arizona franchise"
+    },
+    {
+      "slug": "vancouver-canucks",
+      "name": "Vancouver Canucks",
+      "shortName": "Canucks",
+      "abbr": "VAN",
+      "accent": "#00843D",
+      "secondary": "#00205B",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": null,
+      "firstGameNote": "Lost their 1970 debut to the Kings; three Final trips since (1982, 1994, 2011) ended without a Cup — two of them with riots.",
+      "finalsLosses": [
+        1982,
+        1994,
+        2011
+      ],
+      "firstGame": "1970-10-09"
+    },
+    {
+      "slug": "vegas-golden-knights",
+      "name": "Vegas Golden Knights",
+      "shortName": "Golden Knights",
+      "abbr": "VGK",
+      "accent": "#B4975A",
+      "secondary": "#333F42",
+      "titleYears": [
+        2023
+      ],
+      "lastTitle": {
+        "date": "2023-06-13",
+        "opponent": "Florida Panthers",
+        "series": "4–1",
+        "asName": null
+      },
+      "accentLight": "#333F42"
+    },
+    {
+      "slug": "washington-capitals",
+      "name": "Washington Capitals",
+      "shortName": "Capitals",
+      "abbr": "WSH",
+      "accent": "#C8102E",
+      "secondary": "#041E42",
+      "titleYears": [
+        2018
+      ],
+      "lastTitle": {
+        "date": "2018-06-07",
+        "opponent": "Vegas Golden Knights",
+        "series": "4–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "winnipeg-jets",
+      "name": "Winnipeg Jets",
+      "shortName": "Jets",
+      "abbr": "WPG",
+      "accent": "#004C97",
+      "secondary": "#AC162C",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGameAs": "Atlanta Thrashers",
+      "firstGameNote": "Lost their 1999 debut to New Jersey as the Atlanta Thrashers, who never won a single playoff game before moving north.",
+      "finalsLosses": [],
+      "firstGame": "1999-10-02",
+      "lineage": "Atlanta Thrashers (1999–2011) → Winnipeg Jets (2011– ); the original Winnipeg Jets (1972–96) became the Phoenix/Arizona Coyotes, whose records stay with that inactive franchise"
+    }
+  ]
+}

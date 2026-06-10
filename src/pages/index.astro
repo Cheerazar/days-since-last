@@ -1,7 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
 import {
-  league,
+  leagues,
+  worstDrought,
   byDrought,
   clockStartMs,
   daysSince,
@@ -9,92 +11,124 @@ import {
   yearOf,
 } from '../lib/droughts';
 
-const teams = byDrought(league.teams);
 const now = Date.now();
+const featured = worstDrought();
+const featuredStart = clockStartMs(featured.team);
+const featuredDays = daysSince(featuredStart, now);
+const liveBanners = leagues.filter((l) => l.banner);
 const ogImage = new URL('/og/home.png', Astro.site).href;
 ---
 
 <Base
-  title="Days Since Last Championship — every NBA drought, live"
-  description="All 30 NBA teams ranked by days since their last championship. Live-ticking counters, from a 75-year wait to the reigning champs."
+  title="Days Since Last — every championship drought in American sports, live"
+  description="Every team in every league, ranked by days since their last championship. Live-ticking droughts across the NBA, NFL, MLB, NHL, and more."
   ogImage={ogImage}
 >
+  <Nav />
+
   <header class="hero">
-    <p class="eyebrow">THE NBA DROUGHT BOARD</p>
+    <p class="eyebrow">EVERY LEAGUE · EVERY SECOND</p>
     <h1>DAYS SINCE LAST<br />CHAMPIONSHIP</h1>
-    <p class="sub">All 30 teams, ranked by how long it's been. The clock doesn't lie.</p>
   </header>
 
+  <a
+    class="featured"
+    href={`/${featured.league.slug}/${featured.team.slug}/`}
+    style={`--ac-d:${featured.team.accent};--ac-l:${featured.team.accentLight ?? featured.team.accent}`}
+  >
+    <p class="feyebrow">THE LONGEST WAIT IN AMERICAN SPORTS</p>
+    <div class="fcount seg" data-since={featuredStart}>
+      <span class="ghost" aria-hidden="true" data-ghost>{'8'.repeat(String(featuredDays).length)}</span>
+      <span class="digits" data-d>{featuredDays}</span>
+    </div>
+    <p class="fwho">
+      <span class="fbadge">{featured.team.abbr}</span>
+      {featured.team.name} · {featured.league.league} — days and counting
+    </p>
+  </a>
+
   {
-    league.banner && (
-      <div class="banner">
-        <span class="dot" aria-hidden="true" />
-        <span>{league.banner}</span>
+    liveBanners.length > 0 && (
+      <div class="banners">
+        {liveBanners.map((l) => (
+          <div class="banner">
+            <span class="dot" aria-hidden="true" />
+            <span>
+              <strong>{l.league}:</strong> {l.banner}
+            </span>
+          </div>
+        ))}
       </div>
     )
   }
 
-  <main class="board">
-    <ol>
-      {
-        teams.map((t, i) => {
-          const start = clockStartMs(t);
-          const d = daysSince(start, now);
-          const isChamp = i === teams.length - 1;
-          return (
-            <li>
-              <a
-                class="row"
-                href={`/nba/${t.slug}/`}
-                style={`--ac-d:${t.accent};--ac-l:${t.accentLight ?? t.accent};--ac2:${t.secondary}`}
-              >
-                <span class="rank">{i + 1}</span>
-                <span class="badge">{t.abbr}</span>
-                <span class="who">
-                  <span class="team">
-                    {t.name}
-                    {neverWon(t) && <em class="tag never">NEVER WON</em>}
-                    {isChamp && <em class="tag champ">REIGNING CHAMPS</em>}
-                  </span>
-                  <span class="meta">
-                    {neverWon(t)
-                      ? `In the league since ${yearOf(t.firstNbaGame!)}${t.firstGameAs ? ` (as the ${t.firstGameAs})` : ''}`
-                      : `Last title ${yearOf(t.lastTitle!.date)}${t.lastTitle!.asName ? ` (as the ${t.lastTitle!.asName})` : ''}`}
-                  </span>
-                </span>
-                <span class="count seg" data-since={start}>
-                  <span class="ghost" aria-hidden="true" data-ghost>
-                    {'8'.repeat(String(d).length)}
-                  </span>
-                  <span class="digits" data-d>
-                    {d}
-                  </span>
-                </span>
-                <span class="unit">DAYS</span>
-              </a>
-            </li>
-          );
-        })
-      }
-    </ol>
+  <main class="grid">
+    {
+      leagues.map((lg) => {
+        const top = byDrought(lg.teams).slice(0, 5);
+        return (
+          <section class="card">
+            <a class="cardhead" href={`/${lg.slug}/`}>
+              <h2>{lg.league}</h2>
+              <span class="ccount">{lg.teams.length} TEAMS</span>
+            </a>
+            <ol>
+              {top.map((t, i) => {
+                const start = clockStartMs(t);
+                const d = daysSince(start, now);
+                return (
+                  <li>
+                    <a
+                      class="mini"
+                      href={`/${lg.slug}/${t.slug}/`}
+                      style={`--ac-d:${t.accent};--ac-l:${t.accentLight ?? t.accent}`}
+                    >
+                      <span class="mrank">{i + 1}</span>
+                      <span class="mbadge">{t.abbr}</span>
+                      <span class="mname">
+                        {t.shortName}
+                        {neverWon(t) ? (
+                          <em class="mtag">NEVER · {yearOf(t.firstGame!)}</em>
+                        ) : (
+                          <em class="mtag won">LAST {yearOf(t.lastTitle!.date)}</em>
+                        )}
+                      </span>
+                      <span class="mcount seg" data-since={start}>
+                        <span class="ghost" aria-hidden="true" data-ghost>
+                          {'8'.repeat(String(d).length)}
+                        </span>
+                        <span class="digits" data-d>
+                          {d}
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ol>
+            <a class="cardfoot" href={`/${lg.slug}/`}>
+              All {lg.teams.length} teams →
+            </a>
+          </section>
+        );
+      })
+    }
   </main>
 
   <footer class="foot">
     <p>
-      Counters run from the night of the title-clinching game — or a franchise's first NBA game for
-      the never-have-wons. Franchise records follow official NBA history, relocations and all. Dates
-      verified against basketball-reference.com box scores.
+      Counters run from the night of the title-clinching game — or a franchise's first game in the
+      league for the never-have-wons. Franchise records follow official league history, relocations
+      and all. Dates verified against box scores and dated game reports.
     </p>
-    <p class="more">NBA first. More leagues soon.</p>
-    <p class="byline">Built by <a href="https://gunnariauvinen.com" rel="author">Gunnari Auvinen</a></p>
   </footer>
 </Base>
 
 <style>
   .hero {
-    max-width: 880px;
+    max-width: 1160px;
     margin: 0 auto;
-    padding: clamp(3rem, 8vw, 5.5rem) 1.25rem 1.5rem;
+    padding: clamp(1.5rem, 5vw, 3rem) 1.25rem 0.5rem;
     text-align: center;
   }
 
@@ -107,29 +141,96 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
   }
 
   h1 {
-    font-size: clamp(2.6rem, 9vw, 5.5rem);
+    font-size: clamp(2.4rem, 8vw, 4.6rem);
     line-height: 0.95;
   }
 
-  .sub {
-    margin: 1.25rem auto 0;
-    max-width: 32rem;
+  .featured {
+    --ac: var(--ac-d);
+    display: block;
+    max-width: 720px;
+    margin: 1.8rem auto 0;
+    padding: 1.6rem 1.25rem 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--panel);
+    text-align: center;
+    transition:
+      border-color 0.15s,
+      transform 0.15s;
+  }
+
+  .featured:hover {
+    border-color: var(--ac);
+    transform: translateY(-1px);
+  }
+
+  :global(html[data-theme='light']) .featured {
+    --ac: var(--ac-l);
+  }
+
+  .feyebrow {
+    margin: 0;
     color: var(--dim);
-    font-size: 1.05rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.32em;
+  }
+
+  .fcount {
+    margin-top: 0.9rem;
+    font-size: clamp(2.6rem, 10vw, 5rem);
+    color: var(--ac);
+    text-shadow:
+      0 0 26px color-mix(in srgb, var(--ac) 60%, transparent),
+      0 0 70px color-mix(in srgb, var(--ac) 28%, transparent);
+  }
+
+  :global(html[data-theme='light']) .fcount {
+    text-shadow: 0 0 18px color-mix(in srgb, var(--ac) 24%, transparent);
+  }
+
+  .fwho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    margin: 1rem 0 0;
+    color: var(--soft);
+    font-size: 0.95rem;
+  }
+
+  .fbadge {
+    display: grid;
+    place-items: center;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--ac-d);
+    color: #0a0c10;
+    font-family: 'Anton', sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .banners {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 720px;
+    margin: 1.2rem auto 0;
+    padding: 0 1.25rem;
   }
 
   .banner {
     display: flex;
     align-items: center;
     gap: 0.7rem;
-    max-width: 880px;
-    margin: 1.5rem auto 0;
-    padding: 0.8rem 1.1rem;
+    padding: 0.7rem 1rem;
     border: 1px solid var(--gold-line);
     border-radius: 10px;
     background: var(--gold-bg);
     color: var(--gold-text);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .dot {
@@ -147,161 +248,148 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
     }
   }
 
-  .board {
-    max-width: 880px;
-    margin: 2rem auto 0;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    max-width: 1160px;
+    margin: 2.2rem auto 0;
     padding: 0 1.25rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--panel);
+    overflow: hidden;
+  }
+
+  .cardhead {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1rem 1.1rem 0.7rem;
+  }
+
+  .cardhead h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+  }
+
+  .cardhead:hover h2 {
+    color: var(--gold);
+  }
+
+  .ccount {
+    color: var(--dim);
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
   }
 
   ol {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0.55rem;
     display: flex;
     flex-direction: column;
-    gap: 0.55rem;
+    gap: 0.3rem;
   }
 
-  .row {
+  .mini {
     --ac: var(--ac-d);
     display: grid;
-    grid-template-columns: 2rem 3.1rem 1fr auto auto;
+    grid-template-columns: 1.1rem 2.6rem 1fr auto;
     align-items: center;
-    gap: 0.9rem;
-    padding: 0.85rem 1.1rem;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: var(--panel);
-    transition:
-      border-color 0.15s,
-      transform 0.15s;
+    gap: 0.55rem;
+    padding: 0.5rem 0.55rem;
+    border-radius: 9px;
+    transition: background 0.15s;
   }
 
-  .row:hover {
-    border-color: var(--ac);
-    transform: translateY(-1px);
+  .mini:hover {
+    background: color-mix(in srgb, var(--ac) 10%, transparent);
   }
 
-  :global(html[data-theme='light']) .row {
+  :global(html[data-theme='light']) .mini {
     --ac: var(--ac-l);
   }
 
-  .rank {
+  .mrank {
     color: var(--dim);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-variant-numeric: tabular-nums;
     text-align: right;
   }
 
-  .badge {
+  .mbadge {
     display: grid;
     place-items: center;
-    width: 3.1rem;
-    height: 2.5rem;
+    width: 2.6rem;
+    height: 1.9rem;
     border: 1px solid var(--line);
-    border-radius: 8px;
+    border-radius: 6px;
     background: var(--ac-d);
     color: #0a0c10;
     font-family: 'Anton', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.04em;
+    font-size: 0.78rem;
   }
 
-  .who {
+  .mname {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 0.05rem;
     min-width: 0;
-  }
-
-  .team {
     font-weight: 650;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-
-  .tag {
-    font-style: normal;
-    font-size: 0.62rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    padding: 0.18rem 0.45rem;
-    border-radius: 99px;
-  }
-
-  .never {
-    color: var(--red-text);
-    border: 1px solid var(--red-line);
-    background: var(--red-bg);
-  }
-
-  .champ {
-    color: var(--gold-text);
-    border: 1px solid var(--gold-line);
-    background: var(--gold-bg);
-  }
-
-  .meta {
-    color: var(--dim);
-    font-size: 0.8rem;
+    font-size: 0.92rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .count {
-    font-size: clamp(1.05rem, 3.4vw, 1.55rem);
-    color: var(--ac);
-    text-shadow: 0 0 18px color-mix(in srgb, var(--ac) 55%, transparent);
-  }
-
-  :global(html[data-theme='light']) .count {
-    text-shadow: 0 0 12px color-mix(in srgb, var(--ac) 22%, transparent);
-  }
-
-  .unit {
-    color: var(--dim);
-    font-size: 0.62rem;
+  .mtag {
+    font-style: normal;
+    color: var(--red-text);
+    font-size: 0.6rem;
     font-weight: 800;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.1em;
+  }
+
+  .mtag.won {
+    color: var(--dim);
+  }
+
+  .mcount {
+    font-size: 1.05rem;
+    color: var(--ac);
+    text-shadow: 0 0 14px color-mix(in srgb, var(--ac) 45%, transparent);
+  }
+
+  :global(html[data-theme='light']) .mcount {
+    text-shadow: 0 0 10px color-mix(in srgb, var(--ac) 20%, transparent);
+  }
+
+  .cardfoot {
+    margin-top: auto;
+    padding: 0.8rem 1.1rem 1rem;
+    color: var(--dim);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .cardfoot:hover {
+    color: var(--text);
   }
 
   .foot {
-    max-width: 880px;
+    max-width: 1160px;
     margin: 3rem auto 0;
     padding: 1.5rem 1.25rem 3rem;
     border-top: 1px solid var(--line);
     color: var(--dim);
     font-size: 0.85rem;
-  }
-
-  .more {
-    letter-spacing: 0.08em;
-    font-weight: 700;
-    font-size: 0.72rem;
-  }
-
-  @media (max-width: 560px) {
-    .rank {
-      display: none;
-    }
-
-    .row {
-      grid-template-columns: 2.7rem 1fr auto auto;
-      gap: 0.65rem;
-      padding: 0.75rem 0.8rem;
-    }
-
-    .badge {
-      width: 2.7rem;
-      height: 2.2rem;
-      font-size: 0.85rem;
-    }
-
-    .meta {
-      white-space: normal;
-    }
   }
 </style>

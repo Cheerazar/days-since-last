@@ -1,0 +1,656 @@
+{
+  "league": "NFL",
+  "slug": "nfl",
+  "finalsName": "the Super Bowl",
+  "updated": "2026-06-10",
+  "teams": [
+    {
+      "slug": "arizona-cardinals",
+      "name": "Arizona Cardinals",
+      "shortName": "Cardinals",
+      "abbr": "ARI",
+      "accent": "#97233F",
+      "secondary": "#FFB612",
+      "titleYears": [
+        1925,
+        1947
+      ],
+      "lastTitle": {
+        "date": "1947-12-28",
+        "opponent": "Philadelphia Eagles",
+        "series": "28–21",
+        "asName": "Chicago Cardinals"
+      },
+      "lineage": "Chicago Cardinals (1920–59) → St. Louis Cardinals (1960–87) → Phoenix Cardinals (1988–93) → Arizona Cardinals (1994– )"
+    },
+    {
+      "slug": "atlanta-falcons",
+      "name": "Atlanta Falcons",
+      "shortName": "Falcons",
+      "abbr": "ATL",
+      "accent": "#A71930",
+      "secondary": "#A5ACAF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1966-09-11",
+      "firstGameAs": null,
+      "firstGameNote": "Lost their 1966 debut to the Rams 19–14, and six decades later the franchise is still best known for leading Super Bowl LI 28–3 — and losing.",
+      "finalsLosses": [
+        1998,
+        2016
+      ]
+    },
+    {
+      "slug": "baltimore-ravens",
+      "name": "Baltimore Ravens",
+      "shortName": "Ravens",
+      "abbr": "BAL",
+      "accent": "#9E7C0C",
+      "secondary": "#241773",
+      "titleYears": [
+        2000,
+        2012
+      ],
+      "lastTitle": {
+        "date": "2013-02-03",
+        "opponent": "San Francisco 49ers",
+        "series": "34–31",
+        "asName": null
+      }
+    },
+    {
+      "slug": "buffalo-bills",
+      "name": "Buffalo Bills",
+      "shortName": "Bills",
+      "abbr": "BUF",
+      "accent": "#C60C30",
+      "secondary": "#00338D",
+      "titleYears": [
+        1964,
+        1965
+      ],
+      "lastTitle": {
+        "date": "1965-12-26",
+        "opponent": "San Diego Chargers",
+        "series": "23–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "carolina-panthers",
+      "name": "Carolina Panthers",
+      "shortName": "Panthers",
+      "abbr": "CAR",
+      "accent": "#0085CA",
+      "secondary": "#101820",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1995-09-03",
+      "firstGameAs": null,
+      "firstGameNote": "Dropped their very first game 23–20 in overtime in Atlanta, and both Super Bowl trips since have ended the same way: empty-handed.",
+      "finalsLosses": [
+        2003,
+        2015
+      ]
+    },
+    {
+      "slug": "chicago-bears",
+      "name": "Chicago Bears",
+      "shortName": "Bears",
+      "abbr": "CHI",
+      "accent": "#C83803",
+      "secondary": "#0B162A",
+      "titleYears": [
+        1921,
+        1932,
+        1933,
+        1940,
+        1941,
+        1943,
+        1946,
+        1963,
+        1985
+      ],
+      "lastTitle": {
+        "date": "1986-01-26",
+        "opponent": "New England Patriots",
+        "series": "46–10",
+        "asName": null
+      },
+      "lineage": "Decatur Staleys (1920) → Chicago Staleys (1921) → Chicago Bears (1922– )"
+    },
+    {
+      "slug": "cincinnati-bengals",
+      "name": "Cincinnati Bengals",
+      "shortName": "Bengals",
+      "abbr": "CIN",
+      "accent": "#FB4F14",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1968-09-06",
+      "firstGameAs": null,
+      "firstGameNote": "Lost their 1968 debut 29–13 in San Diego and have since dropped three Super Bowls — two of them snatched away by Joe Montana's 49ers.",
+      "finalsLosses": [
+        1981,
+        1988,
+        2021
+      ]
+    },
+    {
+      "slug": "cleveland-browns",
+      "name": "Cleveland Browns",
+      "shortName": "Browns",
+      "abbr": "CLE",
+      "accent": "#FF3C00",
+      "secondary": "#311D00",
+      "titleYears": [
+        1950,
+        1954,
+        1955,
+        1964
+      ],
+      "lastTitle": {
+        "date": "1964-12-27",
+        "opponent": "Baltimore Colts",
+        "series": "27–0",
+        "asName": null
+      },
+      "asterisk": {
+        "label": "AAFC",
+        "years": [
+          1946,
+          1947,
+          1948,
+          1949
+        ]
+      }
+    },
+    {
+      "slug": "dallas-cowboys",
+      "name": "Dallas Cowboys",
+      "shortName": "Cowboys",
+      "abbr": "DAL",
+      "accent": "#869397",
+      "secondary": "#041E42",
+      "titleYears": [
+        1971,
+        1977,
+        1992,
+        1993,
+        1995
+      ],
+      "lastTitle": {
+        "date": "1996-01-28",
+        "opponent": "Pittsburgh Steelers",
+        "series": "27–17",
+        "asName": null
+      }
+    },
+    {
+      "slug": "denver-broncos",
+      "name": "Denver Broncos",
+      "shortName": "Broncos",
+      "abbr": "DEN",
+      "accent": "#FB4F14",
+      "secondary": "#002244",
+      "titleYears": [
+        1997,
+        1998,
+        2015
+      ],
+      "lastTitle": {
+        "date": "2016-02-07",
+        "opponent": "Carolina Panthers",
+        "series": "24–10",
+        "asName": null
+      }
+    },
+    {
+      "slug": "detroit-lions",
+      "name": "Detroit Lions",
+      "shortName": "Lions",
+      "abbr": "DET",
+      "accent": "#0076B6",
+      "secondary": "#B0B7BC",
+      "titleYears": [
+        1935,
+        1952,
+        1953,
+        1957
+      ],
+      "lastTitle": {
+        "date": "1957-12-29",
+        "opponent": "Cleveland Browns",
+        "series": "59–14",
+        "asName": null
+      }
+    },
+    {
+      "slug": "green-bay-packers",
+      "name": "Green Bay Packers",
+      "shortName": "Packers",
+      "abbr": "GB",
+      "accent": "#FFB612",
+      "secondary": "#203731",
+      "accentLight": "#203731",
+      "titleYears": [
+        1929,
+        1930,
+        1931,
+        1936,
+        1939,
+        1944,
+        1961,
+        1962,
+        1965,
+        1966,
+        1967,
+        1996,
+        2010
+      ],
+      "lastTitle": {
+        "date": "2011-02-06",
+        "opponent": "Pittsburgh Steelers",
+        "series": "31–25",
+        "asName": null
+      }
+    },
+    {
+      "slug": "houston-texans",
+      "name": "Houston Texans",
+      "shortName": "Texans",
+      "abbr": "HOU",
+      "accent": "#A71930",
+      "secondary": "#03202F",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2002-09-08",
+      "firstGameAs": null,
+      "firstGameNote": "Won their 2002 debut 19–10 over the Cowboys — the high point of a franchise that has still never so much as reached a Super Bowl.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "indianapolis-colts",
+      "name": "Indianapolis Colts",
+      "shortName": "Colts",
+      "abbr": "IND",
+      "accent": "#A2AAAD",
+      "secondary": "#002C5F",
+      "accentLight": "#002C5F",
+      "titleYears": [
+        1958,
+        1959,
+        1970,
+        2006
+      ],
+      "lastTitle": {
+        "date": "2007-02-04",
+        "opponent": "Chicago Bears",
+        "series": "29–17",
+        "asName": null
+      },
+      "lineage": "Baltimore Colts (1953–83) → Indianapolis Colts (1984– )"
+    },
+    {
+      "slug": "jacksonville-jaguars",
+      "name": "Jacksonville Jaguars",
+      "shortName": "Jaguars",
+      "abbr": "JAX",
+      "accent": "#006778",
+      "secondary": "#D7A22A",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1995-09-03",
+      "firstGameAs": null,
+      "firstGameNote": "Lost their 1995 debut 10–3 to the Oilers, and three AFC title-game trips later they have still never played in a Super Bowl.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "kansas-city-chiefs",
+      "name": "Kansas City Chiefs",
+      "shortName": "Chiefs",
+      "abbr": "KC",
+      "accent": "#E31837",
+      "secondary": "#FFB81C",
+      "titleYears": [
+        1962,
+        1969,
+        2019,
+        2022,
+        2023
+      ],
+      "lastTitle": {
+        "date": "2024-02-11",
+        "opponent": "San Francisco 49ers",
+        "series": "25–22 (OT)",
+        "asName": null
+      },
+      "lineage": "Dallas Texans (1960–62) → Kansas City Chiefs (1963– )"
+    },
+    {
+      "slug": "las-vegas-raiders",
+      "name": "Las Vegas Raiders",
+      "shortName": "Raiders",
+      "abbr": "LV",
+      "accent": "#A5ACAF",
+      "secondary": "#000000",
+      "accentLight": "#000000",
+      "titleYears": [
+        1976,
+        1980,
+        1983
+      ],
+      "lastTitle": {
+        "date": "1984-01-22",
+        "opponent": "Washington Redskins",
+        "series": "38–9",
+        "asName": "Los Angeles Raiders"
+      },
+      "lineage": "Oakland Raiders (1960–81) → Los Angeles Raiders (1982–94) → Oakland Raiders (1995–2019) → Las Vegas Raiders (2020– )"
+    },
+    {
+      "slug": "los-angeles-chargers",
+      "name": "Los Angeles Chargers",
+      "shortName": "Chargers",
+      "abbr": "LAC",
+      "accent": "#0080C6",
+      "secondary": "#FFC20E",
+      "titleYears": [
+        1963
+      ],
+      "lastTitle": {
+        "date": "1964-01-05",
+        "opponent": "Boston Patriots",
+        "series": "51–10",
+        "asName": "San Diego Chargers"
+      },
+      "lineage": "Los Angeles Chargers (1960) → San Diego Chargers (1961–2016) → Los Angeles Chargers (2017– )"
+    },
+    {
+      "slug": "los-angeles-rams",
+      "name": "Los Angeles Rams",
+      "shortName": "Rams",
+      "abbr": "LAR",
+      "accent": "#FFA300",
+      "secondary": "#003594",
+      "accentLight": "#003594",
+      "titleYears": [
+        1945,
+        1951,
+        1999,
+        2021
+      ],
+      "lastTitle": {
+        "date": "2022-02-13",
+        "opponent": "Cincinnati Bengals",
+        "series": "23–20",
+        "asName": null
+      },
+      "lineage": "Cleveland Rams (1937–45) → Los Angeles Rams (1946–94) → St. Louis Rams (1995–2015) → Los Angeles Rams (2016– )"
+    },
+    {
+      "slug": "miami-dolphins",
+      "name": "Miami Dolphins",
+      "shortName": "Dolphins",
+      "abbr": "MIA",
+      "accent": "#008E97",
+      "secondary": "#FC4C02",
+      "titleYears": [
+        1972,
+        1973
+      ],
+      "lastTitle": {
+        "date": "1974-01-13",
+        "opponent": "Minnesota Vikings",
+        "series": "24–7",
+        "asName": null
+      }
+    },
+    {
+      "slug": "minnesota-vikings",
+      "name": "Minnesota Vikings",
+      "shortName": "Vikings",
+      "abbr": "MIN",
+      "accent": "#FFC62F",
+      "secondary": "#4F2683",
+      "accentLight": "#4F2683",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1961-09-17",
+      "firstGameAs": null,
+      "firstGameNote": "Actually won their very first game in 1961, stunning the Bears 37–13 — then lost all four Super Bowls they reached and haven't been back since January 1977.",
+      "finalsLosses": [
+        1969,
+        1973,
+        1974,
+        1976
+      ]
+    },
+    {
+      "slug": "new-england-patriots",
+      "name": "New England Patriots",
+      "shortName": "Patriots",
+      "abbr": "NE",
+      "accent": "#C60C30",
+      "secondary": "#002244",
+      "titleYears": [
+        2001,
+        2003,
+        2004,
+        2014,
+        2016,
+        2018
+      ],
+      "lastTitle": {
+        "date": "2019-02-03",
+        "opponent": "Los Angeles Rams",
+        "series": "13–3",
+        "asName": null
+      }
+    },
+    {
+      "slug": "new-orleans-saints",
+      "name": "New Orleans Saints",
+      "shortName": "Saints",
+      "abbr": "NO",
+      "accent": "#D3BC8D",
+      "secondary": "#101820",
+      "accentLight": "#101820",
+      "titleYears": [
+        2009
+      ],
+      "lastTitle": {
+        "date": "2010-02-07",
+        "opponent": "Indianapolis Colts",
+        "series": "31–17",
+        "asName": null
+      }
+    },
+    {
+      "slug": "new-york-giants",
+      "name": "New York Giants",
+      "shortName": "Giants",
+      "abbr": "NYG",
+      "accent": "#A71930",
+      "secondary": "#0B2265",
+      "titleYears": [
+        1927,
+        1934,
+        1938,
+        1956,
+        1986,
+        1990,
+        2007,
+        2011
+      ],
+      "lastTitle": {
+        "date": "2012-02-05",
+        "opponent": "New England Patriots",
+        "series": "21–17",
+        "asName": null
+      }
+    },
+    {
+      "slug": "new-york-jets",
+      "name": "New York Jets",
+      "shortName": "Jets",
+      "abbr": "NYJ",
+      "accent": "#125740",
+      "secondary": "#FFFFFF",
+      "titleYears": [
+        1968
+      ],
+      "lastTitle": {
+        "date": "1969-01-12",
+        "opponent": "Baltimore Colts",
+        "series": "16–7",
+        "asName": null
+      }
+    },
+    {
+      "slug": "philadelphia-eagles",
+      "name": "Philadelphia Eagles",
+      "shortName": "Eagles",
+      "abbr": "PHI",
+      "accent": "#A5ACAF",
+      "secondary": "#004C54",
+      "accentLight": "#004C54",
+      "titleYears": [
+        1948,
+        1949,
+        1960,
+        2017,
+        2024
+      ],
+      "lastTitle": {
+        "date": "2025-02-09",
+        "opponent": "Kansas City Chiefs",
+        "series": "40–22",
+        "asName": null
+      }
+    },
+    {
+      "slug": "pittsburgh-steelers",
+      "name": "Pittsburgh Steelers",
+      "shortName": "Steelers",
+      "abbr": "PIT",
+      "accent": "#FFB612",
+      "secondary": "#101820",
+      "accentLight": "#101820",
+      "titleYears": [
+        1974,
+        1975,
+        1978,
+        1979,
+        2005,
+        2008
+      ],
+      "lastTitle": {
+        "date": "2009-02-01",
+        "opponent": "Arizona Cardinals",
+        "series": "27–23",
+        "asName": null
+      }
+    },
+    {
+      "slug": "san-francisco-49ers",
+      "name": "San Francisco 49ers",
+      "shortName": "49ers",
+      "abbr": "SF",
+      "accent": "#AA0000",
+      "secondary": "#B3995D",
+      "titleYears": [
+        1981,
+        1984,
+        1988,
+        1989,
+        1994
+      ],
+      "lastTitle": {
+        "date": "1995-01-29",
+        "opponent": "San Diego Chargers",
+        "series": "49–26",
+        "asName": null
+      }
+    },
+    {
+      "slug": "seattle-seahawks",
+      "name": "Seattle Seahawks",
+      "shortName": "Seahawks",
+      "abbr": "SEA",
+      "accent": "#69BE28",
+      "secondary": "#002244",
+      "titleYears": [
+        2013,
+        2025
+      ],
+      "lastTitle": {
+        "date": "2026-02-08",
+        "opponent": "New England Patriots",
+        "series": "29–13",
+        "asName": null
+      }
+    },
+    {
+      "slug": "tampa-bay-buccaneers",
+      "name": "Tampa Bay Buccaneers",
+      "shortName": "Buccaneers",
+      "abbr": "TB",
+      "accent": "#D50A0A",
+      "secondary": "#34302B",
+      "titleYears": [
+        2002,
+        2020
+      ],
+      "lastTitle": {
+        "date": "2021-02-07",
+        "opponent": "Kansas City Chiefs",
+        "series": "31–9",
+        "asName": null
+      }
+    },
+    {
+      "slug": "tennessee-titans",
+      "name": "Tennessee Titans",
+      "shortName": "Titans",
+      "abbr": "TEN",
+      "accent": "#4B92DB",
+      "secondary": "#0C2340",
+      "titleYears": [
+        1960,
+        1961
+      ],
+      "lastTitle": {
+        "date": "1961-12-24",
+        "opponent": "San Diego Chargers",
+        "series": "10–3",
+        "asName": "Houston Oilers"
+      },
+      "lineage": "Houston Oilers (1960–96) → Tennessee Oilers (1997–98) → Tennessee Titans (1999– )"
+    },
+    {
+      "slug": "washington-commanders",
+      "name": "Washington Commanders",
+      "shortName": "Commanders",
+      "abbr": "WAS",
+      "accent": "#FFB612",
+      "secondary": "#5A1414",
+      "accentLight": "#5A1414",
+      "titleYears": [
+        1937,
+        1942,
+        1982,
+        1987,
+        1991
+      ],
+      "lastTitle": {
+        "date": "1992-01-26",
+        "opponent": "Buffalo Bills",
+        "series": "37–24",
+        "asName": "Washington Redskins"
+      },
+      "lineage": "Boston Braves (1932) → Boston Redskins (1933–36) → Washington Redskins (1937–2019) → Washington Football Team (2020–21) → Washington Commanders (2022– )"
+    }
+  ]
+}

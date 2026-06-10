@@ -1,0 +1,559 @@
+{
+  "league": "MLS",
+  "slug": "mls",
+  "finalsName": "MLS Cup",
+  "updated": "2026-06-10",
+  "teams": [
+    {
+      "slug": "atlanta-united-fc",
+      "name": "Atlanta United FC",
+      "shortName": "Atlanta United",
+      "abbr": "ATL",
+      "accent": "#A19060",
+      "secondary": "#80000A",
+      "titleYears": [
+        2018
+      ],
+      "lastTitle": {
+        "date": "2018-12-08",
+        "opponent": "Portland Timbers",
+        "series": "2–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "austin-fc",
+      "name": "Austin FC",
+      "shortName": "Austin",
+      "abbr": "ATX",
+      "accent": "#00B140",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2021-04-17",
+      "firstGameAs": null,
+      "firstGameNote": "Shut out 2–0 at LAFC in their 2021 debut, and the Verde trophy case is still waiting on its first final.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "cf-montreal",
+      "name": "CF Montréal",
+      "shortName": "Montréal",
+      "abbr": "MTL",
+      "accent": "#C1C6C8",
+      "secondary": "#003DA5",
+      "accentLight": "#003DA5",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2012-03-10",
+      "firstGameAs": "Montreal Impact",
+      "firstGameNote": "Opened MLS life with a 2–0 loss in Vancouver, conceding the fastest season-opening goal in league history after just four minutes.",
+      "finalsLosses": [],
+      "lineage": "Montreal Impact (2012–20) → CF Montréal (2021– )"
+    },
+    {
+      "slug": "charlotte-fc",
+      "name": "Charlotte FC",
+      "shortName": "Charlotte",
+      "abbr": "CLT",
+      "accent": "#1A85C8",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2022-02-26",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 3–0 at D.C. United, then drew an MLS-record 74,479 to the home opener a week later — hope dies hard in the Queen City.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "chicago-fire-fc",
+      "name": "Chicago Fire FC",
+      "shortName": "Fire",
+      "abbr": "CHI",
+      "accent": "#FF0000",
+      "secondary": "#141946",
+      "titleYears": [
+        1998
+      ],
+      "lastTitle": {
+        "date": "1998-10-25",
+        "opponent": "D.C. United",
+        "series": "2–0",
+        "asName": "Chicago Fire"
+      },
+      "lineage": "Chicago Fire (1998–2019) → Chicago Fire FC (2019– )"
+    },
+    {
+      "slug": "colorado-rapids",
+      "name": "Colorado Rapids",
+      "shortName": "Rapids",
+      "abbr": "COL",
+      "accent": "#9CC2EA",
+      "secondary": "#960A2C",
+      "accentLight": "#960A2C",
+      "titleYears": [
+        2010
+      ],
+      "lastTitle": {
+        "date": "2010-11-21",
+        "opponent": "FC Dallas",
+        "series": "2–1 (aet)",
+        "asName": null
+      }
+    },
+    {
+      "slug": "columbus-crew",
+      "name": "Columbus Crew",
+      "shortName": "Crew",
+      "abbr": "CLB",
+      "accent": "#FEDD00",
+      "secondary": "#000000",
+      "accentLight": "#000000",
+      "titleYears": [
+        2008,
+        2020,
+        2023
+      ],
+      "lastTitle": {
+        "date": "2023-12-09",
+        "opponent": "Los Angeles FC",
+        "series": "2–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "dc-united",
+      "name": "D.C. United",
+      "shortName": "D.C. United",
+      "abbr": "DC",
+      "accent": "#EF3E42",
+      "secondary": "#231F20",
+      "titleYears": [
+        1996,
+        1997,
+        1999,
+        2004
+      ],
+      "lastTitle": {
+        "date": "2004-11-14",
+        "opponent": "Kansas City Wizards",
+        "series": "3–2",
+        "asName": null
+      }
+    },
+    {
+      "slug": "fc-cincinnati",
+      "name": "FC Cincinnati",
+      "shortName": "Cincinnati",
+      "abbr": "CIN",
+      "accent": "#F05323",
+      "secondary": "#263B80",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2019-03-02",
+      "firstGameAs": null,
+      "firstGameNote": "Thumped 4–1 at Seattle in their 2019 debut, the first of three straight last-place finishes before the good years arrived.",
+      "finalsLosses": [],
+      "asterisk": {
+        "label": "Supporters' Shield",
+        "years": [
+          2023
+        ]
+      }
+    },
+    {
+      "slug": "fc-dallas",
+      "name": "FC Dallas",
+      "shortName": "Dallas",
+      "abbr": "DAL",
+      "accent": "#E81F3E",
+      "secondary": "#2A4076",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1996-04-14",
+      "firstGameAs": "Dallas Burn",
+      "firstGameNote": "Won their 1996 debut at the Cotton Bowl in a hockey-style shootout; thirty seasons on, two Supporters' Shields but still no Cup.",
+      "finalsLosses": [
+        2010
+      ],
+      "asterisk": {
+        "label": "Supporters' Shield",
+        "years": [
+          2006,
+          2016
+        ]
+      },
+      "lineage": "Dallas Burn (1996–2004) → FC Dallas (2005– )"
+    },
+    {
+      "slug": "houston-dynamo-fc",
+      "name": "Houston Dynamo FC",
+      "shortName": "Dynamo",
+      "abbr": "HOU",
+      "accent": "#FF6B00",
+      "secondary": "#101820",
+      "titleYears": [
+        2006,
+        2007
+      ],
+      "lastTitle": {
+        "date": "2007-11-18",
+        "opponent": "New England Revolution",
+        "series": "2–1",
+        "asName": "Houston Dynamo"
+      },
+      "lineage": "Founded 2006 with San Jose's relocated roster, but MLS treats Houston as a separate expansion franchise — the Earthquakes kept their history and titles"
+    },
+    {
+      "slug": "inter-miami-cf",
+      "name": "Inter Miami CF",
+      "shortName": "Inter Miami",
+      "abbr": "MIA",
+      "accent": "#F7B5CD",
+      "secondary": "#231F20",
+      "accentLight": "#231F20",
+      "titleYears": [
+        2025
+      ],
+      "lastTitle": {
+        "date": "2025-12-06",
+        "opponent": "Vancouver Whitecaps FC",
+        "series": "3–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "la-galaxy",
+      "name": "LA Galaxy",
+      "shortName": "Galaxy",
+      "abbr": "LA",
+      "accent": "#FFD200",
+      "secondary": "#00245D",
+      "accentLight": "#00245D",
+      "titleYears": [
+        2002,
+        2005,
+        2011,
+        2012,
+        2014,
+        2024
+      ],
+      "lastTitle": {
+        "date": "2024-12-07",
+        "opponent": "New York Red Bulls",
+        "series": "2–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "los-angeles-fc",
+      "name": "Los Angeles FC",
+      "shortName": "LAFC",
+      "abbr": "LAFC",
+      "accent": "#C39E6D",
+      "secondary": "#000000",
+      "accentLight": "#000000",
+      "titleYears": [
+        2022
+      ],
+      "lastTitle": {
+        "date": "2022-11-05",
+        "opponent": "Philadelphia Union",
+        "series": "3–3 (3–0 pens)",
+        "asName": null
+      }
+    },
+    {
+      "slug": "minnesota-united-fc",
+      "name": "Minnesota United FC",
+      "shortName": "Loons",
+      "abbr": "MIN",
+      "accent": "#8CD2F4",
+      "secondary": "#231F20",
+      "accentLight": "#231F20",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2017-03-03",
+      "firstGameAs": null,
+      "firstGameNote": "Hammered 5–1 at Portland in their 2017 debut, then welcomed home with a 6–1 loss in the snow a week later.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "nashville-sc",
+      "name": "Nashville SC",
+      "shortName": "Nashville",
+      "abbr": "NSH",
+      "accent": "#ECE83A",
+      "secondary": "#1F1646",
+      "accentLight": "#1F1646",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2020-02-29",
+      "firstGameAs": null,
+      "firstGameNote": "Debuted on Leap Day 2020 before a Tennessee-record 59,069 and lost 2–1 to Atlanta — so the drought's true birthday only comes every four years.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "new-england-revolution",
+      "name": "New England Revolution",
+      "shortName": "Revolution",
+      "abbr": "NE",
+      "accent": "#CE0E2D",
+      "secondary": "#0A2240",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1996-04-13",
+      "firstGameAs": null,
+      "firstGameNote": "A founding member since April 1996 with five MLS Cup final defeats and zero wins — the league's most decorated runners-up.",
+      "finalsLosses": [
+        2002,
+        2005,
+        2006,
+        2007,
+        2014
+      ],
+      "asterisk": {
+        "label": "Supporters' Shield",
+        "years": [
+          2021
+        ]
+      }
+    },
+    {
+      "slug": "new-york-city-fc",
+      "name": "New York City FC",
+      "shortName": "NYCFC",
+      "abbr": "NYC",
+      "accent": "#9FD2FF",
+      "secondary": "#FF5E36",
+      "accentLight": "#000229",
+      "titleYears": [
+        2021
+      ],
+      "lastTitle": {
+        "date": "2021-12-11",
+        "opponent": "Portland Timbers",
+        "series": "1–1 (4–2 pens)",
+        "asName": null
+      }
+    },
+    {
+      "slug": "new-york-red-bulls",
+      "name": "New York Red Bulls",
+      "shortName": "Red Bulls",
+      "abbr": "RBNY",
+      "accent": "#ED1E36",
+      "secondary": "#23326A",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1996-04-13",
+      "firstGameAs": "NY/NJ MetroStars",
+      "firstGameNote": "Debuted before 69,255 at the Rose Bowl in 1996 and lost 2–1; three decades, two name eras, three Shields, two lost finals, no Cup.",
+      "finalsLosses": [
+        2008,
+        2024
+      ],
+      "asterisk": {
+        "label": "Supporters' Shield",
+        "years": [
+          2013,
+          2015,
+          2018
+        ]
+      },
+      "lineage": "New York/New Jersey MetroStars (1996–2005) → New York Red Bulls (2006– )"
+    },
+    {
+      "slug": "orlando-city-sc",
+      "name": "Orlando City SC",
+      "shortName": "Orlando City",
+      "abbr": "ORL",
+      "accent": "#FDE192",
+      "secondary": "#633492",
+      "accentLight": "#633492",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2015-03-08",
+      "firstGameAs": null,
+      "firstGameNote": "Kaká's stoppage-time free kick rescued a 1–1 draw with fellow newcomers NYCFC before 62,510 at the Citrus Bowl — still the high-water mark of purple euphoria.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "philadelphia-union",
+      "name": "Philadelphia Union",
+      "shortName": "Union",
+      "abbr": "PHI",
+      "accent": "#B19B69",
+      "secondary": "#071B2C",
+      "accentLight": "#071B2C",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2010-03-25",
+      "firstGameAs": null,
+      "firstGameNote": "Blanked 2–0 at Seattle in 2010; twelve years later they led the MLS Cup final in the 124th minute and still didn't win it.",
+      "finalsLosses": [
+        2022
+      ],
+      "asterisk": {
+        "label": "Supporters' Shield",
+        "years": [
+          2020,
+          2025
+        ]
+      }
+    },
+    {
+      "slug": "portland-timbers",
+      "name": "Portland Timbers",
+      "shortName": "Timbers",
+      "abbr": "POR",
+      "accent": "#C99700",
+      "secondary": "#2C5234",
+      "titleYears": [
+        2015
+      ],
+      "lastTitle": {
+        "date": "2015-12-06",
+        "opponent": "Columbus Crew",
+        "series": "2–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "real-salt-lake",
+      "name": "Real Salt Lake",
+      "shortName": "RSL",
+      "abbr": "RSL",
+      "accent": "#B30838",
+      "secondary": "#013A81",
+      "titleYears": [
+        2009
+      ],
+      "lastTitle": {
+        "date": "2009-11-22",
+        "opponent": "LA Galaxy",
+        "series": "1–1 (5–4 pens)",
+        "asName": null
+      }
+    },
+    {
+      "slug": "san-diego-fc",
+      "name": "San Diego FC",
+      "shortName": "San Diego",
+      "abbr": "SD",
+      "accent": "#687C7B",
+      "secondary": "#051C2C",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2025-02-23",
+      "firstGameAs": null,
+      "firstGameNote": "Stunned the defending-champion LA Galaxy 2–0 in the club's first-ever match — this drought is barely old enough to walk.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "san-jose-earthquakes",
+      "name": "San Jose Earthquakes",
+      "shortName": "Earthquakes",
+      "abbr": "SJ",
+      "accent": "#0067B1",
+      "secondary": "#000000",
+      "titleYears": [
+        2001,
+        2003
+      ],
+      "lastTitle": {
+        "date": "2003-11-23",
+        "opponent": "Chicago Fire",
+        "series": "4–2",
+        "asName": null
+      },
+      "lineage": "San Jose Clash (1996–99) → San Jose Earthquakes (2000–05; on hiatus 2006–07 while the roster moved to Houston; 2008– ) — MLS credits the franchise with its full history and both Cups"
+    },
+    {
+      "slug": "seattle-sounders-fc",
+      "name": "Seattle Sounders FC",
+      "shortName": "Sounders",
+      "abbr": "SEA",
+      "accent": "#5D9741",
+      "secondary": "#005595",
+      "titleYears": [
+        2016,
+        2019
+      ],
+      "lastTitle": {
+        "date": "2019-11-10",
+        "opponent": "Toronto FC",
+        "series": "3–1",
+        "asName": null
+      }
+    },
+    {
+      "slug": "sporting-kansas-city",
+      "name": "Sporting Kansas City",
+      "shortName": "Sporting KC",
+      "abbr": "SKC",
+      "accent": "#91B0D5",
+      "secondary": "#002F65",
+      "accentLight": "#002F65",
+      "titleYears": [
+        2000,
+        2013
+      ],
+      "lastTitle": {
+        "date": "2013-12-07",
+        "opponent": "Real Salt Lake",
+        "series": "1–1 (7–6 pens)",
+        "asName": null
+      },
+      "lineage": "Kansas City Wiz (1996) → Kansas City Wizards (1997–2010) → Sporting Kansas City (2011– )"
+    },
+    {
+      "slug": "st-louis-city-sc",
+      "name": "St. Louis City SC",
+      "shortName": "St. Louis City",
+      "abbr": "STL",
+      "accent": "#DD004A",
+      "secondary": "#001837",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2023-02-25",
+      "firstGameAs": null,
+      "firstGameNote": "Beat Austin 3–2 and ripped off a record five straight wins to open expansion life, then got swept out of their first playoff series.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "toronto-fc",
+      "name": "Toronto FC",
+      "shortName": "Toronto FC",
+      "abbr": "TOR",
+      "accent": "#B81137",
+      "secondary": "#455560",
+      "titleYears": [
+        2017
+      ],
+      "lastTitle": {
+        "date": "2017-12-09",
+        "opponent": "Seattle Sounders FC",
+        "series": "2–0",
+        "asName": null
+      }
+    },
+    {
+      "slug": "vancouver-whitecaps-fc",
+      "name": "Vancouver Whitecaps FC",
+      "shortName": "Whitecaps",
+      "abbr": "VAN",
+      "accent": "#9DC2EA",
+      "secondary": "#00245E",
+      "accentLight": "#00245E",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2011-03-19",
+      "firstGameAs": null,
+      "firstGameNote": "Won the first all-Canadian MLS match 4–2 over Toronto, then went winless in their next 11; in 2025 they finally reached the final and ran into Messi.",
+      "finalsLosses": [
+        2025
+      ]
+    }
+  ]
+}
