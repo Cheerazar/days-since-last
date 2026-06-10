@@ -102,7 +102,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <script>
       // One ticker drives every counter on the page. Each [data-since] holds
       // an epoch-ms start; children tagged data-d/h/m/s receive the pieces.
-      const pad = (n: number) => String(n).padStart(2, '0');
+      // Time math lives in lib/clock.ts so the suite can test it directly.
+      import { pad, splitElapsed } from '../lib/clock';
+
       const set = (el: Element | null, value: string) => {
         if (el && el.textContent !== value) el.textContent = value;
       };
@@ -110,8 +112,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       function tick() {
         const now = Date.now();
         for (const root of document.querySelectorAll<HTMLElement>('[data-since]')) {
-          const ms = Math.max(0, now - Number(root.dataset.since));
-          const days = Math.floor(ms / 86_400_000);
+          const { days, hours, minutes, seconds } = splitElapsed(now - Number(root.dataset.since));
           const dEl = root.querySelector('[data-d]');
           if (dEl) {
             const text = String(days);
@@ -121,10 +122,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
               ghost.textContent = '8'.repeat(text.length);
             }
           }
-          const rem = ms % 86_400_000;
-          set(root.querySelector('[data-h]'), pad(Math.floor(rem / 3_600_000)));
-          set(root.querySelector('[data-m]'), pad(Math.floor(rem / 60_000) % 60));
-          set(root.querySelector('[data-s]'), pad(Math.floor(rem / 1_000) % 60));
+          set(root.querySelector('[data-h]'), pad(hours));
+          set(root.querySelector('[data-m]'), pad(minutes));
+          set(root.querySelector('[data-s]'), pad(seconds));
         }
       }
 

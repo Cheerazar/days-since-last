@@ -65,7 +65,8 @@ export function getLeague(slug: string): League | undefined {
 // games end late evening ET, so day counts match how a fan would say it:
 // "it has been N days since June 17, 2024."
 const ET_OFFSET = '-05:00';
-export const DAY_MS = 86_400_000;
+export { DAY_MS } from './clock';
+import { DAY_MS } from './clock';
 
 export function neverWon(team: Team): boolean {
   return team.lastTitle === null;
