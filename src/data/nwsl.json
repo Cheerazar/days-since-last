@@ -24,9 +24,8 @@
       "name": "Bay FC",
       "shortName": "Bay FC",
       "abbr": "BAY",
-      "accent": "#FAACA8",
-      "secondary": "#0C2032",
-      "accentLight": "#0C2032",
+      "accent": "#F9423A",
+      "secondary": "#051C2C",
       "titleYears": [],
       "lastTitle": null,
       "firstGame": "2024-03-17",
@@ -39,23 +38,24 @@
       "name": "Boston Legacy FC",
       "shortName": "Legacy",
       "abbr": "BOS",
-      "accent": "#00B140",
-      "secondary": "#0B0B0B",
+      "accent": "#26D07C",
+      "secondary": "#212322",
       "titleYears": [],
       "lastTitle": null,
       "firstGame": "2026-03-14",
       "firstGameAs": null,
       "firstGameNote": "Drew 30,207 to Gillette Stadium for their 2026 debut, then lost 1–0 to the reigning champs.",
-      "finalsLosses": []
+      "finalsLosses": [],
+      "accentLight": "#D00070"
     },
     {
       "slug": "chicago-stars-fc",
       "name": "Chicago Stars FC",
       "shortName": "Stars",
       "abbr": "CHI",
-      "accent": "#41B6E6",
-      "secondary": "#C8102E",
-      "accentLight": "#C8102E",
+      "accent": "#00A3E0",
+      "secondary": "#0C2340",
+      "accentLight": "#0C2340",
       "titleYears": [],
       "lastTitle": null,
       "firstGame": "2013-04-14",
@@ -72,21 +72,22 @@
       "name": "Denver Summit FC",
       "shortName": "Summit",
       "abbr": "DEN",
-      "accent": "#E04E39",
-      "secondary": "#25422F",
+      "accent": "#F6BE00",
+      "secondary": "#1D6960",
       "titleYears": [],
       "lastTitle": null,
       "firstGame": "2026-03-14",
       "firstGameAs": null,
       "firstGameNote": "Scored 20 minutes into their existence, then lost their 2026 debut 2–1 at Bay FC.",
-      "finalsLosses": []
+      "finalsLosses": [],
+      "accentLight": "#1D6960"
     },
     {
       "slug": "houston-dash",
       "name": "Houston Dash",
       "shortName": "Dash",
       "abbr": "HOU",
-      "accent": "#FF6B00",
+      "accent": "#FF6900",
       "secondary": "#101820",
       "titleYears": [],
       "lastTitle": null,
@@ -106,9 +107,9 @@
       "name": "Kansas City Current",
       "shortName": "Current",
       "abbr": "KC",
-      "accent": "#62CBC9",
-      "secondary": "#E31837",
-      "accentLight": "#E31837",
+      "accent": "#64CCC9",
+      "secondary": "#091F2C",
+      "accentLight": "#CB333B",
       "titleYears": [],
       "lastTitle": null,
       "firstGame": "2021-05-15",
@@ -130,9 +131,9 @@
       "name": "NJ/NY Gotham FC",
       "shortName": "Gotham",
       "abbr": "NJY",
-      "accent": "#9BCBEB",
-      "secondary": "#000000",
-      "accentLight": "#000000",
+      "accent": "#9ADBE8",
+      "secondary": "#010101",
+      "accentLight": "#010101",
       "titleYears": [
         2023,
         2025
@@ -150,7 +151,7 @@
       "name": "North Carolina Courage",
       "shortName": "Courage",
       "abbr": "NC",
-      "accent": "#AD9659",
+      "accent": "#B3A369",
       "secondary": "#01426A",
       "titleYears": [
         2018,
@@ -162,15 +163,16 @@
         "series": "4–0",
         "asName": null
       },
-      "lineage": "Founded 2017 with the roster of the 2016 champion Western New York Flash, but the Flash's title and records officially stayed behind in New York."
+      "lineage": "Founded 2017 with the roster of the 2016 champion Western New York Flash, but the Flash's title and records officially stayed behind in New York.",
+      "accentLight": "#01426A"
     },
     {
       "slug": "orlando-pride",
       "name": "Orlando Pride",
       "shortName": "Pride",
       "abbr": "ORL",
-      "accent": "#633492",
-      "secondary": "#FDE192",
+      "accent": "#5F249F",
+      "secondary": "#00A9E0",
       "titleYears": [
         2024
       ],
@@ -206,8 +208,8 @@
       "shortName": "Racing",
       "abbr": "LOU",
       "accent": "#C5B4E3",
-      "secondary": "#2E1A47",
-      "accentLight": "#2E1A47",
+      "secondary": "#1E1A34",
+      "accentLight": "#1E1A34",
       "titleYears": [],
       "lastTitle": null,
       "firstGame": "2021-05-15",
@@ -241,7 +243,7 @@
       "name": "Seattle Reign FC",
       "shortName": "Reign",
       "abbr": "SEA",
-      "accent": "#B89D5A",
+      "accent": "#D0A66B",
       "secondary": "#292431",
       "titleYears": [],
       "lastTitle": null,
@@ -261,7 +263,8 @@
           2022
         ]
       },
-      "lineage": "Seattle Reign FC (2013–2018) → Reign FC (2019) → OL Reign (2020–2023) → Seattle Reign FC (2024– )"
+      "lineage": "Seattle Reign FC (2013–2018) → Reign FC (2019) → OL Reign (2020–2023) → Seattle Reign FC (2024– )",
+      "accentLight": "#2E407A"
     },
     {
       "slug": "utah-royals",
@@ -269,8 +272,8 @@
       "shortName": "Royals",
       "abbr": "UTA",
       "accent": "#FFB81C",
-      "secondary": "#00263A",
-      "accentLight": "#00263A",
+      "secondary": "#13294B",
+      "accentLight": "#13294B",
       "titleYears": [],
       "lastTitle": null,
       "firstGame": "2018-03-24",
@@ -284,8 +287,8 @@
       "name": "Washington Spirit",
       "shortName": "Spirit",
       "abbr": "WAS",
-      "accent": "#C8102E",
-      "secondary": "#000000",
+      "accent": "#EDE939",
+      "secondary": "#003A40",
       "titleYears": [
         2021
       ],
@@ -294,7 +297,8 @@
         "opponent": "Chicago Red Stars",
         "series": "2–1",
         "asName": null
-      }
+      },
+      "accentLight": "#003A40"
     }
   ]
 }
