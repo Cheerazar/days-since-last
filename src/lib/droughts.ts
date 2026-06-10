@@ -89,6 +89,17 @@ export function byDrought(teams: Team[]): Team[] {
   return [...teams].sort((a, b) => clockStartMs(a) - clockStartMs(b));
 }
 
+/**
+ * The team holding the league's most recent title — the reigning champion.
+ * Not simply the last row of the drought sort: a brand-new expansion team's
+ * clock (first game) can start after the champion's title date.
+ */
+export function reigningChamp(teams: Team[]): Team | undefined {
+  return teams
+    .filter((t) => t.lastTitle)
+    .sort((a, b) => Date.parse(b.lastTitle!.date) - Date.parse(a.lastTitle!.date))[0];
+}
+
 /** The single longest-running drought across every league on the site. */
 export function worstDrought(): { league: League; team: Team } {
   let worst: { league: League; team: Team } | null = null;
