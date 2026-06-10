@@ -62,6 +62,13 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1989-07-02', 'Alex Morgan'],
     ['2000-08-10', 'Sophia Smith'],
   ],
+  epl: [
+    ['1970-08-13', 'Alan Shearer'],
+    ['1975-05-02', 'David Beckham'],
+    ['1985-10-24', 'Wayne Rooney'],
+    ['1993-07-28', 'Harry Kane'],
+    ['2001-09-05', 'Bukayo Saka'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */
@@ -94,12 +101,14 @@ function finalsShort(league: League): string {
  */
 export function factsFor(team: Team, league: League, now: Date = new Date()): string[] {
   const since = clockStartIso(team);
+  const noun = league.competitionNoun ?? league.league;
   const facts: string[] = [];
 
   if (neverWon(team)) {
-    facts.push(`The ${team.shortName} have never won it all. This clock has been running since their first ${league.league} game.`);
+    facts.push(`The ${team.shortName} have never won it all. This clock has been running since their first ${noun} game.`);
     if (team.asterisk?.years.length) {
-      facts.push(`They did win ${team.asterisk.years.length} ${team.asterisk.label} titles (${team.asterisk.years.join(', ')}). The ${league.league} doesn't count those. Neither does the pain.`);
+      const plural = team.asterisk.years.length === 1 ? 'title' : 'titles';
+      facts.push(`They did win ${team.asterisk.years.length} ${team.asterisk.label} ${plural} (${team.asterisk.years.join(', ')}). The ${league.league} doesn't count those. Neither does the pain.`);
     }
     if (team.finalsLosses?.length) {
       facts.push(`Closest calls: ${finalsShort(league)} losses in ${listOut(team.finalsLosses.map(String))}.`);
@@ -110,7 +119,7 @@ export function factsFor(team: Team, league: League, now: Date = new Date()): st
 
   const seasons = currentSeasonEndYear(now) - yearOf(since);
   if (seasons >= 2) {
-    facts.push(`That's ${seasons} ${league.league} seasons of waiting.`);
+    facts.push(`That's ${seasons} ${noun} seasons of waiting.`);
   }
 
   const eventsSince = EVENTS.filter(([d]) => d > since);

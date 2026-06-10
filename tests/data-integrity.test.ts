@@ -17,10 +17,11 @@ const EXPECTED_TEAM_COUNTS: Record<string, number> = {
   wnba: 15,
   nwsl: 16,
   pwhl: 8,
+  epl: 20,
 };
 
 describe('league registry shape', () => {
-  it('contains the seven expected leagues with full rosters', () => {
+  it('contains the expected leagues with full rosters', () => {
     expect(Object.fromEntries(leagues.map((l) => [l.slug, l.teams.length]))).toEqual(
       EXPECTED_TEAM_COUNTS,
     );
@@ -54,8 +55,12 @@ describe('every team', () => {
       const id = `${league.slug}/${t.slug}`;
       if (t.lastTitle) {
         expect(t.lastTitle.date, id).toMatch(ISO);
-        expect(t.lastTitle.opponent, id).toBeTruthy();
-        expect(t.lastTitle.series, id).toBeTruthy();
+        // A title clinched outside a championship game carries a clinch
+        // sentence instead of opponent/series.
+        if (!t.lastTitle.clinch) {
+          expect(t.lastTitle.opponent, id).toBeTruthy();
+          expect(t.lastTitle.series, id).toBeTruthy();
+        }
         expect(t.titleYears.length, id).toBeGreaterThan(0);
         // Title games can be played early the following year (Super Bowls).
         const dateYear = Number(t.lastTitle.date.slice(0, 4));
@@ -98,6 +103,7 @@ describe('reigning champions', () => {
       wnba: 'las-vegas-aces',
       nwsl: 'nj-ny-gotham-fc',
       pwhl: 'montreal-victoire',
+      epl: 'arsenal',
     });
   });
 
@@ -125,6 +131,10 @@ describe('anchor dates', () => {
     ['nwsl', 'nj-ny-gotham-fc', '2025-11-22'],
     ['mls', 'inter-miami-cf', '2025-12-06'],
     ['pwhl', 'montreal-victoire', '2026-05-20'],
+    ['epl', 'newcastle-united', '1927-04-30'],
+    ['epl', 'sunderland', '1936-04-13'],
+    ['epl', 'nottingham-forest', '1978-04-22'],
+    ['epl', 'arsenal', '2026-05-19'],
   ];
 
   it.each(ANCHORS)('%s/%s last title on %s', (leagueSlug, teamSlug, date) => {

@@ -1,0 +1,324 @@
+{
+  "league": "Premier League",
+  "slug": "epl",
+  "finalsName": "the top two",
+  "competitionNoun": "top-flight",
+  "updated": "2026-06-10",
+  "banner": "Arsenal's 22-year wait ended May 19, 2026, when Man City stumbled at Bournemouth — and Coventry, Ipswich and Hull come up for 2026–27. Titles here count the whole English top flight, back to 1889.",
+  "teams": [
+    {
+      "slug": "arsenal",
+      "name": "Arsenal",
+      "shortName": "Arsenal",
+      "abbr": "ARS",
+      "accent": "#EF0107",
+      "secondary": "#023474",
+      "titleYears": [1931, 1933, 1934, 1935, 1938, 1948, 1953, 1971, 1989, 1991, 1998, 2002, 2004, 2026],
+      "lastTitle": {
+        "date": "2026-05-19",
+        "opponent": null,
+        "series": null,
+        "asName": null,
+        "clinch": "clinched without kicking a ball, when Manchester City's 1–1 draw at Bournemouth ended a 22-year wait"
+      }
+    },
+    {
+      "slug": "aston-villa",
+      "name": "Aston Villa",
+      "shortName": "Villa",
+      "abbr": "AVL",
+      "accent": "#95BFE5",
+      "accentLight": "#670E36",
+      "secondary": "#670E36",
+      "titleYears": [1894, 1896, 1897, 1899, 1900, 1910, 1981],
+      "lastTitle": {
+        "date": "1981-05-02",
+        "opponent": "Arsenal",
+        "series": "0–2",
+        "asName": null,
+        "clinch": "crowned on the final day despite losing 0–2 at Arsenal, as sole challengers Ipswich fell 2–1 at Middlesbrough"
+      }
+    },
+    {
+      "slug": "afc-bournemouth",
+      "name": "AFC Bournemouth",
+      "shortName": "Cherries",
+      "abbr": "BOU",
+      "accent": "#DA291C",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2015-08-08",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 1–0 at home to Aston Villa in their 2015 top-flight debut — and in May 2026 the Cherries decided a title they've never won, holding Man City 1–1 to crown Arsenal.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "brentford",
+      "name": "Brentford",
+      "shortName": "Bees",
+      "abbr": "BRE",
+      "accent": "#D20000",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1935-08-31",
+      "firstGameAs": null,
+      "firstGameNote": "Won 2–0 at Bolton in their 1935 First Division debut and finished fifth — still the club's best season, one 74-year exile from the top flight later.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "brighton-hove-albion",
+      "name": "Brighton & Hove Albion",
+      "shortName": "Seagulls",
+      "abbr": "BHA",
+      "accent": "#0057B8",
+      "secondary": "#FFCD00",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1979-08-18",
+      "firstGameAs": null,
+      "firstGameNote": "Thrashed 4–0 by Arsenal at the Goldstone Ground in their 1979 top-flight bow; 'And Smith must score…' in the 1983 FA Cup final is still as close as it has come.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "chelsea",
+      "name": "Chelsea",
+      "shortName": "Chelsea",
+      "abbr": "CHE",
+      "accent": "#034694",
+      "secondary": "#DBA111",
+      "titleYears": [1955, 2005, 2006, 2010, 2015, 2017],
+      "lastTitle": {
+        "date": "2017-05-12",
+        "opponent": "West Bromwich Albion",
+        "series": "1–0",
+        "asName": null,
+        "clinch": "won 1–0 at West Brom, Michy Batshuayi's 82nd-minute winner sealing the title with two games to spare"
+      }
+    },
+    {
+      "slug": "coventry-city",
+      "name": "Coventry City",
+      "shortName": "Sky Blues",
+      "abbr": "COV",
+      "accent": "#059DD9",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1967-08-19",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 2–1 at Burnley in 1967, two days after Sky Blue Revolution architect Jimmy Hill quit for television — then spent 34 straight top-flight seasons never finishing higher than sixth.",
+      "finalsLosses": [],
+      "asterisk": { "label": "FA Cup", "years": [1987] }
+    },
+    {
+      "slug": "crystal-palace",
+      "name": "Crystal Palace",
+      "shortName": "Eagles",
+      "abbr": "CRY",
+      "accent": "#1B458F",
+      "secondary": "#C4122E",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1969-08-09",
+      "firstGameAs": null,
+      "firstGameNote": "Held Bobby Charlton's Manchester United 2–2 at Selhurst Park in their 1969 top-flight debut; the trophy case finally got its first major silverware in 2025 — an FA Cup, not the league.",
+      "finalsLosses": [],
+      "asterisk": { "label": "FA Cup", "years": [2025] }
+    },
+    {
+      "slug": "everton",
+      "name": "Everton",
+      "shortName": "Everton",
+      "abbr": "EVE",
+      "accent": "#003399",
+      "secondary": "#FFFFFF",
+      "titleYears": [1891, 1915, 1928, 1932, 1939, 1963, 1970, 1985, 1987],
+      "lastTitle": {
+        "date": "1987-05-04",
+        "opponent": "Norwich City",
+        "series": "1–0",
+        "asName": null,
+        "clinch": "won 1–0 at Norwich, Pat Van den Hauwe striking inside the first minute to seal title number nine"
+      }
+    },
+    {
+      "slug": "fulham",
+      "name": "Fulham",
+      "shortName": "Cottagers",
+      "abbr": "FUL",
+      "accent": "#FFFFFF",
+      "accentLight": "#000000",
+      "secondary": "#CC0000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1949-08-20",
+      "firstGameAs": null,
+      "firstGameNote": "43,854 packed Craven Cottage for their 1949 First Division debut and watched Wolves win 2–1; seventh place remains the Cottagers' top-flight ceiling.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "hull-city",
+      "name": "Hull City",
+      "shortName": "Tigers",
+      "abbr": "HUL",
+      "accent": "#F18A01",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2008-08-16",
+      "firstGameAs": null,
+      "firstGameNote": "Beat Fulham 2–1 in their 2008 top-flight debut, 104 years after the club was founded — and they're back for 2026–27 via the play-off final, still without a major trophy of any kind.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "ipswich-town",
+      "name": "Ipswich Town",
+      "shortName": "Ipswich",
+      "abbr": "IPS",
+      "accent": "#3A64A3",
+      "secondary": "#DE2C37",
+      "titleYears": [1962],
+      "lastTitle": {
+        "date": "1962-04-28",
+        "opponent": "Aston Villa",
+        "series": "2–0",
+        "asName": null,
+        "clinch": "beat Aston Villa 2–0 behind two Ray Crawford goals, then learned Burnley had drawn — champions of England in their first-ever top-flight season"
+      }
+    },
+    {
+      "slug": "leeds-united",
+      "name": "Leeds United",
+      "shortName": "Leeds",
+      "abbr": "LEE",
+      "accent": "#FFFFFF",
+      "accentLight": "#1D428A",
+      "secondary": "#FFCD00",
+      "titleYears": [1969, 1974, 1992],
+      "lastTitle": {
+        "date": "1992-04-26",
+        "opponent": "Sheffield United",
+        "series": "3–2",
+        "asName": null,
+        "clinch": "won 3–2 at Bramall Lane in the early game, then watched Manchester United lose at Anfield — the last champions of the old First Division"
+      }
+    },
+    {
+      "slug": "liverpool",
+      "name": "Liverpool",
+      "shortName": "Liverpool",
+      "abbr": "LIV",
+      "accent": "#C8102E",
+      "secondary": "#00B2A9",
+      "titleYears": [1901, 1906, 1922, 1923, 1947, 1964, 1966, 1973, 1976, 1977, 1979, 1980, 1982, 1983, 1984, 1986, 1988, 1990, 2020, 2025],
+      "lastTitle": {
+        "date": "2025-04-27",
+        "opponent": "Tottenham Hotspur",
+        "series": "5–1",
+        "asName": null,
+        "clinch": "demolished Tottenham 5–1 at Anfield to clinch with four games to spare — title number 20, level with Manchester United's record"
+      }
+    },
+    {
+      "slug": "manchester-city",
+      "name": "Manchester City",
+      "shortName": "Man City",
+      "abbr": "MCI",
+      "accent": "#6CABDD",
+      "accentLight": "#1C2C5B",
+      "secondary": "#1C2C5B",
+      "titleYears": [1937, 1968, 2012, 2014, 2018, 2019, 2021, 2022, 2023, 2024],
+      "lastTitle": {
+        "date": "2024-05-19",
+        "opponent": "West Ham United",
+        "series": "3–1",
+        "asName": null,
+        "clinch": "beat West Ham 3–1 on the final day, Phil Foden scoring after 74 seconds, to land a record fourth straight title"
+      }
+    },
+    {
+      "slug": "manchester-united",
+      "name": "Manchester United",
+      "shortName": "Man United",
+      "abbr": "MUN",
+      "accent": "#DA291C",
+      "secondary": "#FBE122",
+      "titleYears": [1908, 1911, 1952, 1956, 1957, 1965, 1967, 1993, 1994, 1996, 1997, 1999, 2000, 2001, 2003, 2007, 2008, 2009, 2011, 2013],
+      "lastTitle": {
+        "date": "2013-04-22",
+        "opponent": "Aston Villa",
+        "series": "3–0",
+        "asName": null,
+        "clinch": "beat Aston Villa 3–0 at Old Trafford behind a Robin van Persie first-half hat-trick — Sir Alex Ferguson's 13th and final title"
+      }
+    },
+    {
+      "slug": "newcastle-united",
+      "name": "Newcastle United",
+      "shortName": "Newcastle",
+      "abbr": "NEW",
+      "accent": "#FFFFFF",
+      "accentLight": "#241F20",
+      "secondary": "#41B6E6",
+      "titleYears": [1905, 1907, 1909, 1927],
+      "lastTitle": {
+        "date": "1927-04-30",
+        "opponent": "Sheffield Wednesday",
+        "series": "2–1",
+        "asName": null,
+        "clinch": "beat Sheffield Wednesday 2–1 at St James' Park to put Hughie Gallacher's side mathematically out of reach"
+      }
+    },
+    {
+      "slug": "nottingham-forest",
+      "name": "Nottingham Forest",
+      "shortName": "Forest",
+      "abbr": "NFO",
+      "accent": "#DD0000",
+      "secondary": "#FFFFFF",
+      "titleYears": [1978],
+      "lastTitle": {
+        "date": "1978-04-22",
+        "opponent": "Coventry City",
+        "series": "0–0",
+        "asName": null,
+        "clinch": "drew 0–0 at Coventry to put Brian Clough's newly promoted side uncatchable with four games left"
+      }
+    },
+    {
+      "slug": "sunderland",
+      "name": "Sunderland",
+      "shortName": "Sunderland",
+      "abbr": "SUN",
+      "accent": "#EB172B",
+      "secondary": "#211E1E",
+      "titleYears": [1892, 1893, 1895, 1902, 1913, 1936],
+      "lastTitle": {
+        "date": "1936-04-13",
+        "opponent": "Birmingham",
+        "series": "7–2",
+        "asName": null,
+        "clinch": "hammered Birmingham 7–2 at St Andrew's on Easter Monday, Bobby Gurney scoring four, to seal a sixth title"
+      }
+    },
+    {
+      "slug": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "shortName": "Spurs",
+      "abbr": "TOT",
+      "accent": "#FFFFFF",
+      "accentLight": "#132257",
+      "secondary": "#132257",
+      "titleYears": [1951, 1961],
+      "lastTitle": {
+        "date": "1961-04-17",
+        "opponent": "Sheffield Wednesday",
+        "series": "2–1",
+        "asName": null,
+        "clinch": "beat second-placed Sheffield Wednesday 2–1 at White Hart Lane to clinch the league half of the Double with three games to spare"
+      }
+    }
+  ]
+}

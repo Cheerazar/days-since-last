@@ -125,6 +125,7 @@ describe('league registry', () => {
       'wnba',
       'nwsl',
       'pwhl',
+      'epl',
     ]);
   });
 
@@ -133,10 +134,10 @@ describe('league registry', () => {
     expect(getLeague('nope')).toBeUndefined();
   });
 
-  it('crowns the Cardinals with the longest wait in American sports', () => {
+  it('crowns Newcastle with the longest wait on the site', () => {
     const { league, team: worst } = worstDrought();
-    expect(league.slug).toBe('nfl');
-    expect(worst.slug).toBe('arizona-cardinals');
-    expect(worst.lastTitle?.date).toBe('1947-12-28');
+    expect(league.slug).toBe('epl');
+    expect(worst.slug).toBe('newcastle-united');
+    expect(worst.lastTitle?.date).toBe('1927-04-30');
   });
 });

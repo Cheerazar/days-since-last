@@ -1,8 +1,15 @@
 export interface LastTitle {
   date: string;
-  opponent: string;
-  series: string;
+  /** Null only when the title wasn't decided in a game the team played (see clinch). */
+  opponent: string | null;
+  series: string | null;
   asName: string | null;
+  /**
+   * For titles not won in a championship game — e.g. league-format titles
+   * clinched via a draw, a loss, or another team's result. Rendered in place
+   * of "beat the {opponent}, {series}".
+   */
+  clinch?: string;
 }
 
 export interface Asterisk {
@@ -35,6 +42,13 @@ export interface League {
   slug: string;
   /** How the championship round is referred to, e.g. "the Finals", "the Super Bowl". */
   finalsName: string;
+  /**
+   * Noun for "first {noun} game" / "{noun} seasons" copy when the competition
+   * predates the league's current name (e.g. "top-flight" for the Premier
+   * League, whose history runs back through the First Division). Defaults to
+   * the league name.
+   */
+  competitionNoun?: string;
   updated: string;
   banner?: string;
   teams: Team[];
@@ -47,7 +61,7 @@ const modules = import.meta.glob('../data/*.json', { eager: true }) as Record<
   { default: League }
 >;
 
-const LEAGUE_ORDER = ['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl', 'pwhl'];
+const LEAGUE_ORDER = ['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl', 'pwhl', 'epl'];
 
 export const leagues: League[] = Object.values(modules)
   .map((m) => m.default)

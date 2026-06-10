@@ -48,9 +48,11 @@ for (const file of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
       if (t.titleYears.length) fail(file, `${id}: never-won but titleYears non-empty`);
       if (t.firstGame && Date.parse(t.firstGame) > Date.now()) fail(file, `${id}: firstGame in the future`);
     } else if (t.lastTitle) {
-      const { date, opponent, series } = t.lastTitle;
+      const { date, opponent, series, clinch } = t.lastTitle;
       if (!date || !ISO.test(date)) fail(file, `${id}: bad lastTitle.date: ${date}`);
-      if (!opponent || !series) fail(file, `${id}: lastTitle missing opponent/series`);
+      // League-format titles can be clinched via a draw, a loss, or another
+      // team's result — then a clinch sentence stands in for opponent/series.
+      if (!clinch && (!opponent || !series)) fail(file, `${id}: lastTitle needs opponent/series or clinch`);
       if (!t.titleYears.length) fail(file, `${id}: has lastTitle but empty titleYears`);
       const dateYear = Number(date?.slice(0, 4));
       const lastYear = t.titleYears.at(-1);

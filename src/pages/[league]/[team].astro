@@ -32,8 +32,8 @@ const d = daysSince(start);
 const facts = isChamp ? [] : factsFor(team, lg);
 
 const context = never
-  ? `Counting since their first ${lg.league} game, ${formatDate(team.firstGame!)}${team.firstGameAs ? `, as the ${team.firstGameAs}` : ''}.`
-  : `Won ${formatDate(team.lastTitle!.date)}${team.lastTitle!.asName ? ` as the ${team.lastTitle!.asName}` : ''} — beat the ${team.lastTitle!.opponent}, ${team.lastTitle!.series}.`;
+  ? `Counting since their first ${lg.competitionNoun ?? lg.league} game, ${formatDate(team.firstGame!)}${team.firstGameAs ? `, as the ${team.firstGameAs}` : ''}.`
+  : `Won ${formatDate(team.lastTitle!.date)}${team.lastTitle!.asName ? ` as the ${team.lastTitle!.asName}` : ''} — ${team.lastTitle!.clinch ?? `beat the ${team.lastTitle!.opponent}, ${team.lastTitle!.series}`}.`;
 
 const title = never
   ? `${team.name} — days without a championship, ever`
@@ -120,7 +120,7 @@ const ogImage = new URL(`/og/${lg.slug}/${team.slug}.png`, Astro.site).href;
     </section>
 
     <footer class="foot">
-      <a href="/">dayssincelast — every drought in American sports, live</a>
+      <a href="/">dayssincelast — every drought in sports, live</a>
       <p class="byline">
         Built by <a href="https://gunnariauvinen.com" rel="author">Gunnari Auvinen</a>
       </p>

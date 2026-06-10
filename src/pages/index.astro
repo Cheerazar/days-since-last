@@ -20,7 +20,7 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
 ---
 
 <Base
-  title="Days Since Last — every championship drought in American sports, live"
+  title="Days Since Last — every championship drought in sports, live"
   description="Every team in every league, ranked by days since their last championship. Live-ticking droughts across the NBA, NFL, MLB, NHL, and more."
   ogImage={ogImage}
 >
@@ -36,7 +36,7 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
     href={`/${featured.league.slug}/${featured.team.slug}/`}
     style={`--ac-d:${featured.team.accent};--ac-l:${featured.team.accentLight ?? featured.team.accent}`}
   >
-    <p class="feyebrow">THE LONGEST WAIT IN AMERICAN SPORTS</p>
+    <p class="feyebrow">THE LONGEST WAIT IN SPORTS</p>
     <div class="fcount seg" data-since={featuredStart}>
       <span class="ghost" aria-hidden="true" data-ghost>{'8'.repeat(String(featuredDays).length)}</span>
       <span class="digits" data-d>{featuredDays}</span>
