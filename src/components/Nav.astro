@@ -14,8 +14,12 @@ const { current } = Astro.props;
   <div class="links">
     {
       leagues.map((l) => (
-        <a href={`/${l.slug}/`} class:list={[{ active: l.slug === current }]}>
-          {l.league}
+        <a
+          href={`/${l.slug}/`}
+          class:list={[{ active: l.slug === current }]}
+          title={l.navLabel ? l.league : undefined}
+        >
+          {l.navLabel ?? l.league}
         </a>
       ))
     }
@@ -41,16 +45,13 @@ const { current } = Astro.props;
     white-space: nowrap;
   }
 
+  /* Wrap instead of scrolling: nine leagues and counting, and a hidden
+     horizontal scrollbar made the overflow links undiscoverable on phones. */
   .links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 0.35rem;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .links::-webkit-scrollbar {
-    display: none;
   }
 
   .links a {
@@ -75,5 +76,19 @@ const { current } = Astro.props;
     color: var(--text);
     border-color: var(--line);
     background: var(--panel);
+  }
+
+  /* On phones the side-by-side layout leaves the links a sliver of width;
+     stack them under the wordmark instead. */
+  @media (max-width: 640px) {
+    .sitenav {
+      flex-direction: column;
+      gap: 0.6rem;
+      padding: 1rem 1.25rem 0.5rem;
+    }
+
+    .links {
+      justify-content: center;
+    }
   }
 </style>

@@ -39,6 +39,8 @@ export interface Team {
 
 export interface League {
   league: string;
+  /** Short form for the top nav, where the full name is too wide (e.g. "EPL"). */
+  navLabel?: string;
   slug: string;
   /** How the championship round is referred to, e.g. "the Finals", "the Super Bowl". */
   finalsName: string;

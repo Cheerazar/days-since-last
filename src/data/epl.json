@@ -1,5 +1,6 @@
 {
   "league": "Premier League",
+  "navLabel": "EPL",
   "slug": "epl",
   "finalsName": "the top two",
   "competitionNoun": "top-flight",
