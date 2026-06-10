@@ -121,6 +121,9 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
       league for the never-have-wons. Franchise records follow official league history, relocations
       and all. Dates verified against box scores and dated game reports.
     </p>
+    <p class="byline">
+      Built by <a href="https://gunnariauvinen.com" rel="author">Gunnari Auvinen</a>
+    </p>
   </footer>
 </Base>
 
@@ -391,5 +394,14 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
     border-top: 1px solid var(--line);
     color: var(--dim);
     font-size: 0.85rem;
+  }
+
+  .byline a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .byline a:hover {
+    color: var(--text);
   }
 </style>

@@ -121,6 +121,9 @@ const ogImage = new URL(`/og/${lg.slug}/${team.slug}.png`, Astro.site).href;
 
     <footer class="foot">
       <a href="/">dayssincelast — every drought in American sports, live</a>
+      <p class="byline">
+        Built by <a href="https://gunnariauvinen.com" rel="author">Gunnari Auvinen</a>
+      </p>
     </footer>
   </div>
 </Base>
@@ -400,5 +403,14 @@ const ogImage = new URL(`/og/${lg.slug}/${team.slug}.png`, Astro.site).href;
 
   .foot a:hover {
     color: var(--text);
+  }
+
+  .byline {
+    margin: 0.6rem 0 0;
+  }
+
+  .byline a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 </style>

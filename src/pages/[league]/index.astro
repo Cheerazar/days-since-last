@@ -97,6 +97,9 @@ const ogImage = new URL(`/og/${lg.slug}/home.png`, Astro.site).href;
       Dates verified against box scores and dated game reports.
     </p>
     <p class="more"><a href="/">← EVERY LEAGUE</a></p>
+    <p class="byline">
+      Built by <a href="https://gunnariauvinen.com" rel="author">Gunnari Auvinen</a>
+    </p>
   </footer>
 </Base>
 
@@ -294,6 +297,15 @@ const ogImage = new URL(`/og/${lg.slug}/home.png`, Astro.site).href;
   }
 
   .more a:hover {
+    color: var(--text);
+  }
+
+  .byline a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .byline a:hover {
     color: var(--text);
   }
 

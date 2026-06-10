@@ -1,5 +1,7 @@
 # dayssincelast
 
+By [Gunnari Auvinen](https://gunnariauvinen.com) — principal software engineer.
+
 Every team in every major American league, ranked by days since its last
 championship — live-ticking jumbotron counters, fan-pain facts, and per-team
 share cards. NFL, NBA, MLB, NHL, MLS, WNBA, NWSL.
