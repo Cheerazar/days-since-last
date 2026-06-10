@@ -47,6 +47,17 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       type="font/woff2"
       crossorigin
     />
+    {
+      import.meta.env.PROD && (
+        <>
+          {/* Queues custom events until the Vercel Analytics beacon loads. */}
+          <script is:inline>
+            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+          </script>
+          <script is:inline defer src="/_vercel/insights/script.js" />
+        </>
+      )
+    }
   </head>
   <body>
     <button id="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">

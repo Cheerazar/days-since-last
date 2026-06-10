@@ -109,7 +109,7 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
     </section>
 
     <section class="share">
-      <button id="share">SHARE THE PAIN</button>
+      <button id="share" data-team={team.slug}>SHARE THE PAIN</button>
     </section>
 
     <footer class="foot">
@@ -120,13 +120,38 @@ const ogImage = new URL(`/og/nba/${team.slug}.png`, Astro.site).href;
 
 <script>
   const btn = document.getElementById('share');
+
+  // Fires a custom event into whichever analytics provider is present
+  // (Vercel `va` and/or Plausible). Safe no-op when neither is loaded.
+  // Vercel's base Pro tier keeps only 2 properties per event, so it gets
+  // the essential pair; Plausible gets the full set.
+  const track = (method: string) => {
+    const team = btn?.dataset.team;
+    try {
+      (window as any).va?.('event', { name: 'share', data: { team, method } });
+      (window as any).plausible?.('share', { props: { team, league: 'nba', method } });
+    } catch {}
+  };
+
+  // Tag shared links so share-driven arrivals are attributable in analytics.
+  const shareUrl = () => {
+    const url = new URL(location.href);
+    url.searchParams.set('utm_source', 'share');
+    return url.toString();
+  };
+
   btn?.addEventListener('click', async () => {
-    const data = { title: document.title, url: location.href };
     if (navigator.share) {
-      await navigator.share(data).catch(() => {});
+      track('native');
+      await navigator.share({ title: document.title, url: shareUrl() }).catch(() => {});
       return;
     }
-    await navigator.clipboard.writeText(location.href);
+    track('copy');
+    const copied = await navigator.clipboard.writeText(shareUrl()).then(
+      () => true,
+      () => false,
+    );
+    if (!copied) return;
     const old = btn.textContent;
     btn.textContent = 'LINK COPIED';
     setTimeout(() => (btn.textContent = old), 1600);
