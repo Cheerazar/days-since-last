@@ -4,6 +4,7 @@
   "finalsName": "the Stanley Cup Final",
   "updated": "2026-06-10",
   "banner": "The 2026 Stanley Cup Final is tied 2–2: either the Hurricanes end a 20-year wait, or the Golden Knights reset a clock that barely started — Game 5 is June 11 in Raleigh.",
+  "bannerUntil": "2026-06-11",
   "teams": [
     {
       "slug": "anaheim-ducks",

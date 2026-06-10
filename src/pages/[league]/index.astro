@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Nav from '../../components/Nav.astro';
 import {
+  activeBanner,
   leagues,
   type League,
   byDrought,
@@ -20,6 +21,7 @@ const { lg } = Astro.props as { lg: League };
 const teams = byDrought(lg.teams);
 const champSlug = reigningChamp(lg.teams)?.slug;
 const now = Date.now();
+const banner = activeBanner(lg, now);
 const ogImage = new URL(`/og/${lg.slug}/home.png`, Astro.site).href;
 ---
 
@@ -37,10 +39,10 @@ const ogImage = new URL(`/og/${lg.slug}/home.png`, Astro.site).href;
   </header>
 
   {
-    lg.banner && (
+    banner && (
       <div class="banner">
         <span class="dot" aria-hidden="true" />
-        <span>{lg.banner}</span>
+        <span>{banner}</span>
       </div>
     )
   }
@@ -91,10 +93,12 @@ const ogImage = new URL(`/og/${lg.slug}/home.png`, Astro.site).href;
   </main>
 
   <footer class="foot">
+    {lg.footnote && <p>{lg.footnote}</p>}
     <p>
-      Counters run from the night of the title-clinching game — or a franchise's first {lg.league} game
-      for the never-have-wons. Franchise records follow official league history, relocations and all.
-      Dates verified against box scores and dated game reports.
+      Counters run from the night of the title-clinching game — or a franchise's first{' '}
+      {lg.competitionNoun ?? lg.league} game for the never-have-wons. Franchise records follow
+      official league history, relocations and all. Dates verified against box scores and dated
+      game reports.
     </p>
     <p class="more"><a href="/">← EVERY LEAGUE</a></p>
     <p class="byline">

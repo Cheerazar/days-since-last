@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import {
   DAY_MS,
+  type League,
   type Team,
+  activeBanner,
   byDrought,
   clockStartIso,
   clockStartMs,
@@ -35,6 +37,15 @@ const champion = (slug: string, date: string): Team =>
   });
 
 const expansion = (slug: string, firstGame: string): Team => team({ slug, firstGame });
+
+const league = (overrides: Partial<League>): League => ({
+  league: 'TST',
+  slug: 'tst',
+  finalsName: 'the Finals',
+  updated: '2026-01-01',
+  teams: [],
+  ...overrides,
+});
 
 describe('clock start', () => {
   it('uses the last title date for champions', () => {
@@ -104,6 +115,25 @@ describe('reigningChamp', () => {
 
   it('returns undefined when nobody has won', () => {
     expect(reigningChamp([expansion('a', '2020-01-01')])).toBeUndefined();
+  });
+});
+
+describe('activeBanner', () => {
+  const banner = league({ banner: 'Game 7 tonight.', bannerUntil: '2026-06-15' });
+
+  it('shows through the end of the bannerUntil day, US Eastern', () => {
+    expect(activeBanner(banner, Date.parse('2026-06-15T23:00:00-05:00'))).toBe('Game 7 tonight.');
+    expect(activeBanner(banner, Date.parse('2026-06-16T01:00:00-05:00'))).toBeUndefined();
+  });
+
+  it('returns undefined when there is no banner', () => {
+    expect(activeBanner(league({}), Date.parse('2026-06-01T00:00:00Z'))).toBeUndefined();
+  });
+
+  it('never expires a banner without a date (the validator forbids them anyway)', () => {
+    expect(activeBanner(league({ banner: 'Stays.' }), Date.parse('2099-01-01T00:00:00Z'))).toBe(
+      'Stays.',
+    );
   });
 });
 

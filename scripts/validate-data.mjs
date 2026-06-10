@@ -24,6 +24,11 @@ for (const file of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
   for (const key of ['league', 'slug', 'finalsName', 'updated', 'teams']) {
     if (!data[key]) fail(file, `missing top-level "${key}"`);
   }
+  // Banners are news; every one needs an expiry date so it can't go stale.
+  if (data.banner && !data.bannerUntil) fail(file, 'banner without bannerUntil');
+  if (data.bannerUntil && !ISO.test(data.bannerUntil)) {
+    fail(file, `bad bannerUntil: ${data.bannerUntil}`);
+  }
   // Smallest current league is the 8-team PWHL.
   if (!Array.isArray(data.teams) || data.teams.length < 6) {
     fail(file, `suspicious team count: ${data.teams?.length}`);

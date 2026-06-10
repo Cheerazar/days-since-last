@@ -35,7 +35,14 @@ The only maintenance this site needs, once per league per year:
    - set `lastTitle` to `{ "date": "<clinching game date>", "opponent": "...", "series": "...", "asName": null }`
    - if the winner had never won, also delete its `firstGame`, `firstGameAs`,
      `firstGameNote`, and `finalsLosses` fields
-2. Update or remove the league's `banner` line.
+2. Update or remove the league's `banner` line. Banners are news with a
+   shelf life and always carry a `bannerUntil` date (the last day they show;
+   the nightly rebuild hides them after that, no commit needed): a banner for
+   a final round in progress expires the day of the last possible game, and a
+   "they just won" banner expires about a week after the clinch — beyond
+   that, the reset counter at the bottom of the board tells the story better.
+   Permanent context belongs in the league's `footnote` (fine print on the
+   board), never in a banner.
 3. Run `node scripts/validate-data.mjs`, commit, push. The winner's counter
    resets to ~0 and drops to the bottom of its board.
 

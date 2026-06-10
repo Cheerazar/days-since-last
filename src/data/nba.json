@@ -4,6 +4,7 @@
   "finalsName": "the Finals",
   "updated": "2026-06-09",
   "banner": "The 2026 Finals are under way: either the Knicks end a 53-year wait, or the Spurs reset to zero.",
+  "bannerUntil": "2026-06-22",
   "teams": [
     {
       "slug": "atlanta-hawks",

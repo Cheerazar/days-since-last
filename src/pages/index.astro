@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Nav from '../components/Nav.astro';
 import {
+  activeBanner,
   leagues,
   worstDrought,
   byDrought,
@@ -15,7 +16,9 @@ const now = Date.now();
 const featured = worstDrought();
 const featuredStart = clockStartMs(featured.team);
 const featuredDays = daysSince(featuredStart, now);
-const liveBanners = leagues.filter((l) => l.banner);
+const liveBanners = leagues
+  .map((l) => ({ league: l.league, banner: activeBanner(l, now) }))
+  .filter((b) => b.banner);
 const ogImage = new URL('/og/home.png', Astro.site).href;
 ---
 
@@ -50,11 +53,11 @@ const ogImage = new URL('/og/home.png', Astro.site).href;
   {
     liveBanners.length > 0 && (
       <div class="banners">
-        {liveBanners.map((l) => (
+        {liveBanners.map((b) => (
           <div class="banner">
             <span class="dot" aria-hidden="true" />
             <span>
-              <strong>{l.league}:</strong> {l.banner}
+              <strong>{b.league}:</strong> {b.banner}
             </span>
           </div>
         ))}

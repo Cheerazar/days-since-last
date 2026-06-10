@@ -53,6 +53,14 @@ export interface League {
   competitionNoun?: string;
   updated: string;
   banner?: string;
+  /**
+   * Last day (ISO, US Eastern) the banner is shown; required whenever banner
+   * is set so news can't quietly go stale. The nightly rebuild retires
+   * expired banners without a commit.
+   */
+  bannerUntil?: string;
+  /** Permanent fine print for the league board, e.g. data conventions. */
+  footnote?: string;
   teams: Team[];
 }
 
@@ -86,6 +94,19 @@ import { DAY_MS } from './clock';
 
 export function neverWon(team: Team): boolean {
   return team.lastTitle === null;
+}
+
+/**
+ * The league's banner, unless it has passed its bannerUntil date (shown
+ * through the end of that day, US Eastern). Banners are baked at build time,
+ * so expiry takes effect on the next (nightly) rebuild.
+ */
+export function activeBanner(league: League, now: number = Date.now()): string | undefined {
+  if (!league.banner) return undefined;
+  if (league.bannerUntil && now > Date.parse(`${league.bannerUntil}T23:59:59${ET_OFFSET}`)) {
+    return undefined;
+  }
+  return league.banner;
 }
 
 /** The ISO date a team's drought clock starts from. */
