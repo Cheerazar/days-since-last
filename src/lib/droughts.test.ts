@@ -159,6 +159,7 @@ describe('league registry', () => {
       'laliga',
       'bundesliga',
       'seriea',
+      'ligue1',
     ]);
   });
 

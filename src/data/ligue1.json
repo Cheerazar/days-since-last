@@ -1,0 +1,292 @@
+{
+  "league": "Ligue 1",
+  "slug": "ligue1",
+  "finalsName": "the title race",
+  "competitionNoun": "top-flight",
+  "updated": "2026-06-10",
+  "footnote": "Titles follow the official record from the first professional season, 1932–33 — the league was Division 1 until 2002 — with the 1993 title vacated after the Marseille affair and wartime seasons excluded. Never-champions count from their first top-flight match. The 18 clubs shown are the 2026–27 season's.",
+  "teams": [
+    {
+      "slug": "angers",
+      "name": "Angers SCO",
+      "shortName": "Angevins",
+      "abbr": "ANG",
+      "accent": "#FFFFFF",
+      "accentLight": "#000000",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1956-08-19",
+      "firstGameAs": null,
+      "firstGameNote": "Drew 1–1 with Nîmes at Jean-Bouin in their 1956 top-flight debut; two Coupe de France finals since, both lost — the second on a 91st-minute own goal against PSG in 2017.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "auxerre",
+      "name": "AJ Auxerre",
+      "shortName": "Auxerre",
+      "abbr": "AUX",
+      "accent": "#1C4F9C",
+      "secondary": "#FFFFFF",
+      "titleYears": [1996],
+      "lastTitle": {
+        "date": "1996-05-11",
+        "opponent": "Guingamp",
+        "series": "1–1",
+        "asName": null,
+        "clinch": "drew 1–1 at Guingamp to clinch with a game to spare — Guy Roux's village club completing a league and cup double"
+      }
+    },
+    {
+      "slug": "brest",
+      "name": "Stade Brestois 29",
+      "shortName": "Brestois",
+      "abbr": "BRE",
+      "accent": "#ED1C24",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1979-07-26",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 3–0 at the Vélodrome on opening night 1979 and won once in their first 22 matches; in 2024 they finished third and took tiny Francis-Le Blé to the Champions League.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "le-havre",
+      "name": "Le Havre AC",
+      "shortName": "Havrais",
+      "abbr": "HAC",
+      "accent": "#8BC4E5",
+      "accentLight": "#003259",
+      "secondary": "#003259",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1938-09-04",
+      "firstGameAs": null,
+      "firstGameNote": "France's oldest club waited six years after the professional league began for a debut — a 3–3 draw at Excelsior Roubaix in 1938; their lone Coupe de France came in 1959, won from the second division.",
+      "finalsLosses": [],
+      "asterisk": { "label": "Coupe de France", "years": [1959] }
+    },
+    {
+      "slug": "le-mans",
+      "name": "Le Mans FC",
+      "shortName": "Manceaux",
+      "abbr": "LEM",
+      "accent": "#BE081A",
+      "secondary": "#F1C100",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2003-08-02",
+      "firstGameAs": "Le Mans UC 72",
+      "firstGameNote": "Held Lens 0–0 at Bollaert in their 2003 top-flight debut, just after a young Didier Drogba left town; liquidated in 2013, refounded in the amateur leagues, and back in the top flight for 2026–27.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "lens",
+      "name": "RC Lens",
+      "shortName": "Lens",
+      "abbr": "LEN",
+      "accent": "#EC1C24",
+      "secondary": "#FFF200",
+      "titleYears": [1998],
+      "lastTitle": {
+        "date": "1998-05-09",
+        "opponent": "Auxerre",
+        "series": "1–1",
+        "asName": null,
+        "clinch": "drew 1–1 at Auxerre on the final day and took the only title in club history from Metz on goal difference"
+      }
+    },
+    {
+      "slug": "lille",
+      "name": "Lille OSC",
+      "shortName": "Lille",
+      "abbr": "LIL",
+      "accent": "#E01E13",
+      "secondary": "#24216A",
+      "titleYears": [1946, 1954, 2011, 2021],
+      "lastTitle": {
+        "date": "2021-05-23",
+        "opponent": "Angers",
+        "series": "2–1",
+        "asName": null,
+        "clinch": "won 2–1 at Angers on the final day — Jonathan David and a Yılmaz penalty — to hold off PSG by a single point"
+      },
+      "lineage": "Predecessor Olympique Lillois won the inaugural 1933 title; LOSC's own count starts with the 1944 merger."
+    },
+    {
+      "slug": "lorient",
+      "name": "FC Lorient",
+      "shortName": "Merlus",
+      "abbr": "LOR",
+      "accent": "#F58113",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1998-08-07",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 2–1 to Monaco on a 90th-minute Giuly goal in their 1998 debut; the Merlus lifted the 2002 Coupe de France days after being relegated.",
+      "finalsLosses": [],
+      "asterisk": { "label": "Coupe de France", "years": [2002] }
+    },
+    {
+      "slug": "lyon",
+      "name": "Olympique Lyonnais",
+      "shortName": "Lyon",
+      "abbr": "LYO",
+      "accent": "#FFFFFF",
+      "accentLight": "#14387F",
+      "secondary": "#DA0812",
+      "titleYears": [2002, 2003, 2004, 2005, 2006, 2007, 2008],
+      "lastTitle": {
+        "date": "2008-05-17",
+        "opponent": "Auxerre",
+        "series": "3–1",
+        "asName": null,
+        "clinch": "won 3–1 at Auxerre on the final day — Benzema scoring inside a minute — for a record seventh straight title"
+      }
+    },
+    {
+      "slug": "marseille",
+      "name": "Olympique de Marseille",
+      "shortName": "Marseille",
+      "abbr": "MAR",
+      "accent": "#2FAEE0",
+      "secondary": "#BEA064",
+      "titleYears": [1937, 1948, 1971, 1972, 1989, 1990, 1991, 1992, 2010],
+      "lastTitle": {
+        "date": "2010-05-05",
+        "opponent": "Rennes",
+        "series": "3–1",
+        "asName": null,
+        "clinch": "beat Rennes 3–1 at the Vélodrome — Heinze, Niang, Lucho González — to end an 18-year wait for title number nine"
+      },
+      "lineage": "Official count is 9: the 1993 title was stripped and left vacant after the match-fixing affair."
+    },
+    {
+      "slug": "monaco",
+      "name": "AS Monaco",
+      "shortName": "Monaco",
+      "abbr": "MON",
+      "accent": "#E51B22",
+      "secondary": "#FFFFFF",
+      "titleYears": [1961, 1963, 1978, 1982, 1988, 1997, 2000, 2017],
+      "lastTitle": {
+        "date": "2017-05-17",
+        "opponent": "Saint-Étienne",
+        "series": "2–0",
+        "asName": null,
+        "clinch": "beat Saint-Étienne 2–0 at the Louis II — 18-year-old Kylian Mbappé opening — to end PSG's reign with a game to spare"
+      }
+    },
+    {
+      "slug": "nice",
+      "name": "OGC Nice",
+      "shortName": "Nice",
+      "abbr": "NIC",
+      "accent": "#ED1C24",
+      "secondary": "#000000",
+      "titleYears": [1951, 1952, 1956, 1959],
+      "lastTitle": {
+        "date": "1959-05-24",
+        "opponent": "Angers",
+        "series": "0–3",
+        "asName": null,
+        "clinch": "crowned despite losing 0–3 at home to Angers, as Nîmes' draw at Lille left the Aiglons mathematically uncatchable"
+      }
+    },
+    {
+      "slug": "paris-fc",
+      "name": "Paris FC",
+      "shortName": "Parisiens",
+      "abbr": "PFC",
+      "accent": "#0098CC",
+      "accentLight": "#0A0F2D",
+      "secondary": "#0A0F2D",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1972-08-09",
+      "firstGameAs": null,
+      "firstGameNote": "Beat Nancy 3–2 in 1972 while inaugurating the brand-new Parc des Princes — then handed it to PSG, the club they had just split from, and waited 46 years to return to the top flight.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "shortName": "PSG",
+      "abbr": "PSG",
+      "accent": "#DA291C",
+      "accentLight": "#004170",
+      "secondary": "#004170",
+      "titleYears": [1986, 1994, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2022, 2023, 2024, 2025, 2026],
+      "lastTitle": {
+        "date": "2026-05-13",
+        "opponent": "RC Lens",
+        "series": "2–0",
+        "asName": null,
+        "clinch": "won 2–0 at Lens — Kvaratskhelia, then Mbaye in stoppage time — for a 14th title and a fifth straight, with a match to spare"
+      }
+    },
+    {
+      "slug": "rennes",
+      "name": "Stade Rennais",
+      "shortName": "Rennais",
+      "abbr": "REN",
+      "accent": "#E13327",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1932-09-11",
+      "firstGameAs": null,
+      "firstGameNote": "Won 2–1 at Metz on the very first day of French professional football in 1932 — Walter Kaiser scoring — and the founding member is still waiting on a first league title.",
+      "finalsLosses": [],
+      "asterisk": { "label": "Coupe de France", "years": [1965, 1971, 2019] }
+    },
+    {
+      "slug": "strasbourg",
+      "name": "RC Strasbourg",
+      "shortName": "Strasbourg",
+      "abbr": "STR",
+      "accent": "#009FE3",
+      "secondary": "#FFFFFF",
+      "titleYears": [1979],
+      "lastTitle": {
+        "date": "1979-06-01",
+        "opponent": "Lyon",
+        "series": "3–0",
+        "asName": null,
+        "clinch": "won 3–0 at Lyon on the final day — Roland Wagner scoring twice — three years after playing in Division 2"
+      }
+    },
+    {
+      "slug": "toulouse",
+      "name": "Toulouse FC",
+      "shortName": "Violets",
+      "abbr": "TOU",
+      "accent": "#745990",
+      "accentLight": "#3E2C56",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1982-08-10",
+      "firstGameAs": null,
+      "firstGameNote": "Beat Strasbourg 3–1 in their 1982 top-flight debut at the Stadium; the Violets finally lifted a first major trophy in 2023, thrashing Nantes 5–1 in the Coupe de France final.",
+      "finalsLosses": [],
+      "asterisk": { "label": "Coupe de France", "years": [2023] }
+    },
+    {
+      "slug": "troyes",
+      "name": "ES Troyes AC",
+      "shortName": "Troyens",
+      "abbr": "TRO",
+      "accent": "#006EB2",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1999-07-31",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 1–0 at PSG on an own goal in their 1999 debut — the third professional club the city of Troyes has produced, now City Football Group-owned and promoted back for 2026–27.",
+      "finalsLosses": []
+    }
+  ]
+}

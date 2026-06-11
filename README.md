@@ -6,8 +6,8 @@ By [Gunnari Auvinen](https://gunnariauvinen.com) — principal software engineer
 
 Every team in every major league, ranked by days since its last
 championship — live-ticking jumbotron counters, fan-pain facts, and per-team
-share cards. NFL, NBA, MLB, NHL, MLS, WNBA, NWSL, PWHL, and the English
-Premier League.
+share cards. NFL, NBA, MLB, NHL, MLS, WNBA, NWSL, PWHL, plus Europe's big
+five: the Premier League, La Liga, Bundesliga, Serie A, and Ligue 1.
 
 Static [Astro](https://astro.build) site. No database, no API, no server: each
 league is one JSON file in [`src/data/`](src/data/), with every title date
@@ -54,8 +54,9 @@ December.
 
 ### Promotion/relegation leagues: the annual roster swap
 
-European leagues (EPL, La Liga) change membership every summer once the
-season and the promotion play-offs end. In the league's JSON:
+The European leagues (EPL, La Liga, Bundesliga, Serie A, Ligue 1) change
+membership every summer once the season and the promotion play-offs end. In
+the league's JSON:
 
 1. Delete the three relegated clubs' entries.
 2. Add the three promoted clubs. A club returning to the top flight keeps its

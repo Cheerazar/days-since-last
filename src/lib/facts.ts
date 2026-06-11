@@ -87,6 +87,12 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1976-09-27', 'Francesco Totti'],
     ['1999-02-25', 'Gianluigi Donnarumma'],
   ],
+  ligue1: [
+    ['1955-06-21', 'Michel Platini'],
+    ['1972-06-23', 'Zinédine Zidane'],
+    ['1977-08-17', 'Thierry Henry'],
+    ['1998-12-20', 'Kylian Mbappé'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */

@@ -71,7 +71,7 @@ const modules = import.meta.glob('../data/*.json', { eager: true }) as Record<
   { default: League }
 >;
 
-const LEAGUE_ORDER = ['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl', 'pwhl', 'epl', 'laliga', 'bundesliga', 'seriea'];
+const LEAGUE_ORDER = ['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl', 'pwhl', 'epl', 'laliga', 'bundesliga', 'seriea', 'ligue1'];
 
 export const leagues: League[] = Object.values(modules)
   .map((m) => m.default)
