@@ -103,6 +103,11 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1998-01-18', 'Aitana Bonmatí'],
     ['2006-07-26', 'Vicky López'],
   ],
+  frauenbundesliga: [
+    ['1977-10-25', 'Birgit Prinz'],
+    ['1991-04-06', 'Alexandra Popp'],
+    ['2001-12-19', 'Lena Oberdorf'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */

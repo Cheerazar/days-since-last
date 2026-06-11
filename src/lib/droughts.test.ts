@@ -162,6 +162,7 @@ describe('league registry', () => {
       'ligue1',
       'wsl',
       'ligaf',
+      'frauenbundesliga',
     ]);
   });
 
