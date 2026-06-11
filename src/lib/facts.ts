@@ -108,6 +108,11 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1991-04-06', 'Alexandra Popp'],
     ['2001-12-19', 'Lena Oberdorf'],
   ],
+  'seriea-femminile': [
+    ['1964-02-05', 'Carolina Morace'],
+    ['1975-02-08', 'Patrizia Panico'],
+    ['1990-04-23', 'Cristiana Girelli'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */

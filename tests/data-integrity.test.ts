@@ -25,6 +25,7 @@ const EXPECTED_TEAM_COUNTS: Record<string, number> = {
   wsl: 14,
   ligaf: 16,
   frauenbundesliga: 14,
+  'seriea-femminile': 12,
 };
 
 describe('league registry shape', () => {
@@ -118,6 +119,7 @@ describe('reigning champions', () => {
       wsl: 'manchester-city',
       ligaf: 'barcelona',
       frauenbundesliga: 'bayern-munich',
+      'seriea-femminile': 'roma',
     });
   });
 
@@ -170,6 +172,9 @@ describe('anchor dates', () => {
     ['frauenbundesliga', 'eintracht-frankfurt', '2008-06-15'],
     ['frauenbundesliga', 'wolfsburg', '2022-05-08'],
     ['frauenbundesliga', 'bayern-munich', '2026-04-22'],
+    ['seriea-femminile', 'fiorentina', '2017-05-06'],
+    ['seriea-femminile', 'juventus', '2025-04-18'],
+    ['seriea-femminile', 'roma', '2026-05-02'],
   ];
 
   it.each(ANCHORS)('%s/%s last title on %s', (leagueSlug, teamSlug, date) => {

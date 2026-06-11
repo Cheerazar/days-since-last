@@ -163,6 +163,7 @@ describe('league registry', () => {
       'wsl',
       'ligaf',
       'frauenbundesliga',
+      'seriea-femminile',
     ]);
   });
 
