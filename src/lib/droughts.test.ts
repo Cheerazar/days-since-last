@@ -156,6 +156,7 @@ describe('league registry', () => {
       'nwsl',
       'pwhl',
       'epl',
+      'laliga',
     ]);
   });
 

@@ -1,0 +1,313 @@
+{
+  "league": "La Liga",
+  "slug": "laliga",
+  "finalsName": "the top two",
+  "updated": "2026-06-10",
+  "banner": "Barcelona sealed title No. 29 on May 10, beating Real Madrid in the Clásico — and the last 2026–27 spot is decided in the Almería–Málaga promotion play-off final on June 20.",
+  "bannerUntil": "2026-06-21",
+  "footnote": "The 20 clubs shown are the 2025–26 season's; once the promotion play-off concludes June 20, Racing Santander, Deportivo La Coruña and the play-off winner replace the relegated trio.",
+  "teams": [
+    {
+      "slug": "alaves",
+      "name": "Deportivo Alavés",
+      "shortName": "Babazorros",
+      "abbr": "ALA",
+      "accent": "#0761AF",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1930-12-07",
+      "firstGameAs": null,
+      "firstGameNote": "Drew 2–2 at Real Sociedad in their 1930 debut — and came within one golden-goal own goal of the 2001 UEFA Cup, losing 5–4 to Liverpool in one of the great European finals.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "athletic-club",
+      "name": "Athletic Club",
+      "shortName": "Athletic",
+      "abbr": "ATH",
+      "accent": "#EE2523",
+      "secondary": "#000000",
+      "titleYears": [1930, 1931, 1934, 1936, 1943, 1956, 1983, 1984],
+      "lastTitle": {
+        "date": "1984-04-29",
+        "opponent": "Real Sociedad",
+        "series": "2–1",
+        "asName": null,
+        "clinch": "beat Real Sociedad 2–1 at San Mamés on the final day — Liceranzu scoring both — to pip Real Madrid on the head-to-head tiebreaker"
+      }
+    },
+    {
+      "slug": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "shortName": "Atlético",
+      "abbr": "ATM",
+      "accent": "#CE3524",
+      "secondary": "#262F61",
+      "titleYears": [1940, 1941, 1950, 1951, 1966, 1970, 1973, 1977, 1996, 2014, 2021],
+      "lastTitle": {
+        "date": "2021-05-22",
+        "opponent": "Real Valladolid",
+        "series": "2–1",
+        "asName": null,
+        "clinch": "came from behind to win 2–1 at Valladolid on the final day, Luis Suárez striking the title-winning goal"
+      },
+      "lineage": "Athletic Aviación (1940 title) → Atlético Aviación (1941) → Atlético de Madrid (1947– )"
+    },
+    {
+      "slug": "barcelona",
+      "name": "FC Barcelona",
+      "shortName": "Barça",
+      "abbr": "FCB",
+      "accent": "#A50044",
+      "secondary": "#004D98",
+      "titleYears": [1929, 1945, 1948, 1949, 1952, 1953, 1959, 1960, 1974, 1985, 1991, 1992, 1993, 1994, 1998, 1999, 2005, 2006, 2009, 2010, 2011, 2013, 2015, 2016, 2018, 2019, 2023, 2025, 2026],
+      "lastTitle": {
+        "date": "2026-05-10",
+        "opponent": "Real Madrid",
+        "series": "2–0",
+        "asName": null,
+        "clinch": "beat Real Madrid 2–0 in the Clásico at Camp Nou — Rashford and Ferran Torres — to seal a second straight title with three games to spare"
+      }
+    },
+    {
+      "slug": "celta-vigo",
+      "name": "Celta Vigo",
+      "shortName": "Celestes",
+      "abbr": "CEL",
+      "accent": "#8AC3EE",
+      "accentLight": "#E5254E",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1939-12-03",
+      "firstGameAs": null,
+      "firstGameNote": "Won promotion in April 1936, then waited three and a half years through the Civil War to finally debut — a 3–2 loss at Zaragoza. Three Copa finals since, three defeats.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "elche",
+      "name": "Elche",
+      "shortName": "Franjiverdes",
+      "abbr": "ELC",
+      "accent": "#05642C",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1959-09-13",
+      "firstGameAs": null,
+      "firstGameNote": "Drew 1–1 at Oviedo in their 1959 debut; that first golden era brought a fifth place that still stands as the club record — and an 11–2 evisceration at the Bernabéu.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "espanyol",
+      "name": "Espanyol",
+      "shortName": "Pericos",
+      "abbr": "ESP",
+      "accent": "#007FC8",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1929-02-10",
+      "firstGameAs": null,
+      "firstGameNote": "Beat Real Unión 3–2 at Sarrià on La Liga's very first matchday in 1929 — Pitus Prat scored the league's first-ever goal — and the founding member is still waiting.",
+      "finalsLosses": [],
+      "asterisk": { "label": "Copa del Rey", "years": [1929, 1940, 2000, 2006] }
+    },
+    {
+      "slug": "getafe",
+      "name": "Getafe",
+      "shortName": "Azulones",
+      "abbr": "GET",
+      "accent": "#005999",
+      "secondary": "#C43A2F",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2004-08-29",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 3–1 at Zaragoza in their 2004 debut; back-to-back Copa del Rey final defeats in 2007 and 2008 remain the closest the Azulones have come to silverware.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "girona",
+      "name": "Girona",
+      "shortName": "Gironins",
+      "abbr": "GIR",
+      "accent": "#CF152D",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2017-08-19",
+      "firstGameAs": null,
+      "firstGameNote": "Led Atlético Madrid 2–0 on debut night at Montilivi in 2017 before settling for 2–2; the 2024 fairy tale peaked at third place and a Champions League debut.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "levante",
+      "name": "Levante",
+      "shortName": "Granotas",
+      "abbr": "LEV",
+      "accent": "#B4053F",
+      "secondary": "#005CA5",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1963-09-15",
+      "firstGameAs": null,
+      "firstGameNote": "Drew 4–4 at Espanyol in a 1963 debut played in torrential rain; their only national trophy is the wartime Copa de la España Libre of 1937 — officially recognized 86 years later.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "mallorca",
+      "name": "RCD Mallorca",
+      "shortName": "Bermellones",
+      "abbr": "MLL",
+      "accent": "#E20613",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1960-09-11",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 2–0 at Betis in their 1960 debut; the league table has never read better than third, twice — and 2025–26 ended in final-day relegation.",
+      "finalsLosses": [],
+      "asterisk": { "label": "Copa del Rey", "years": [2003] }
+    },
+    {
+      "slug": "osasuna",
+      "name": "Osasuna",
+      "shortName": "Rojillos",
+      "abbr": "OSA",
+      "accent": "#D91A21",
+      "secondary": "#0A346F",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1935-11-10",
+      "firstGameAs": null,
+      "firstGameNote": "Walloped 5–1 by reigning champions Betis in their 1935 debut, then avenged it 6–0 in Pamplona the same season — the Civil War, relegations and 90 years of waiting followed.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "shortName": "Franjirrojos",
+      "abbr": "RAY",
+      "accent": "#E3361D",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1977-09-04",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 2–1 at Cádiz in 1977 in a match where both clubs were making their top-flight debuts; the pride of Vallecas has never finished above eighth.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "real-betis",
+      "name": "Real Betis",
+      "shortName": "Betis",
+      "abbr": "BET",
+      "accent": "#0BB363",
+      "secondary": "#FFFFFF",
+      "titleYears": [1935],
+      "lastTitle": {
+        "date": "1935-04-28",
+        "opponent": "Racing Santander",
+        "series": "5–0",
+        "asName": "Betis Balompié",
+        "clinch": "thrashed Racing Santander 5–0 at El Sardinero on the final day, holding off Madrid FC by a single point"
+      }
+    },
+    {
+      "slug": "real-madrid",
+      "name": "Real Madrid",
+      "shortName": "Real Madrid",
+      "abbr": "RMA",
+      "accent": "#FFFFFF",
+      "accentLight": "#004996",
+      "secondary": "#FEBE10",
+      "titleYears": [1932, 1933, 1954, 1955, 1957, 1958, 1961, 1962, 1963, 1964, 1965, 1967, 1968, 1969, 1972, 1975, 1976, 1978, 1979, 1980, 1986, 1987, 1988, 1989, 1990, 1995, 1997, 2001, 2003, 2007, 2008, 2012, 2017, 2020, 2022, 2024],
+      "lastTitle": {
+        "date": "2024-05-04",
+        "opponent": "Cádiz",
+        "series": "3–0",
+        "asName": null,
+        "clinch": "beat Cádiz 3–0 at the Bernabéu, then watched title number 36 arrive that evening as Barcelona fell 4–2 at Girona"
+      }
+    },
+    {
+      "slug": "real-oviedo",
+      "name": "Real Oviedo",
+      "shortName": "Carbayones",
+      "abbr": "OVI",
+      "accent": "#094CA1",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1933-11-05",
+      "firstGameAs": null,
+      "firstGameNote": "Demolished Barcelona 7–3 at Buenavista in 1933 — still the greatest debut by a promoted club, with a Lángara second-half hat-trick — then returned in 2025 after 24 years away, only to go straight back down.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "real-sociedad",
+      "name": "Real Sociedad",
+      "shortName": "La Real",
+      "abbr": "RSO",
+      "accent": "#0067B1",
+      "secondary": "#FFFFFF",
+      "titleYears": [1981, 1982],
+      "lastTitle": {
+        "date": "1982-04-25",
+        "opponent": "Athletic Club",
+        "series": "2–1",
+        "asName": null,
+        "clinch": "beat Athletic 2–1 at Atocha on the final day to retain the title, two points clear of Barcelona"
+      }
+    },
+    {
+      "slug": "sevilla",
+      "name": "Sevilla",
+      "shortName": "Sevilla",
+      "abbr": "SEV",
+      "accent": "#F43333",
+      "secondary": "#FFFFFF",
+      "titleYears": [1946],
+      "lastTitle": {
+        "date": "1946-03-31",
+        "opponent": "Barcelona",
+        "series": "1–1",
+        "asName": null,
+        "clinch": "drew 1–1 at Barcelona's Les Corts on the final day — Araujo's seventh-minute header earning the point that won the title by one"
+      }
+    },
+    {
+      "slug": "valencia",
+      "name": "Valencia",
+      "shortName": "Valencia",
+      "abbr": "VAL",
+      "accent": "#EE3524",
+      "secondary": "#FFDF1C",
+      "titleYears": [1942, 1944, 1947, 1971, 2002, 2004],
+      "lastTitle": {
+        "date": "2004-05-09",
+        "opponent": "Sevilla",
+        "series": "2–0",
+        "asName": null,
+        "clinch": "won 2–0 at Sevilla — Vicente and Baraja — to clinch with two games to spare"
+      }
+    },
+    {
+      "slug": "villarreal",
+      "name": "Villarreal",
+      "shortName": "Yellow Submarine",
+      "abbr": "VIL",
+      "accent": "#FFE667",
+      "accentLight": "#005187",
+      "secondary": "#005187",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1998-08-31",
+      "firstGameAs": null,
+      "firstGameNote": "Led the reigning European champions inside three minutes at the Bernabéu in their 1998 debut before losing 4–1; second place in 2008 is as close as the Yellow Submarine has surfaced.",
+      "finalsLosses": [2008]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Nav from '../../components/Nav.astro';
 import {
   activeBanner,
+  leagueRef,
   leagues,
   type League,
   byDrought,
@@ -33,7 +34,7 @@ const ogImage = new URL(`/og/${lg.slug}/home.png`, Astro.site).href;
   <Nav current={lg.slug} />
 
   <header class="hero">
-    <p class="eyebrow">THE {lg.league} DROUGHT BOARD</p>
+    <p class="eyebrow">{leagueRef(lg)} DROUGHT BOARD</p>
     <h1>DAYS SINCE LAST<br />CHAMPIONSHIP</h1>
     <p class="sub">All {lg.teams.length} teams, ranked by how long it's been. The clock doesn't lie.</p>
   </header>

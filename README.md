@@ -52,10 +52,10 @@ champion played; use the `clinch` field), NHL mid-June, NBA mid-June, WNBA
 mid-October, MLB late October/early November, NWSL late November, MLS early
 December.
 
-### Premier League only: the annual relegation swap
+### Promotion/relegation leagues: the annual roster swap
 
-Once the season and the Championship play-off final end (late May), the
-league's membership changes. In `src/data/epl.json`:
+European leagues (EPL, La Liga) change membership every summer once the
+season and the promotion play-offs end. In the league's JSON:
 
 1. Delete the three relegated clubs' entries.
 2. Add the three promoted clubs. A club returning to the top flight keeps its

@@ -1,4 +1,4 @@
-import { type League, type Team, neverWon, clockStartIso, yearOf } from './droughts';
+import { type League, type Team, leagueRef, neverWon, clockStartIso, yearOf } from './droughts';
 
 // Things that have happened since a team last won. Labels read as items in
 // "Since then: X, Y, and Z."
@@ -69,6 +69,12 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1993-07-28', 'Harry Kane'],
     ['2001-09-05', 'Bukayo Saka'],
   ],
+  laliga: [
+    ['1947-04-25', 'Johan Cruyff'],
+    ['1977-06-27', 'Raúl'],
+    ['1987-06-24', 'Lionel Messi'],
+    ['2007-07-13', 'Lamine Yamal'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */
@@ -108,7 +114,8 @@ export function factsFor(team: Team, league: League, now: Date = new Date()): st
     facts.push(`The ${team.shortName} have never won it all. This clock has been running since their first ${noun} game.`);
     if (team.asterisk?.years.length) {
       const plural = team.asterisk.years.length === 1 ? 'title' : 'titles';
-      facts.push(`They did win ${team.asterisk.years.length} ${team.asterisk.label} ${plural} (${team.asterisk.years.join(', ')}). The ${league.league} doesn't count those. Neither does the pain.`);
+      const ref = leagueRef(league);
+      facts.push(`They did win ${team.asterisk.years.length} ${team.asterisk.label} ${plural} (${team.asterisk.years.join(', ')}). ${ref[0].toUpperCase()}${ref.slice(1)} doesn't count those. Neither does the pain.`);
     }
     if (team.finalsLosses?.length) {
       facts.push(`Closest calls: ${finalsShort(league)} losses in ${listOut(team.finalsLosses.map(String))}.`);

@@ -71,7 +71,7 @@ const modules = import.meta.glob('../data/*.json', { eager: true }) as Record<
   { default: League }
 >;
 
-const LEAGUE_ORDER = ['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl', 'pwhl', 'epl'];
+const LEAGUE_ORDER = ['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl', 'pwhl', 'epl', 'laliga'];
 
 export const leagues: League[] = Object.values(modules)
   .map((m) => m.default)
@@ -94,6 +94,15 @@ import { DAY_MS } from './clock';
 
 export function neverWon(team: Team): boolean {
   return team.lastTitle === null;
+}
+
+/**
+ * League name with the definite article English wants mid-sentence ("the
+ * NFL"), skipped for names that carry their own ("La Liga", not "the La
+ * Liga").
+ */
+export function leagueRef(league: League): string {
+  return /^(La|Le|Les|Lo|Los)\b/.test(league.league) ? league.league : `the ${league.league}`;
 }
 
 /**

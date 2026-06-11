@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import {
+  leagueRef,
   leagues,
   type League,
   type Team,
@@ -110,7 +111,7 @@ const ogImage = new URL(`/og/${lg.slug}/${team.slug}.png`, Astro.site).href;
         )
       }
       {team.asterisk && (
-        <p class="fine">{team.asterisk.label} titles in {team.asterisk.years.join(', ')} don't hang in this rafter — the {lg.league} doesn't count them.</p>
+        <p class="fine">{team.asterisk.label} titles in {team.asterisk.years.join(', ')} don't hang in this rafter — {leagueRef(lg)} doesn't count them.</p>
       )}
       {team.lineage && <p class="fine">{team.lineage}</p>}
     </section>
