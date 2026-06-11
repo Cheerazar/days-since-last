@@ -81,6 +81,12 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1989-09-13', 'Thomas Müller'],
     ['2003-02-26', 'Jamal Musiala'],
   ],
+  seriea: [
+    ['1943-08-18', 'Gianni Rivera'],
+    ['1967-02-18', 'Roberto Baggio'],
+    ['1976-09-27', 'Francesco Totti'],
+    ['1999-02-25', 'Gianluigi Donnarumma'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */

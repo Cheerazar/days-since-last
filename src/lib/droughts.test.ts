@@ -158,6 +158,7 @@ describe('league registry', () => {
       'epl',
       'laliga',
       'bundesliga',
+      'seriea',
     ]);
   });
 
@@ -166,10 +167,10 @@ describe('league registry', () => {
     expect(getLeague('nope')).toBeUndefined();
   });
 
-  it('crowns Newcastle with the longest wait on the site', () => {
+  it('crowns Genoa with the longest wait on the site', () => {
     const { league, team: worst } = worstDrought();
-    expect(league.slug).toBe('epl');
-    expect(worst.slug).toBe('newcastle-united');
-    expect(worst.lastTitle?.date).toBe('1927-04-30');
+    expect(league.slug).toBe('seriea');
+    expect(worst.slug).toBe('genoa');
+    expect(worst.lastTitle?.date).toBe('1924-09-07');
   });
 });

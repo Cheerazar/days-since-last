@@ -20,6 +20,7 @@ const EXPECTED_TEAM_COUNTS: Record<string, number> = {
   epl: 20,
   laliga: 20,
   bundesliga: 18,
+  seriea: 20,
 };
 
 describe('league registry shape', () => {
@@ -108,6 +109,7 @@ describe('reigning champions', () => {
       epl: 'arsenal',
       laliga: 'barcelona',
       bundesliga: 'bayern-munich',
+      seriea: 'inter-milan',
     });
   });
 
@@ -145,6 +147,9 @@ describe('anchor dates', () => {
     ['bundesliga', 'eintracht-frankfurt', '1959-06-28'],
     ['bundesliga', 'hamburger-sv', '1983-06-04'],
     ['bundesliga', 'bayern-munich', '2026-04-19'],
+    ['seriea', 'genoa', '1924-09-07'],
+    ['seriea', 'bologna', '1964-06-07'],
+    ['seriea', 'inter-milan', '2026-05-03'],
   ];
 
   it.each(ANCHORS)('%s/%s last title on %s', (leagueSlug, teamSlug, date) => {
