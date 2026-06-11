@@ -2,6 +2,7 @@
   "league": "Serie A Femminile",
   "navLabel": "Serie A Fem",
   "slug": "seriea-femminile",
+  "group": "football-womens",
   "finalsName": "the title race",
   "updated": "2026-06-11",
   "footnote": "Titles follow the historical albo d'oro back to 1968 — the pre-FIGC federations included. Honours follow legal continuity: sporting-title purchases don't transfer them, so today's Milan and Lazio carry none of the historic Milan- and Lazio-named crowns. The 12 clubs shown are the 2025–26 season's until newcomers Como 1907 debut in the autumn.",
@@ -28,7 +29,9 @@
       "abbr": "FIO",
       "accent": "#482E92",
       "secondary": "#FFFFFF",
-      "titleYears": [2017],
+      "titleYears": [
+        2017
+      ],
       "lastTitle": {
         "date": "2017-05-06",
         "opponent": "Tavagnacco",
@@ -64,7 +67,10 @@
       "firstGame": "2019-09-14",
       "firstGameAs": null,
       "firstGameNote": "Drew 2–2 with Hellas Verona in their 2019 debut, Julie Debever scoring the club's first top-flight goal; back-to-back runner-up finishes since — both times watching someone else lift it.",
-      "finalsLosses": [2025, 2026]
+      "finalsLosses": [
+        2025,
+        2026
+      ]
     },
     {
       "slug": "juventus",
@@ -74,7 +80,14 @@
       "accent": "#FFFFFF",
       "accentLight": "#000000",
       "secondary": "#000000",
-      "titleYears": [2018, 2019, 2020, 2021, 2022, 2025],
+      "titleYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2025
+      ],
       "lastTitle": {
         "date": "2025-04-18",
         "opponent": "Milan",
@@ -111,7 +124,9 @@
       "firstGame": "2018-09-22",
       "firstGameAs": null,
       "firstGameNote": "Won 6–0 at Pink Bari in their 2018 debut — but the five Milan-named scudetti in the record books belong to unrelated historic clubs, and the 2018 club has since lost a league, a cup and a supercup final apiece.",
-      "finalsLosses": [2021]
+      "finalsLosses": [
+        2021
+      ]
     },
     {
       "slug": "napoli",
@@ -149,7 +164,11 @@
       "abbr": "ROM",
       "accent": "#8E1F2F",
       "secondary": "#F0BC42",
-      "titleYears": [2023, 2024, 2026],
+      "titleYears": [
+        2023,
+        2024,
+        2026
+      ],
       "lastTitle": {
         "date": "2026-05-02",
         "opponent": "Ternana",

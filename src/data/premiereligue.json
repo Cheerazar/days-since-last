@@ -1,6 +1,7 @@
 {
   "league": "Première Ligue",
   "slug": "premiereligue",
+  "group": "football-womens",
   "finalsName": "the play-off final",
   "competitionNoun": "top-flight",
   "updated": "2026-06-11",
@@ -85,7 +86,10 @@
       "accent": "#F08000",
       "accentLight": "#14387F",
       "secondary": "#14387F",
-      "titleYears": [2004, 2005],
+      "titleYears": [
+        2004,
+        2005
+      ],
       "lastTitle": {
         "date": "2005-05-07",
         "opponent": "Condé-sur-Noireau",
@@ -117,7 +121,27 @@
       "accent": "#FFFFFF",
       "accentLight": "#14387F",
       "secondary": "#DA0812",
-      "titleYears": [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2022, 2023, 2024, 2025, 2026],
+      "titleYears": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
       "lastTitle": {
         "date": "2026-05-29",
         "opponent": "Paris FC",
@@ -135,7 +159,14 @@
       "accent": "#0098CC",
       "accentLight": "#0A0F2D",
       "secondary": "#0A0F2D",
-      "titleYears": [1992, 1994, 1996, 1997, 2003, 2006],
+      "titleYears": [
+        1992,
+        1994,
+        1996,
+        1997,
+        2003,
+        2006
+      ],
       "lastTitle": {
         "date": "2006-05-25",
         "opponent": null,
@@ -153,7 +184,9 @@
       "accent": "#DA291C",
       "accentLight": "#004170",
       "secondary": "#004170",
-      "titleYears": [2021],
+      "titleYears": [
+        2021
+      ],
       "lastTitle": {
         "date": "2021-06-04",
         "opponent": "Dijon",
@@ -175,7 +208,12 @@
       "firstGameAs": "RC Saint-Étienne",
       "firstGameNote": "Beat Soyaux 1–0 in the lineage's verifiable 2007 debut as Racing Club de Saint-Étienne — a club founded the day after ASSE shut its women's section in 1977, folded back in by 2009; relegated again in 2026.",
       "finalsLosses": [],
-      "asterisk": { "label": "Coupe de France", "years": [2011] }
+      "asterisk": {
+        "label": "Coupe de France",
+        "years": [
+          2011
+        ]
+      }
     },
     {
       "slug": "strasbourg",

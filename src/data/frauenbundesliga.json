@@ -1,6 +1,7 @@
 {
   "league": "Frauen-Bundesliga",
   "slug": "frauenbundesliga",
+  "group": "football-womens",
   "finalsName": "the title race",
   "updated": "2026-06-11",
   "footnote": "Titles count every German women's championship back to 1974 — the pre-Bundesliga finals era included; East German titles don't count. Never-champions count from their first Frauen-Bundesliga match (the national league began in 1990). The 14 clubs shown are the 2025–26 season's until newcomers Stuttgart and Mainz — both first-time top-flight clubs — kick off in the autumn.",
@@ -26,7 +27,16 @@
       "abbr": "FCB",
       "accent": "#DC052D",
       "secondary": "#FFFFFF",
-      "titleYears": [1976, 2015, 2016, 2021, 2023, 2024, 2025, 2026],
+      "titleYears": [
+        1976,
+        2015,
+        2016,
+        2021,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
       "lastTitle": {
         "date": "2026-04-22",
         "opponent": "Union Berlin",
@@ -49,7 +59,12 @@
       "firstGameAs": "FF USV Jena",
       "firstGameNote": "Lost 3–2 to Hamburg in FF USV Jena's 2008 Bundesliga debut; the lineage won the last-ever East German championship in 1991 — a title no one can win again — and went back down in 2026.",
       "finalsLosses": [],
-      "asterisk": { "label": "East German championship", "years": [1991] }
+      "asterisk": {
+        "label": "East German championship",
+        "years": [
+          1991
+        ]
+      }
     },
     {
       "slug": "eintracht-frankfurt",
@@ -58,7 +73,15 @@
       "abbr": "SGE",
       "accent": "#E1000F",
       "secondary": "#000000",
-      "titleYears": [1999, 2001, 2002, 2003, 2005, 2007, 2008],
+      "titleYears": [
+        1999,
+        2001,
+        2002,
+        2003,
+        2005,
+        2007,
+        2008
+      ],
       "lastTitle": {
         "date": "2008-06-15",
         "opponent": "SG Essen-Schönebeck",
@@ -201,7 +224,15 @@
       "abbr": "WOB",
       "accent": "#65B32E",
       "secondary": "#FFFFFF",
-      "titleYears": [2013, 2014, 2017, 2018, 2019, 2020, 2022],
+      "titleYears": [
+        2013,
+        2014,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022
+      ],
       "lastTitle": {
         "date": "2022-05-08",
         "opponent": "Carl Zeiss Jena",

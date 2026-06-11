@@ -41,6 +41,8 @@ export interface League {
   league: string;
   /** Short form for the top nav, where the full name is too wide (e.g. "EPL"). */
   navLabel?: string;
+  /** Nav dropdown group; leagues without one land in "US Leagues". */
+  group?: 'football-mens' | 'football-womens';
   slug: string;
   /** How the championship round is referred to, e.g. "the Finals", "the Super Bowl". */
   finalsName: string;
@@ -83,6 +85,26 @@ export const leagues: League[] = Object.values(modules)
 
 export function getLeague(slug: string): League | undefined {
   return leagues.find((l) => l.slug === slug);
+}
+
+export interface NavGroup {
+  label: string;
+  columns: Array<{ label: string | null; leagues: League[] }>;
+}
+
+/** The top nav's dropdown structure: US leagues, then football split men's/women's. */
+export function navGroups(): NavGroup[] {
+  const by = (group?: League['group']) => leagues.filter((l) => l.group === group);
+  return [
+    { label: 'US Leagues', columns: [{ label: null, leagues: by(undefined) }] },
+    {
+      label: 'Football',
+      columns: [
+        { label: "Men's", leagues: by('football-mens') },
+        { label: "Women's", leagues: by('football-womens') },
+      ],
+    },
+  ];
 }
 
 // Counters run from midnight US Eastern on the date in question. Clinching

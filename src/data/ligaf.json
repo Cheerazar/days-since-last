@@ -1,6 +1,7 @@
 {
   "league": "Liga F",
   "slug": "ligaf",
+  "group": "football-womens",
   "finalsName": "the title race",
   "competitionNoun": "top-flight",
   "updated": "2026-06-10",
@@ -27,7 +28,13 @@
       "abbr": "ATH",
       "accent": "#EE2523",
       "secondary": "#FFFFFF",
-      "titleYears": [2003, 2004, 2005, 2007, 2016],
+      "titleYears": [
+        2003,
+        2004,
+        2005,
+        2007,
+        2016
+      ],
       "lastTitle": {
         "date": "2016-06-05",
         "opponent": null,
@@ -43,7 +50,12 @@
       "abbr": "ATM",
       "accent": "#CE3524",
       "secondary": "#262F61",
-      "titleYears": [1990, 2017, 2018, 2019],
+      "titleYears": [
+        1990,
+        2017,
+        2018,
+        2019
+      ],
       "lastTitle": {
         "date": "2019-05-05",
         "opponent": "Real Sociedad",
@@ -74,7 +86,19 @@
       "abbr": "FCB",
       "accent": "#A50044",
       "secondary": "#004D98",
-      "titleYears": [2012, 2013, 2014, 2015, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
+      "titleYears": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
       "lastTitle": {
         "date": "2026-04-22",
         "opponent": "Espanyol",
@@ -137,7 +161,9 @@
       "firstGame": "2020-10-04",
       "firstGameAs": null,
       "firstGameNote": "Beat Real Betis 1–0 at Unbe in SD Eibar's own 2020 top-flight debut; the lineage runs deeper — as Eibartarrak they reached the top flight in 1997 and finished league runners-up in 2001.",
-      "finalsLosses": [2001]
+      "finalsLosses": [
+        2001
+      ]
     },
     {
       "slug": "espanyol",
@@ -146,7 +172,9 @@
       "abbr": "ESP",
       "accent": "#007FC8",
       "secondary": "#FFFFFF",
-      "titleYears": [2006],
+      "titleYears": [
+        2006
+      ],
       "lastTitle": {
         "date": "2006-04-09",
         "opponent": "Puebla",
@@ -154,7 +182,17 @@
         "asName": null,
         "clinch": "won 2–0 at Puebla on the final day while rivals Híspalis were held 3–3 at Athletic — the title flipped on the head-to-head tiebreaker"
       },
-      "asterisk": { "label": "Copa de la Reina", "years": [1996, 1997, 2006, 2009, 2010, 2012] }
+      "asterisk": {
+        "label": "Copa de la Reina",
+        "years": [
+          1996,
+          1997,
+          2006,
+          2009,
+          2010,
+          2012
+        ]
+      }
     },
     {
       "slug": "granada",
@@ -197,7 +235,13 @@
       "firstGame": "2020-10-04",
       "firstGameAs": null,
       "firstGameNote": "Lost the first-ever Clásico femenino 0–4 to Barcelona at Valdebebas in their 2020 debut; five runner-up finishes in six seasons since — every one behind Barcelona — and still no trophy of any kind.",
-      "finalsLosses": [2021, 2023, 2024, 2025, 2026]
+      "finalsLosses": [
+        2021,
+        2023,
+        2024,
+        2025,
+        2026
+      ]
     },
     {
       "slug": "real-sociedad",
@@ -211,8 +255,15 @@
       "firstGame": "2006-09-10",
       "firstGameAs": null,
       "firstGameNote": "Drew 2–2 with Atlético at Zubieta in their 2006 debut after the federation handed them a vacated spot; the 2019 Copa de la Reina remains the lone major trophy.",
-      "finalsLosses": [2022],
-      "asterisk": { "label": "Copa de la Reina", "years": [2019] }
+      "finalsLosses": [
+        2022
+      ],
+      "asterisk": {
+        "label": "Copa de la Reina",
+        "years": [
+          2019
+        ]
+      }
     },
     {
       "slug": "sevilla",

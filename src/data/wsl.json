@@ -2,6 +2,7 @@
   "league": "Women's Super League",
   "navLabel": "WSL",
   "slug": "wsl",
+  "group": "football-womens",
   "finalsName": "the title race",
   "competitionNoun": "top-flight",
   "updated": "2026-06-10",
@@ -14,7 +15,23 @@
       "abbr": "ARS",
       "accent": "#EF0107",
       "secondary": "#023474",
-      "titleYears": [1993, 1995, 1997, 2001, 2002, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2019],
+      "titleYears": [
+        1993,
+        1995,
+        1997,
+        2001,
+        2002,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2019
+      ],
       "lastTitle": {
         "date": "2019-04-28",
         "opponent": "Brighton & Hove Albion",
@@ -50,8 +67,16 @@
       "firstGame": "2002-09-01",
       "firstGameAs": null,
       "firstGameNote": "Drew 1–1 with Leeds in their 2002 top-flight debut, a teenage Eni Aluko scoring; 2012 brought an FA Cup and a second straight runner-up finish — the title two agonizing points away.",
-      "finalsLosses": [2011, 2012],
-      "asterisk": { "label": "FA Cup", "years": [2012] }
+      "finalsLosses": [
+        2011,
+        2012
+      ],
+      "asterisk": {
+        "label": "FA Cup",
+        "years": [
+          2012
+        ]
+      }
     },
     {
       "slug": "brighton-hove-albion",
@@ -74,7 +99,11 @@
       "abbr": "CHA",
       "accent": "#E31B23",
       "secondary": "#FFFFFF",
-      "titleYears": [1996, 1999, 2000],
+      "titleYears": [
+        1996,
+        1999,
+        2000
+      ],
       "lastTitle": {
         "date": "2000-05-06",
         "opponent": "Aston Villa",
@@ -83,7 +112,14 @@
         "clinch": "put six past Aston Villa on the season's final Saturday to retain the championship as Croydon — the club moved to Charlton that summer"
       },
       "lineage": "Bromley Borough (1991) → Croydon (1994–2000) → Charlton Athletic (2000– ); all three titles won as Croydon. Back in the top flight for 2026–27 after winning the first-ever WSL play-off.",
-      "asterisk": { "label": "FA Cup", "years": [1996, 2000, 2005] }
+      "asterisk": {
+        "label": "FA Cup",
+        "years": [
+          1996,
+          2000,
+          2005
+        ]
+      }
     },
     {
       "slug": "chelsea",
@@ -92,7 +128,16 @@
       "abbr": "CHE",
       "accent": "#034694",
       "secondary": "#DBA111",
-      "titleYears": [2015, 2018, 2020, 2021, 2022, 2023, 2024, 2025],
+      "titleYears": [
+        2015,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
       "lastTitle": {
         "date": "2025-04-30",
         "opponent": "Manchester United",
@@ -122,7 +167,9 @@
       "abbr": "EVE",
       "accent": "#003399",
       "secondary": "#FFFFFF",
-      "titleYears": [1998],
+      "titleYears": [
+        1998
+      ],
       "lastTitle": {
         "date": "1998-04-30",
         "opponent": null,
@@ -138,7 +185,10 @@
       "abbr": "LIV",
       "accent": "#C8102E",
       "secondary": "#00B2A9",
-      "titleYears": [2013, 2014],
+      "titleYears": [
+        2013,
+        2014
+      ],
       "lastTitle": {
         "date": "2014-10-12",
         "opponent": "Bristol Academy",
@@ -169,7 +219,10 @@
       "accent": "#6CABDD",
       "accentLight": "#1C2C5B",
       "secondary": "#1C2C5B",
-      "titleYears": [2016, 2026],
+      "titleYears": [
+        2016,
+        2026
+      ],
       "lastTitle": {
         "date": "2026-05-06",
         "opponent": null,
@@ -190,8 +243,15 @@
       "firstGame": "2019-09-07",
       "firstGameAs": null,
       "firstGameNote": "Lost the first-ever WSL Manchester derby 1–0 at the Etihad before a record 31,213 in their 2019 debut; runners-up in 2023, FA Cup winners in 2024 — the league still missing.",
-      "finalsLosses": [2023],
-      "asterisk": { "label": "FA Cup", "years": [2024] }
+      "finalsLosses": [
+        2023
+      ],
+      "asterisk": {
+        "label": "FA Cup",
+        "years": [
+          2024
+        ]
+      }
     },
     {
       "slug": "tottenham-hotspur",

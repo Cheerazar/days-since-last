@@ -1,6 +1,7 @@
 {
   "league": "Ligue 1",
   "slug": "ligue1",
+  "group": "football-mens",
   "finalsName": "the title race",
   "competitionNoun": "top-flight",
   "updated": "2026-06-10",
@@ -28,7 +29,9 @@
       "abbr": "AUX",
       "accent": "#1C4F9C",
       "secondary": "#FFFFFF",
-      "titleYears": [1996],
+      "titleYears": [
+        1996
+      ],
       "lastTitle": {
         "date": "1996-05-11",
         "opponent": "Guingamp",
@@ -65,7 +68,12 @@
       "firstGameAs": null,
       "firstGameNote": "France's oldest club waited six years after the professional league began for a debut — a 3–3 draw at Excelsior Roubaix in 1938; their lone Coupe de France came in 1959, won from the second division.",
       "finalsLosses": [],
-      "asterisk": { "label": "Coupe de France", "years": [1959] }
+      "asterisk": {
+        "label": "Coupe de France",
+        "years": [
+          1959
+        ]
+      }
     },
     {
       "slug": "le-mans",
@@ -88,7 +96,9 @@
       "abbr": "LEN",
       "accent": "#EC1C24",
       "secondary": "#FFF200",
-      "titleYears": [1998],
+      "titleYears": [
+        1998
+      ],
       "lastTitle": {
         "date": "1998-05-09",
         "opponent": "Auxerre",
@@ -104,7 +114,12 @@
       "abbr": "LIL",
       "accent": "#E01E13",
       "secondary": "#24216A",
-      "titleYears": [1946, 1954, 2011, 2021],
+      "titleYears": [
+        1946,
+        1954,
+        2011,
+        2021
+      ],
       "lastTitle": {
         "date": "2021-05-23",
         "opponent": "Angers",
@@ -127,7 +142,12 @@
       "firstGameAs": null,
       "firstGameNote": "Lost 2–1 to Monaco on a 90th-minute Giuly goal in their 1998 debut; the Merlus lifted the 2002 Coupe de France days after being relegated.",
       "finalsLosses": [],
-      "asterisk": { "label": "Coupe de France", "years": [2002] }
+      "asterisk": {
+        "label": "Coupe de France",
+        "years": [
+          2002
+        ]
+      }
     },
     {
       "slug": "lyon",
@@ -137,7 +157,15 @@
       "accent": "#FFFFFF",
       "accentLight": "#14387F",
       "secondary": "#DA0812",
-      "titleYears": [2002, 2003, 2004, 2005, 2006, 2007, 2008],
+      "titleYears": [
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008
+      ],
       "lastTitle": {
         "date": "2008-05-17",
         "opponent": "Auxerre",
@@ -153,7 +181,17 @@
       "abbr": "MAR",
       "accent": "#2FAEE0",
       "secondary": "#BEA064",
-      "titleYears": [1937, 1948, 1971, 1972, 1989, 1990, 1991, 1992, 2010],
+      "titleYears": [
+        1937,
+        1948,
+        1971,
+        1972,
+        1989,
+        1990,
+        1991,
+        1992,
+        2010
+      ],
       "lastTitle": {
         "date": "2010-05-05",
         "opponent": "Rennes",
@@ -170,7 +208,16 @@
       "abbr": "MON",
       "accent": "#E51B22",
       "secondary": "#FFFFFF",
-      "titleYears": [1961, 1963, 1978, 1982, 1988, 1997, 2000, 2017],
+      "titleYears": [
+        1961,
+        1963,
+        1978,
+        1982,
+        1988,
+        1997,
+        2000,
+        2017
+      ],
       "lastTitle": {
         "date": "2017-05-17",
         "opponent": "Saint-Étienne",
@@ -186,7 +233,12 @@
       "abbr": "NIC",
       "accent": "#ED1C24",
       "secondary": "#000000",
-      "titleYears": [1951, 1952, 1956, 1959],
+      "titleYears": [
+        1951,
+        1952,
+        1956,
+        1959
+      ],
       "lastTitle": {
         "date": "1959-05-24",
         "opponent": "Angers",
@@ -218,7 +270,22 @@
       "accent": "#DA291C",
       "accentLight": "#004170",
       "secondary": "#004170",
-      "titleYears": [1986, 1994, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2022, 2023, 2024, 2025, 2026],
+      "titleYears": [
+        1986,
+        1994,
+        2013,
+        2014,
+        2015,
+        2016,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
       "lastTitle": {
         "date": "2026-05-13",
         "opponent": "RC Lens",
@@ -240,7 +307,14 @@
       "firstGameAs": null,
       "firstGameNote": "Won 2–1 at Metz on the very first day of French professional football in 1932 — Walter Kaiser scoring — and the founding member is still waiting on a first league title.",
       "finalsLosses": [],
-      "asterisk": { "label": "Coupe de France", "years": [1965, 1971, 2019] }
+      "asterisk": {
+        "label": "Coupe de France",
+        "years": [
+          1965,
+          1971,
+          2019
+        ]
+      }
     },
     {
       "slug": "strasbourg",
@@ -249,7 +323,9 @@
       "abbr": "STR",
       "accent": "#009FE3",
       "secondary": "#FFFFFF",
-      "titleYears": [1979],
+      "titleYears": [
+        1979
+      ],
       "lastTitle": {
         "date": "1979-06-01",
         "opponent": "Lyon",
@@ -272,7 +348,12 @@
       "firstGameAs": null,
       "firstGameNote": "Beat Strasbourg 3–1 in their 1982 top-flight debut at the Stadium; the Violets finally lifted a first major trophy in 2023, thrashing Nantes 5–1 in the Coupe de France final.",
       "finalsLosses": [],
-      "asterisk": { "label": "Coupe de France", "years": [2023] }
+      "asterisk": {
+        "label": "Coupe de France",
+        "years": [
+          2023
+        ]
+      }
     },
     {
       "slug": "troyes",

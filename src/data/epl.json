@@ -2,6 +2,7 @@
   "league": "Premier League",
   "navLabel": "EPL",
   "slug": "epl",
+  "group": "football-mens",
   "finalsName": "the title race",
   "competitionNoun": "top-flight",
   "updated": "2026-06-10",
