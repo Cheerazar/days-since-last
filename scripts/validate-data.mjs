@@ -29,6 +29,12 @@ for (const file of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
   if (data.bannerUntil && !ISO.test(data.bannerUntil)) {
     fail(file, `bad bannerUntil: ${data.bannerUntil}`);
   }
+  // News has a shelf life of days, not months — long-lived context belongs in
+  // the footnote. 30 days covers the longest legitimate live window.
+  if (data.bannerUntil && data.updated) {
+    const span = (Date.parse(data.bannerUntil) - Date.parse(data.updated)) / 86400000;
+    if (span > 30) fail(file, `bannerUntil is ${Math.round(span)} days past updated — footnote material, not a banner`);
+  }
   // Smallest current league is the 8-team PWHL.
   if (!Array.isArray(data.teams) || data.teams.length < 6) {
     fail(file, `suspicious team count: ${data.teams?.length}`);
