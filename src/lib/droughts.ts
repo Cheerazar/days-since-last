@@ -71,7 +71,7 @@ const modules = import.meta.glob('../data/*.json', { eager: true }) as Record<
   { default: League }
 >;
 
-const LEAGUE_ORDER = ['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl', 'pwhl', 'epl', 'laliga', 'bundesliga', 'seriea', 'ligue1', 'wsl'];
+const LEAGUE_ORDER = ['nfl', 'nba', 'mlb', 'nhl', 'mls', 'wnba', 'nwsl', 'pwhl', 'epl', 'laliga', 'bundesliga', 'seriea', 'ligue1', 'wsl', 'ligaf'];
 
 export const leagues: League[] = Object.values(modules)
   .map((m) => m.default)
@@ -102,7 +102,7 @@ export function neverWon(team: Team): boolean {
  * Liga").
  */
 export function leagueRef(league: League): string {
-  return /^(La|Le|Les|Lo|Los)\b/.test(league.league) ? league.league : `the ${league.league}`;
+  return /^(La|Le|Les|Lo|Los|Liga)\b/.test(league.league) ? league.league : `the ${league.league}`;
 }
 
 /**

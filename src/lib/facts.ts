@@ -98,6 +98,11 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1991-10-28', 'Lucy Bronze'],
     ['2001-09-29', 'Lauren James'],
   ],
+  ligaf: [
+    ['1994-02-04', 'Alexia Putellas'],
+    ['1998-01-18', 'Aitana Bonmatí'],
+    ['2006-07-26', 'Vicky López'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */
