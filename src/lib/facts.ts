@@ -93,6 +93,11 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1977-08-17', 'Thierry Henry'],
     ['1998-12-20', 'Kylian Mbappé'],
   ],
+  wsl: [
+    ['1978-10-29', 'Kelly Smith'],
+    ['1991-10-28', 'Lucy Bronze'],
+    ['2001-09-29', 'Lauren James'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */

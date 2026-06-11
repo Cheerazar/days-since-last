@@ -1,0 +1,227 @@
+{
+  "league": "Women's Super League",
+  "navLabel": "WSL",
+  "slug": "wsl",
+  "finalsName": "the title race",
+  "competitionNoun": "top-flight",
+  "updated": "2026-06-10",
+  "footnote": "Titles count the whole English women's top flight — the FA Women's Premier League National Division (1992–2010) and the WSL (2011– ); the 2017 Spring Series doesn't count. Never-champions count from their first top-flight match. The 14 clubs shown are the 2026–27 season's, the league's first at that size.",
+  "teams": [
+    {
+      "slug": "arsenal",
+      "name": "Arsenal",
+      "shortName": "Arsenal",
+      "abbr": "ARS",
+      "accent": "#EF0107",
+      "secondary": "#023474",
+      "titleYears": [1993, 1995, 1997, 2001, 2002, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2019],
+      "lastTitle": {
+        "date": "2019-04-28",
+        "opponent": "Brighton & Hove Albion",
+        "series": "4–0",
+        "asName": null,
+        "clinch": "won 4–0 at Brighton — Miedema, McCabe, Mead, van de Donk — to seal English title number 15 with a game to spare"
+      }
+    },
+    {
+      "slug": "aston-villa",
+      "name": "Aston Villa",
+      "shortName": "Villa",
+      "abbr": "AVL",
+      "accent": "#95BFE5",
+      "accentLight": "#670E36",
+      "secondary": "#670E36",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1999-08-29",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 0–4 at home to champions-to-be Croydon in their 1999 top-flight debut, then finished with one point from 18 games — six scored, 81 conceded — in one of English football's bleakest seasons.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "birmingham-city",
+      "name": "Birmingham City",
+      "shortName": "Blues",
+      "abbr": "BIR",
+      "accent": "#0000FF",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2002-09-01",
+      "firstGameAs": null,
+      "firstGameNote": "Drew 1–1 with Leeds in their 2002 top-flight debut, a teenage Eni Aluko scoring; 2012 brought an FA Cup and a second straight runner-up finish — the title two agonizing points away.",
+      "finalsLosses": [2011, 2012],
+      "asterisk": { "label": "FA Cup", "years": [2012] }
+    },
+    {
+      "slug": "brighton-hove-albion",
+      "name": "Brighton & Hove Albion",
+      "shortName": "Seagulls",
+      "abbr": "BHA",
+      "accent": "#0057B8",
+      "secondary": "#FFCD00",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2001-08-19",
+      "firstGameAs": null,
+      "firstGameNote": "Beat Tranmere 1–0 in a long-forgotten 2001 National Division debut, were relegated by 2003, and returned via the WSL in 2018; their first FA Cup final, in 2026, ended 0–4 to Man City.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "charlton-athletic",
+      "name": "Charlton Athletic",
+      "shortName": "Addicks",
+      "abbr": "CHA",
+      "accent": "#E31B23",
+      "secondary": "#FFFFFF",
+      "titleYears": [1996, 1999, 2000],
+      "lastTitle": {
+        "date": "2000-05-06",
+        "opponent": "Aston Villa",
+        "series": "6–0",
+        "asName": null,
+        "clinch": "put six past Aston Villa on the season's final Saturday to retain the championship as Croydon — the club moved to Charlton that summer"
+      },
+      "lineage": "Bromley Borough (1991) → Croydon (1994–2000) → Charlton Athletic (2000– ); all three titles won as Croydon. Back in the top flight for 2026–27 after winning the first-ever WSL play-off.",
+      "asterisk": { "label": "FA Cup", "years": [1996, 2000, 2005] }
+    },
+    {
+      "slug": "chelsea",
+      "name": "Chelsea",
+      "shortName": "Chelsea",
+      "abbr": "CHE",
+      "accent": "#034694",
+      "secondary": "#DBA111",
+      "titleYears": [2015, 2018, 2020, 2021, 2022, 2023, 2024, 2025],
+      "lastTitle": {
+        "date": "2025-04-30",
+        "opponent": "Manchester United",
+        "series": "1–0",
+        "asName": null,
+        "clinch": "won 1–0 at Manchester United through a Lucy Bronze header — a sixth straight title, clinched two games early in the WSL's first unbeaten season"
+      }
+    },
+    {
+      "slug": "crystal-palace",
+      "name": "Crystal Palace",
+      "shortName": "Eagles",
+      "abbr": "CRY",
+      "accent": "#1B458F",
+      "secondary": "#C4122E",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2024-09-22",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 4–0 at Tottenham in their 2024 top-flight debut and went straight back down — then bounced right back, promotion sealed with a 6–1 final-day rout in May 2026.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "everton",
+      "name": "Everton",
+      "shortName": "Everton",
+      "abbr": "EVE",
+      "accent": "#003399",
+      "secondary": "#FFFFFF",
+      "titleYears": [1998],
+      "lastTitle": {
+        "date": "1998-04-30",
+        "opponent": null,
+        "series": null,
+        "asName": null,
+        "clinch": "confirmed champions without kicking a ball when Arsenal's midweek 3–3 draw with Croydon settled it — four days after Mo Marley's side ground out the decisive 0–0 at Croydon"
+      }
+    },
+    {
+      "slug": "liverpool",
+      "name": "Liverpool",
+      "shortName": "Liverpool",
+      "abbr": "LIV",
+      "accent": "#C8102E",
+      "secondary": "#00B2A9",
+      "titleYears": [2013, 2014],
+      "lastTitle": {
+        "date": "2014-10-12",
+        "opponent": "Bristol Academy",
+        "series": "3–0",
+        "asName": null,
+        "clinch": "beat Bristol Academy 3–0 on a wild final day, leaping from third to champions on goal difference as Chelsea fell at Man City"
+      }
+    },
+    {
+      "slug": "london-city-lionesses",
+      "name": "London City Lionesses",
+      "shortName": "Lionesses",
+      "abbr": "LCL",
+      "accent": "#00ABC7",
+      "secondary": "#172234",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2025-09-06",
+      "firstGameAs": null,
+      "firstGameNote": "Led Arsenal at the Emirates through an Asllani penalty in their 2025 debut before losing 4–1 — the WSL's first independent club, Michele Kang-owned, finished sixth in season one.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "manchester-city",
+      "name": "Manchester City",
+      "shortName": "Man City",
+      "abbr": "MCI",
+      "accent": "#6CABDD",
+      "accentLight": "#1C2C5B",
+      "secondary": "#1C2C5B",
+      "titleYears": [2016, 2026],
+      "lastTitle": {
+        "date": "2026-05-06",
+        "opponent": null,
+        "series": null,
+        "asName": null,
+        "clinch": "clinched without playing, when Arsenal's 1–1 draw at Brighton ended Chelsea's six-year reign and City's own ten-year wait"
+      }
+    },
+    {
+      "slug": "manchester-united",
+      "name": "Manchester United",
+      "shortName": "Man United",
+      "abbr": "MUN",
+      "accent": "#DA291C",
+      "secondary": "#FBE122",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2019-09-07",
+      "firstGameAs": null,
+      "firstGameNote": "Lost the first-ever WSL Manchester derby 1–0 at the Etihad before a record 31,213 in their 2019 debut; runners-up in 2023, FA Cup winners in 2024 — the league still missing.",
+      "finalsLosses": [2023],
+      "asterisk": { "label": "FA Cup", "years": [2024] }
+    },
+    {
+      "slug": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "shortName": "Spurs",
+      "abbr": "TOT",
+      "accent": "#FFFFFF",
+      "accentLight": "#132257",
+      "secondary": "#132257",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2019-09-08",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 1–0 at Stamford Bridge before nearly 25,000 in their 2019 WSL debut; two months later 38,262 watched them host Arsenal — the crowds arrived before the trophies.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "west-ham-united",
+      "name": "West Ham United",
+      "shortName": "Hammers",
+      "abbr": "WHU",
+      "accent": "#1BB1E7",
+      "accentLight": "#7A263A",
+      "secondary": "#7A263A",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2018-09-19",
+      "firstGameAs": null,
+      "firstGameNote": "Drew 0–0 with Reading in their 2018 debut after leaping straight from the third tier on a license; they reached Wembley in year one, losing the 2019 FA Cup final.",
+      "finalsLosses": []
+    }
+  ]
+}

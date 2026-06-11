@@ -160,6 +160,7 @@ describe('league registry', () => {
       'bundesliga',
       'seriea',
       'ligue1',
+      'wsl',
     ]);
   });
 
