@@ -38,8 +38,16 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImage && <meta property="og:image:width" content="1200" />}
+    {ogImage && <meta property="og:image:height" content="630" />}
+    {ogImage && <meta property="og:image:alt" content={title} />}
     {ogImage && <meta name="twitter:card" content="summary_large_image" />}
+    {/* X officially falls back to og:*, but its previews (DMs especially)
+        are flaky enough that the explicit tags are worth serving. */}
+    {ogImage && <meta name="twitter:title" content={title} />}
+    {ogImage && <meta name="twitter:description" content={description} />}
     {ogImage && <meta name="twitter:image" content={ogImage} />}
+    {ogImage && <meta name="twitter:image:alt" content={title} />}
     <link
       rel="preload"
       href="/fonts/DSEG7Classic-Bold.woff2"
