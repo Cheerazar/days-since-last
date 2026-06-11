@@ -1,7 +1,7 @@
 {
   "league": "La Liga",
   "slug": "laliga",
-  "finalsName": "the top two",
+  "finalsName": "the title race",
   "updated": "2026-06-10",
   "banner": "Barcelona sealed title No. 29 on May 10, beating Real Madrid in the Clásico — and the last 2026–27 spot is decided in the Almería–Málaga promotion play-off final on June 20.",
   "bannerUntil": "2026-06-21",
@@ -28,7 +28,16 @@
       "abbr": "ATH",
       "accent": "#EE2523",
       "secondary": "#000000",
-      "titleYears": [1930, 1931, 1934, 1936, 1943, 1956, 1983, 1984],
+      "titleYears": [
+        1930,
+        1931,
+        1934,
+        1936,
+        1943,
+        1956,
+        1983,
+        1984
+      ],
       "lastTitle": {
         "date": "1984-04-29",
         "opponent": "Real Sociedad",
@@ -44,7 +53,19 @@
       "abbr": "ATM",
       "accent": "#CE3524",
       "secondary": "#262F61",
-      "titleYears": [1940, 1941, 1950, 1951, 1966, 1970, 1973, 1977, 1996, 2014, 2021],
+      "titleYears": [
+        1940,
+        1941,
+        1950,
+        1951,
+        1966,
+        1970,
+        1973,
+        1977,
+        1996,
+        2014,
+        2021
+      ],
       "lastTitle": {
         "date": "2021-05-22",
         "opponent": "Real Valladolid",
@@ -61,7 +82,37 @@
       "abbr": "FCB",
       "accent": "#A50044",
       "secondary": "#004D98",
-      "titleYears": [1929, 1945, 1948, 1949, 1952, 1953, 1959, 1960, 1974, 1985, 1991, 1992, 1993, 1994, 1998, 1999, 2005, 2006, 2009, 2010, 2011, 2013, 2015, 2016, 2018, 2019, 2023, 2025, 2026],
+      "titleYears": [
+        1929,
+        1945,
+        1948,
+        1949,
+        1952,
+        1953,
+        1959,
+        1960,
+        1974,
+        1985,
+        1991,
+        1992,
+        1993,
+        1994,
+        1998,
+        1999,
+        2005,
+        2006,
+        2009,
+        2010,
+        2011,
+        2013,
+        2015,
+        2016,
+        2018,
+        2019,
+        2023,
+        2025,
+        2026
+      ],
       "lastTitle": {
         "date": "2026-05-10",
         "opponent": "Real Madrid",
@@ -112,7 +163,15 @@
       "firstGameAs": null,
       "firstGameNote": "Beat Real Unión 3–2 at Sarrià on La Liga's very first matchday in 1929 — Pitus Prat scored the league's first-ever goal — and the founding member is still waiting.",
       "finalsLosses": [],
-      "asterisk": { "label": "Copa del Rey", "years": [1929, 1940, 2000, 2006] }
+      "asterisk": {
+        "label": "Copa del Rey",
+        "years": [
+          1929,
+          1940,
+          2000,
+          2006
+        ]
+      }
     },
     {
       "slug": "getafe",
@@ -169,7 +228,12 @@
       "firstGameAs": null,
       "firstGameNote": "Lost 2–0 at Betis in their 1960 debut; the league table has never read better than third, twice — and 2025–26 ended in final-day relegation.",
       "finalsLosses": [],
-      "asterisk": { "label": "Copa del Rey", "years": [2003] }
+      "asterisk": {
+        "label": "Copa del Rey",
+        "years": [
+          2003
+        ]
+      }
     },
     {
       "slug": "osasuna",
@@ -206,7 +270,9 @@
       "abbr": "BET",
       "accent": "#0BB363",
       "secondary": "#FFFFFF",
-      "titleYears": [1935],
+      "titleYears": [
+        1935
+      ],
       "lastTitle": {
         "date": "1935-04-28",
         "opponent": "Racing Santander",
@@ -223,7 +289,44 @@
       "accent": "#FFFFFF",
       "accentLight": "#004996",
       "secondary": "#FEBE10",
-      "titleYears": [1932, 1933, 1954, 1955, 1957, 1958, 1961, 1962, 1963, 1964, 1965, 1967, 1968, 1969, 1972, 1975, 1976, 1978, 1979, 1980, 1986, 1987, 1988, 1989, 1990, 1995, 1997, 2001, 2003, 2007, 2008, 2012, 2017, 2020, 2022, 2024],
+      "titleYears": [
+        1932,
+        1933,
+        1954,
+        1955,
+        1957,
+        1958,
+        1961,
+        1962,
+        1963,
+        1964,
+        1965,
+        1967,
+        1968,
+        1969,
+        1972,
+        1975,
+        1976,
+        1978,
+        1979,
+        1980,
+        1986,
+        1987,
+        1988,
+        1989,
+        1990,
+        1995,
+        1997,
+        2001,
+        2003,
+        2007,
+        2008,
+        2012,
+        2017,
+        2020,
+        2022,
+        2024
+      ],
       "lastTitle": {
         "date": "2024-05-04",
         "opponent": "Cádiz",
@@ -253,7 +356,10 @@
       "abbr": "RSO",
       "accent": "#0067B1",
       "secondary": "#FFFFFF",
-      "titleYears": [1981, 1982],
+      "titleYears": [
+        1981,
+        1982
+      ],
       "lastTitle": {
         "date": "1982-04-25",
         "opponent": "Athletic Club",
@@ -269,7 +375,9 @@
       "abbr": "SEV",
       "accent": "#F43333",
       "secondary": "#FFFFFF",
-      "titleYears": [1946],
+      "titleYears": [
+        1946
+      ],
       "lastTitle": {
         "date": "1946-03-31",
         "opponent": "Barcelona",
@@ -285,7 +393,14 @@
       "abbr": "VAL",
       "accent": "#EE3524",
       "secondary": "#FFDF1C",
-      "titleYears": [1942, 1944, 1947, 1971, 2002, 2004],
+      "titleYears": [
+        1942,
+        1944,
+        1947,
+        1971,
+        2002,
+        2004
+      ],
       "lastTitle": {
         "date": "2004-05-09",
         "opponent": "Sevilla",
@@ -307,7 +422,9 @@
       "firstGame": "1998-08-31",
       "firstGameAs": null,
       "firstGameNote": "Led the reigning European champions inside three minutes at the Bernabéu in their 1998 debut before losing 4–1; second place in 2008 is as close as the Yellow Submarine has surfaced.",
-      "finalsLosses": [2008]
+      "finalsLosses": [
+        2008
+      ]
     }
   ]
 }

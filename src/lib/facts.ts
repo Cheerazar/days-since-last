@@ -75,6 +75,12 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1987-06-24', 'Lionel Messi'],
     ['2007-07-13', 'Lamine Yamal'],
   ],
+  bundesliga: [
+    ['1945-09-11', 'Franz Beckenbauer'],
+    ['1961-03-21', 'Lothar Matthäus'],
+    ['1989-09-13', 'Thomas Müller'],
+    ['2003-02-26', 'Jamal Musiala'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */

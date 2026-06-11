@@ -19,6 +19,7 @@ const EXPECTED_TEAM_COUNTS: Record<string, number> = {
   pwhl: 8,
   epl: 20,
   laliga: 20,
+  bundesliga: 18,
 };
 
 describe('league registry shape', () => {
@@ -106,6 +107,7 @@ describe('reigning champions', () => {
       pwhl: 'montreal-victoire',
       epl: 'arsenal',
       laliga: 'barcelona',
+      bundesliga: 'bayern-munich',
     });
   });
 
@@ -140,6 +142,9 @@ describe('anchor dates', () => {
     ['laliga', 'real-betis', '1935-04-28'],
     ['laliga', 'sevilla', '1946-03-31'],
     ['laliga', 'barcelona', '2026-05-10'],
+    ['bundesliga', 'eintracht-frankfurt', '1959-06-28'],
+    ['bundesliga', 'hamburger-sv', '1983-06-04'],
+    ['bundesliga', 'bayern-munich', '2026-04-19'],
   ];
 
   it.each(ANCHORS)('%s/%s last title on %s', (leagueSlug, teamSlug, date) => {

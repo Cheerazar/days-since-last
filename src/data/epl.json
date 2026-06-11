@@ -2,7 +2,7 @@
   "league": "Premier League",
   "navLabel": "EPL",
   "slug": "epl",
-  "finalsName": "the top two",
+  "finalsName": "the title race",
   "competitionNoun": "top-flight",
   "updated": "2026-06-10",
   "footnote": "Titles count the whole English top flight — First Division 1889 through today's Premier League — and clocks keep running through relegation. The 20 clubs shown are the 2026–27 season's.",
@@ -14,7 +14,22 @@
       "abbr": "ARS",
       "accent": "#EF0107",
       "secondary": "#023474",
-      "titleYears": [1931, 1933, 1934, 1935, 1938, 1948, 1953, 1971, 1989, 1991, 1998, 2002, 2004, 2026],
+      "titleYears": [
+        1931,
+        1933,
+        1934,
+        1935,
+        1938,
+        1948,
+        1953,
+        1971,
+        1989,
+        1991,
+        1998,
+        2002,
+        2004,
+        2026
+      ],
       "lastTitle": {
         "date": "2026-05-19",
         "opponent": null,
@@ -31,7 +46,15 @@
       "accent": "#95BFE5",
       "accentLight": "#670E36",
       "secondary": "#670E36",
-      "titleYears": [1894, 1896, 1897, 1899, 1900, 1910, 1981],
+      "titleYears": [
+        1894,
+        1896,
+        1897,
+        1899,
+        1900,
+        1910,
+        1981
+      ],
       "lastTitle": {
         "date": "1981-05-02",
         "opponent": "Arsenal",
@@ -89,7 +112,14 @@
       "abbr": "CHE",
       "accent": "#034694",
       "secondary": "#DBA111",
-      "titleYears": [1955, 2005, 2006, 2010, 2015, 2017],
+      "titleYears": [
+        1955,
+        2005,
+        2006,
+        2010,
+        2015,
+        2017
+      ],
       "lastTitle": {
         "date": "2017-05-12",
         "opponent": "West Bromwich Albion",
@@ -111,7 +141,12 @@
       "firstGameAs": null,
       "firstGameNote": "Lost 2–1 at Burnley in 1967, two days after Sky Blue Revolution architect Jimmy Hill quit for television — then spent 34 straight top-flight seasons never finishing higher than sixth.",
       "finalsLosses": [],
-      "asterisk": { "label": "FA Cup", "years": [1987] }
+      "asterisk": {
+        "label": "FA Cup",
+        "years": [
+          1987
+        ]
+      }
     },
     {
       "slug": "crystal-palace",
@@ -126,7 +161,12 @@
       "firstGameAs": null,
       "firstGameNote": "Held Bobby Charlton's Manchester United 2–2 at Selhurst Park in their 1969 top-flight debut; the trophy case finally got its first major silverware in 2025 — an FA Cup, not the league.",
       "finalsLosses": [],
-      "asterisk": { "label": "FA Cup", "years": [2025] }
+      "asterisk": {
+        "label": "FA Cup",
+        "years": [
+          2025
+        ]
+      }
     },
     {
       "slug": "everton",
@@ -135,7 +175,17 @@
       "abbr": "EVE",
       "accent": "#003399",
       "secondary": "#FFFFFF",
-      "titleYears": [1891, 1915, 1928, 1932, 1939, 1963, 1970, 1985, 1987],
+      "titleYears": [
+        1891,
+        1915,
+        1928,
+        1932,
+        1939,
+        1963,
+        1970,
+        1985,
+        1987
+      ],
       "lastTitle": {
         "date": "1987-05-04",
         "opponent": "Norwich City",
@@ -180,7 +230,9 @@
       "abbr": "IPS",
       "accent": "#3A64A3",
       "secondary": "#DE2C37",
-      "titleYears": [1962],
+      "titleYears": [
+        1962
+      ],
       "lastTitle": {
         "date": "1962-04-28",
         "opponent": "Aston Villa",
@@ -197,7 +249,11 @@
       "accent": "#FFFFFF",
       "accentLight": "#1D428A",
       "secondary": "#FFCD00",
-      "titleYears": [1969, 1974, 1992],
+      "titleYears": [
+        1969,
+        1974,
+        1992
+      ],
       "lastTitle": {
         "date": "1992-04-26",
         "opponent": "Sheffield United",
@@ -213,7 +269,28 @@
       "abbr": "LIV",
       "accent": "#C8102E",
       "secondary": "#00B2A9",
-      "titleYears": [1901, 1906, 1922, 1923, 1947, 1964, 1966, 1973, 1976, 1977, 1979, 1980, 1982, 1983, 1984, 1986, 1988, 1990, 2020, 2025],
+      "titleYears": [
+        1901,
+        1906,
+        1922,
+        1923,
+        1947,
+        1964,
+        1966,
+        1973,
+        1976,
+        1977,
+        1979,
+        1980,
+        1982,
+        1983,
+        1984,
+        1986,
+        1988,
+        1990,
+        2020,
+        2025
+      ],
       "lastTitle": {
         "date": "2025-04-27",
         "opponent": "Tottenham Hotspur",
@@ -230,7 +307,18 @@
       "accent": "#6CABDD",
       "accentLight": "#1C2C5B",
       "secondary": "#1C2C5B",
-      "titleYears": [1937, 1968, 2012, 2014, 2018, 2019, 2021, 2022, 2023, 2024],
+      "titleYears": [
+        1937,
+        1968,
+        2012,
+        2014,
+        2018,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
       "lastTitle": {
         "date": "2024-05-19",
         "opponent": "West Ham United",
@@ -246,7 +334,28 @@
       "abbr": "MUN",
       "accent": "#DA291C",
       "secondary": "#FBE122",
-      "titleYears": [1908, 1911, 1952, 1956, 1957, 1965, 1967, 1993, 1994, 1996, 1997, 1999, 2000, 2001, 2003, 2007, 2008, 2009, 2011, 2013],
+      "titleYears": [
+        1908,
+        1911,
+        1952,
+        1956,
+        1957,
+        1965,
+        1967,
+        1993,
+        1994,
+        1996,
+        1997,
+        1999,
+        2000,
+        2001,
+        2003,
+        2007,
+        2008,
+        2009,
+        2011,
+        2013
+      ],
       "lastTitle": {
         "date": "2013-04-22",
         "opponent": "Aston Villa",
@@ -263,7 +372,12 @@
       "accent": "#FFFFFF",
       "accentLight": "#241F20",
       "secondary": "#41B6E6",
-      "titleYears": [1905, 1907, 1909, 1927],
+      "titleYears": [
+        1905,
+        1907,
+        1909,
+        1927
+      ],
       "lastTitle": {
         "date": "1927-04-30",
         "opponent": "Sheffield Wednesday",
@@ -279,7 +393,9 @@
       "abbr": "NFO",
       "accent": "#DD0000",
       "secondary": "#FFFFFF",
-      "titleYears": [1978],
+      "titleYears": [
+        1978
+      ],
       "lastTitle": {
         "date": "1978-04-22",
         "opponent": "Coventry City",
@@ -295,7 +411,14 @@
       "abbr": "SUN",
       "accent": "#EB172B",
       "secondary": "#211E1E",
-      "titleYears": [1892, 1893, 1895, 1902, 1913, 1936],
+      "titleYears": [
+        1892,
+        1893,
+        1895,
+        1902,
+        1913,
+        1936
+      ],
       "lastTitle": {
         "date": "1936-04-13",
         "opponent": "Birmingham",
@@ -312,7 +435,10 @@
       "accent": "#FFFFFF",
       "accentLight": "#132257",
       "secondary": "#132257",
-      "titleYears": [1951, 1961],
+      "titleYears": [
+        1951,
+        1961
+      ],
       "lastTitle": {
         "date": "1961-04-17",
         "opponent": "Sheffield Wednesday",
