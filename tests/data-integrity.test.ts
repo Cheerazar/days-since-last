@@ -26,6 +26,7 @@ const EXPECTED_TEAM_COUNTS: Record<string, number> = {
   ligaf: 16,
   frauenbundesliga: 14,
   'seriea-femminile': 12,
+  premiereligue: 12,
 };
 
 describe('league registry shape', () => {
@@ -120,6 +121,7 @@ describe('reigning champions', () => {
       ligaf: 'barcelona',
       frauenbundesliga: 'bayern-munich',
       'seriea-femminile': 'roma',
+      premiereligue: 'ol-lyonnes',
     });
   });
 
@@ -175,6 +177,9 @@ describe('anchor dates', () => {
     ['seriea-femminile', 'fiorentina', '2017-05-06'],
     ['seriea-femminile', 'juventus', '2025-04-18'],
     ['seriea-femminile', 'roma', '2026-05-02'],
+    ['premiereligue', 'paris-fc', '2006-05-25'],
+    ['premiereligue', 'montpellier', '2005-05-07'],
+    ['premiereligue', 'ol-lyonnes', '2026-05-29'],
   ];
 
   it.each(ANCHORS)('%s/%s last title on %s', (leagueSlug, teamSlug, date) => {

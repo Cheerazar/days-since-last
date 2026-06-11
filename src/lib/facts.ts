@@ -113,6 +113,11 @@ const PEOPLE: Record<string, Array<[string, string]>> = {
     ['1975-02-08', 'Patrizia Panico'],
     ['1990-04-23', 'Cristiana Girelli'],
   ],
+  premiereligue: [
+    ['1975-11-26', 'Marinette Pichon'],
+    ['1990-07-20', 'Wendie Renard'],
+    ['1998-11-01', 'Marie-Antoinette Katoto'],
+  ],
 };
 
 /** Season end-year of the season currently in progress (or just finished). */

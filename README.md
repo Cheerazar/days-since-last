@@ -7,7 +7,9 @@ By [Gunnari Auvinen](https://gunnariauvinen.com) — principal software engineer
 Every team in every major league, ranked by days since its last
 championship — live-ticking jumbotron counters, fan-pain facts, and per-team
 share cards. NFL, NBA, MLB, NHL, MLS, WNBA, NWSL, PWHL, plus Europe's big
-five: the Premier League, La Liga, Bundesliga, Serie A, and Ligue 1.
+five men's leagues (Premier League, La Liga, Bundesliga, Serie A, Ligue 1)
+and their women's counterparts (WSL, Liga F, Frauen-Bundesliga, Serie A
+Femminile, Première Ligue).
 
 Static [Astro](https://astro.build) site. No database, no API, no server: each
 league is one JSON file in [`src/data/`](src/data/), with every title date
