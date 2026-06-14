@@ -7,6 +7,18 @@
   "competitionNoun": "top-flight",
   "updated": "2026-06-10",
   "footnote": "Titles count the whole English women's top flight — the FA Women's Premier League National Division (1992–2010) and the WSL (2011– ); the 2017 Spring Series doesn't count. Never-champions count from their first top-flight match. The 14 clubs shown are the 2026–27 season's, the league's first at that size.",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "04-20",
+      "until": "05-31"
+    },
+    {
+      "kind": "roster",
+      "from": "08-25",
+      "until": "09-15"
+    }
+  ],
   "teams": [
     {
       "slug": "arsenal",

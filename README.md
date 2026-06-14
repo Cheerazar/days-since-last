@@ -27,10 +27,32 @@ of when the site was built.
 | `npm run preview`                | Serve the built site locally                 |
 | `npm test`                       | Run the Vitest suite                         |
 | `node scripts/validate-data.mjs` | Schema-check every league JSON               |
+| `node scripts/watch-due.mjs`     | List leagues whose result window is open today |
+
+## Staying current automatically
+
+The maintenance below (crownings, roster swaps) is meant to run itself. A scheduled
+GitHub Action, [`.github/workflows/auto-maintain.yml`](.github/workflows/auto-maintain.yml),
+detects champions and promotion/relegation and opens a **pull request** with the
+change — verified, cited, and gated by CI — for you to merge. It never auto-merges.
+
+The cost control is a free calendar gate: each league declares a `watch` array of
+recurring `MM-DD` windows for when a result is possible, and
+[`scripts/watch-due.mjs`](scripts/watch-due.mjs) (plain date math, no model) decides
+whether the job runs at all. Outside every window — the NBA in November, say — it
+exits in a second having spent nothing. Only inside a window does it call Claude
+(per [`.github/maintenance-prompt.md`](.github/maintenance-prompt.md)), which polls
+each morning (the same 09:17 UTC cadence as the rebuild, i.e. the morning after any
+game that could have clinched), confirms a result from ≥2 sources with an adversarial
+second pass, edits the data, runs `validate-data.mjs` + `npm test`, and opens the PR.
+
+To adjust when a league is watched, edit its `watch` windows; pad them generously, the
+in-window polls are cheap. Requires the `ANTHROPIC_API_KEY` repo secret. The manual
+playbooks below remain the fallback (and the spec the agent follows).
 
 ## The night a champion is crowned
 
-The only maintenance this site needs, once per league per year:
+Once per league per year — the agent above does this for you, or by hand:
 
 1. In `src/data/<league>.json`, find the winner and update:
    - append the year to `titleYears`

@@ -6,6 +6,18 @@
   "finalsName": "the title race",
   "updated": "2026-06-11",
   "footnote": "Titles follow the historical albo d'oro back to 1968 — the pre-FIGC federations included. Honours follow legal continuity: sporting-title purchases don't transfer them, so today's Milan and Lazio carry none of the historic Milan- and Lazio-named crowns. The 12 clubs shown are the 2025–26 season's until newcomers Como 1907 debut in the autumn.",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "04-25",
+      "until": "05-31"
+    },
+    {
+      "kind": "roster",
+      "from": "09-20",
+      "until": "10-15"
+    }
+  ],
   "teams": [
     {
       "slug": "como-women",

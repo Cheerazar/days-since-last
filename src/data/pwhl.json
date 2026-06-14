@@ -3,6 +3,13 @@
   "slug": "pwhl",
   "finalsName": "the Walter Cup Finals",
   "updated": "2026-06-10",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "05-15",
+      "until": "06-05"
+    }
+  ],
   "teams": [
     {
       "slug": "boston-fleet",

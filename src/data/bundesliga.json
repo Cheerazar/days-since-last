@@ -5,6 +5,18 @@
   "finalsName": "the title race",
   "updated": "2026-06-10",
   "footnote": "Titles count every German championship back to 1903 — the pre-Bundesliga finals era included, just like the stars on the shirts. Never-champions count from their first Bundesliga match; the single national league began in 1963. The 18 clubs shown are the 2025–26 season's until the newcomers kick off in August.",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "04-12",
+      "until": "05-25"
+    },
+    {
+      "kind": "roster",
+      "from": "08-15",
+      "until": "08-31"
+    }
+  ],
   "teams": [
     {
       "slug": "augsburg",

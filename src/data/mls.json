@@ -3,6 +3,13 @@
   "slug": "mls",
   "finalsName": "MLS Cup",
   "updated": "2026-06-10",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "11-25",
+      "until": "12-14"
+    }
+  ],
   "teams": [
     {
       "slug": "atlanta-united-fc",

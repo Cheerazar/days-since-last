@@ -6,6 +6,18 @@
   "competitionNoun": "top-flight",
   "updated": "2026-06-11",
   "footnote": "Titles count the whole French women's championship back to 1974–75 — the group-stage era included; the title has been decided by play-offs since 2024. Honours follow club continuity: Paris FC carry Juvisy's six titles, while FC Lyon's four stay with FC Lyon despite the 2004 section transfer to OL. The 12 clubs shown are the 2025–26 season's until debutants Saint-Malo kick off in the autumn.",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "05-10",
+      "until": "06-10"
+    },
+    {
+      "kind": "roster",
+      "from": "08-25",
+      "until": "09-20"
+    }
+  ],
   "teams": [
     {
       "slug": "dijon",

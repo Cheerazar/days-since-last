@@ -6,6 +6,18 @@
   "competitionNoun": "top-flight",
   "updated": "2026-06-10",
   "footnote": "Titles follow the official record from the first professional season, 1932–33 — the league was Division 1 until 2002 — with the 1993 title vacated after the Marseille affair and wartime seasons excluded. Never-champions count from their first top-flight match. The 18 clubs shown are the 2026–27 season's.",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "04-12",
+      "until": "05-31"
+    },
+    {
+      "kind": "roster",
+      "from": "08-10",
+      "until": "08-25"
+    }
+  ],
   "teams": [
     {
       "slug": "angers",

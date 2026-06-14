@@ -1,0 +1,61 @@
+# Detects champions and roster swaps and opens a PR — but only on days a result is
+# possible. scripts/watch-due.mjs is a free calendar gate: if no league's `watch`
+# window contains today, the job exits before invoking any model. Requires the
+# ANTHROPIC_API_KEY repo secret.
+name: Auto-maintain data
+
+on:
+  schedule:
+    - cron: '17 9 * * *' # 09:17 UTC ≈ 5:17am ET, after late US games end
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Override date (YYYY-MM-DD) for testing the gate'
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      due: ${{ steps.due.outputs.due }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: due
+        name: Which leagues are in a watch window today?
+        run: node scripts/watch-due.mjs ${{ inputs.date && format('--date {0}', inputs.date) || '' }}
+
+  maintain:
+    needs: gate
+    if: ${{ needs.gate.outputs.due != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Detect, verify, and open a PR
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Sonnet, not Haiku: the calendar gate already makes idle days free and the
+          # idempotency check exits no-op polls fast, so the per-run cost is small
+          # either way — and the rare real events (multi-source verification, lineage
+          # edge cases) want the stronger model. Flip to claude-haiku-4-5 to trade a
+          # little accuracy for ~$20/yr. --max-turns caps any runaway.
+          claude_args: >-
+            --model claude-sonnet-4-6
+            --max-turns 60
+            --allowedTools "WebSearch,Read,Edit,Write,Bash"
+          prompt: |
+            Read .github/maintenance-prompt.md and follow it exactly.
+
+            DUE (leagues in a watch window today, as "<slug> <kind>"):
+            ${{ needs.gate.outputs.due }}

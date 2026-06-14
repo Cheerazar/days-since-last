@@ -7,6 +7,18 @@
   "banner": "The last 2026–27 spot is decided in the Almería–Málaga promotion play-off final on June 20 — Racing Santander and Deportivo La Coruña are already up.",
   "bannerUntil": "2026-06-21",
   "footnote": "The 20 clubs shown are the 2025–26 season's; once the promotion play-off concludes June 20, Racing Santander, Deportivo La Coruña and the play-off winner replace the relegated trio.",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "04-15",
+      "until": "05-31"
+    },
+    {
+      "kind": "roster",
+      "from": "08-10",
+      "until": "08-31"
+    }
+  ],
   "teams": [
     {
       "slug": "alaves",

@@ -63,7 +63,23 @@ export interface League {
   bannerUntil?: string;
   /** Permanent fine print for the league board, e.g. data conventions. */
   footnote?: string;
+  /**
+   * Recurring date windows (MM-DD) when a result is possible this cycle. Used
+   * only by the auto-maintenance job (scripts/watch-due.mjs): outside every
+   * window the scheduled agent never runs, so it can't, e.g., check the NBA
+   * Finals in November.
+   */
+  watch?: WatchWindow[];
   teams: Team[];
+}
+
+export interface WatchWindow {
+  /** "champion" = a title can be clinched; "roster" = promotion/relegation settles. */
+  kind: 'champion' | 'roster';
+  /** Recurring month-day, inclusive. */
+  from: string;
+  /** Recurring month-day, inclusive. May wrap past year-end (from > until). */
+  until: string;
 }
 
 // Every JSON in src/data/ is a league. Drop a new file in and it appears in

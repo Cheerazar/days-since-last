@@ -3,6 +3,13 @@
   "slug": "wnba",
   "finalsName": "the WNBA Finals",
   "updated": "2026-06-10",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "10-01",
+      "until": "10-25"
+    }
+  ],
   "teams": [
     {
       "slug": "atlanta-dream",

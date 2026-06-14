@@ -5,6 +5,18 @@
   "finalsName": "the title race",
   "updated": "2026-06-11",
   "footnote": "Titles count every German women's championship back to 1974 — the pre-Bundesliga finals era included; East German titles don't count. Never-champions count from their first Frauen-Bundesliga match (the national league began in 1990). The 14 clubs shown are the 2025–26 season's until newcomers Stuttgart and Mainz — both first-time top-flight clubs — kick off in the autumn.",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "04-12",
+      "until": "05-25"
+    },
+    {
+      "kind": "roster",
+      "from": "08-25",
+      "until": "09-20"
+    }
+  ],
   "teams": [
     {
       "slug": "bayer-leverkusen",

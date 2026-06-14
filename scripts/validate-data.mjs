@@ -5,6 +5,7 @@ import { join } from 'node:path';
 const dir = 'src/data';
 const HEX = /^#[0-9A-Fa-f]{6}$/;
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
+const MMDD = /^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
 let failures = 0;
 
 const fail = (file, msg) => {
@@ -35,6 +36,22 @@ for (const file of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
     const span = (Date.parse(data.bannerUntil) - Date.parse(data.updated)) / 86400000;
     if (span > 30) fail(file, `bannerUntil is ${Math.round(span)} days past updated — footnote material, not a banner`);
   }
+  // Watch windows gate the auto-maintenance job; recurring MM-DD ranges.
+  if (data.watch !== undefined) {
+    if (!Array.isArray(data.watch)) {
+      fail(file, 'watch must be an array');
+    } else {
+      for (const w of data.watch) {
+        if (w.kind !== 'champion' && w.kind !== 'roster') {
+          fail(file, `watch.kind must be "champion" or "roster": ${w.kind}`);
+        }
+        for (const k of ['from', 'until']) {
+          if (!MMDD.test(w[k] ?? '')) fail(file, `watch.${k} must be MM-DD: ${w[k]}`);
+        }
+      }
+    }
+  }
+
   // Smallest current league is the 8-team PWHL.
   if (!Array.isArray(data.teams) || data.teams.length < 6) {
     fail(file, `suspicious team count: ${data.teams?.length}`);

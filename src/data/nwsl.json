@@ -3,6 +3,13 @@
   "slug": "nwsl",
   "finalsName": "the NWSL Championship",
   "updated": "2026-06-10",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "11-10",
+      "until": "12-01"
+    }
+  ],
   "teams": [
     {
       "slug": "angel-city-fc",

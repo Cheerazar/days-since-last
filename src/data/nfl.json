@@ -3,6 +3,13 @@
   "slug": "nfl",
   "finalsName": "the Super Bowl",
   "updated": "2026-06-10",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "02-01",
+      "until": "02-16"
+    }
+  ],
   "teams": [
     {
       "slug": "arizona-cardinals",

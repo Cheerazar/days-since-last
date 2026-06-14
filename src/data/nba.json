@@ -5,6 +5,13 @@
   "updated": "2026-06-14",
   "banner": "Champions at last: the Knicks beat the Spurs in Game 5 on June 13 to end a 53-year drought, Jalen Brunson Finals MVP. The clock resets to zero.",
   "bannerUntil": "2026-06-21",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "06-01",
+      "until": "06-30"
+    }
+  ],
   "teams": [
     {
       "slug": "atlanta-hawks",

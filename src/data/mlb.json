@@ -3,6 +3,13 @@
   "slug": "mlb",
   "finalsName": "the World Series",
   "updated": "2026-06-10",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "10-25",
+      "until": "11-10"
+    }
+  ],
   "teams": [
     {
       "slug": "arizona-diamondbacks",

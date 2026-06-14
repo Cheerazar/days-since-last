@@ -5,6 +5,18 @@
   "finalsName": "the title race",
   "updated": "2026-06-10",
   "footnote": "Scudetti follow the official FIGC record back to 1898, the pre-Serie A championship era included — with 2005 revoked and 2006 reassigned to Inter after Calciopoli. Never-champions count from their first Serie A match; the single national league began in 1929. The 20 clubs shown are the 2026–27 season's.",
+  "watch": [
+    {
+      "kind": "champion",
+      "from": "04-25",
+      "until": "06-05"
+    },
+    {
+      "kind": "roster",
+      "from": "08-15",
+      "until": "08-31"
+    }
+  ],
   "teams": [
     {
       "slug": "ac-milan",
