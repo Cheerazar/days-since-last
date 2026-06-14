@@ -14,12 +14,12 @@ const teamIn = (leagueSlug: string, teamSlug: string): { team: Team; league: Lea
 };
 
 describe('factsFor — champions of the past', () => {
-  it('builds the Knicks panel exactly as the site shows it', () => {
-    const { team, league } = teamIn('nba', 'new-york-knicks');
+  it('builds a deep-drought panel exactly as the site shows it', () => {
+    const { team, league } = teamIn('nba', 'atlanta-hawks');
     const facts = factsFor(team, league, NOW);
-    expect(facts).toContain("That's 53 NBA seasons of waiting.");
-    expect(facts).toContain('10 U.S. presidencies have started.');
-    expect(facts).toContain("LeBron James wouldn't be born for another 11 years.");
+    expect(facts).toContain("That's 68 NBA seasons of waiting.");
+    expect(facts).toContain('13 U.S. presidencies have started.');
+    expect(facts).toContain("Michael Jordan wouldn't be born for another 5 years.");
     expect(facts.some((f) => f.startsWith('Since then:'))).toBe(true);
   });
 

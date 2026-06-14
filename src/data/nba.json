@@ -2,9 +2,9 @@
   "league": "NBA",
   "slug": "nba",
   "finalsName": "the Finals",
-  "updated": "2026-06-09",
-  "banner": "The 2026 Finals are under way: either the Knicks end a 53-year wait, or the Spurs reset to zero.",
-  "bannerUntil": "2026-06-22",
+  "updated": "2026-06-14",
+  "banner": "Champions at last: the Knicks beat the Spurs in Game 5 on June 13 to end a 53-year drought, Jalen Brunson Finals MVP. The clock resets to zero.",
+  "bannerUntil": "2026-06-21",
   "teams": [
     {
       "slug": "atlanta-hawks",
@@ -399,11 +399,12 @@
       "secondary": "#006BB6",
       "titleYears": [
         1970,
-        1973
+        1973,
+        2026
       ],
       "lastTitle": {
-        "date": "1973-05-10",
-        "opponent": "Los Angeles Lakers",
+        "date": "2026-06-13",
+        "opponent": "San Antonio Spurs",
         "series": "4–1",
         "asName": null
       },
