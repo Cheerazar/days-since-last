@@ -107,7 +107,7 @@ describe('reigning champions', () => {
       nfl: 'seattle-seahawks',
       nba: 'new-york-knicks',
       mlb: 'los-angeles-dodgers',
-      nhl: 'florida-panthers',
+      nhl: 'carolina-hurricanes',
       mls: 'inter-miami-cf',
       wnba: 'las-vegas-aces',
       nwsl: 'nj-ny-gotham-fc',

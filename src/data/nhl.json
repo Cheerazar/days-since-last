@@ -2,9 +2,9 @@
   "league": "NHL",
   "slug": "nhl",
   "finalsName": "the Stanley Cup Final",
-  "updated": "2026-06-10",
-  "banner": "The 2026 Stanley Cup Final is tied 2–2: either the Hurricanes end a 20-year wait, or the Golden Knights reset a clock that barely started — Game 5 is June 11 in Raleigh.",
-  "bannerUntil": "2026-06-11",
+  "updated": "2026-06-15",
+  "banner": "Champions for the first time in 20 years: the Hurricanes blanked the Golden Knights 3–0 in Game 6 on June 14 to win the Stanley Cup. Jordan Staal, Conn Smythe MVP. The clock resets to zero.",
+  "bannerUntil": "2026-06-22",
   "watch": [
     {
       "kind": "champion",
@@ -98,12 +98,13 @@
       "accent": "#CE1126",
       "secondary": "#A4A9AD",
       "titleYears": [
-        2006
+        2006,
+        2026
       ],
       "lastTitle": {
-        "date": "2006-06-19",
-        "opponent": "Edmonton Oilers",
-        "series": "4–3",
+        "date": "2026-06-14",
+        "opponent": "Vegas Golden Knights",
+        "series": "4–2",
         "asName": null
       },
       "lineage": "Hartford Whalers (1979–97) → Carolina Hurricanes (1997– )"
