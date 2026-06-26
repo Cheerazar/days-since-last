@@ -3,10 +3,8 @@
   "slug": "laliga",
   "group": "football-mens",
   "finalsName": "the title race",
-  "updated": "2026-06-10",
-  "banner": "The last 2026–27 spot is decided in the Almería–Málaga promotion play-off final on June 20 — Racing Santander and Deportivo La Coruña are already up.",
-  "bannerUntil": "2026-06-21",
-  "footnote": "The 20 clubs shown are the 2025–26 season's; once the promotion play-off concludes June 20, Racing Santander, Deportivo La Coruña and the play-off winner replace the relegated trio.",
+  "updated": "2026-06-26",
+  "footnote": "The 20 clubs shown are the 2026–27 season's. La Liga titles count from 1929; clocks keep running through relegation.",
   "watch": [
     {
       "kind": "champion",
@@ -155,6 +153,24 @@
       "finalsLosses": []
     },
     {
+      "slug": "deportivo-la-coruna",
+      "name": "Deportivo La Coruña",
+      "shortName": "Depor",
+      "abbr": "DEP",
+      "accent": "#0067B1",
+      "secondary": "#FFFFFF",
+      "titleYears": [
+        2000
+      ],
+      "lastTitle": {
+        "date": "2000-05-19",
+        "opponent": "Espanyol",
+        "series": "2–0",
+        "asName": null,
+        "clinch": "beat Espanyol 2–0 at Riazor on the final day — Donato and Makaay — to finish five points clear for Super Depor’s only title"
+      }
+    },
+    {
       "slug": "elche",
       "name": "Elche",
       "shortName": "Franjiverdes",
@@ -206,20 +222,6 @@
       "finalsLosses": []
     },
     {
-      "slug": "girona",
-      "name": "Girona",
-      "shortName": "Gironins",
-      "abbr": "GIR",
-      "accent": "#CF152D",
-      "secondary": "#FFFFFF",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "2017-08-19",
-      "firstGameAs": null,
-      "firstGameNote": "Led Atlético Madrid 2–0 on debut night at Montilivi in 2017 before settling for 2–2; the 2024 fairy tale peaked at third place and a Champions League debut.",
-      "finalsLosses": []
-    },
-    {
       "slug": "levante",
       "name": "Levante",
       "shortName": "Granotas",
@@ -234,24 +236,18 @@
       "finalsLosses": []
     },
     {
-      "slug": "mallorca",
-      "name": "RCD Mallorca",
-      "shortName": "Bermellones",
-      "abbr": "MLL",
-      "accent": "#E20613",
-      "secondary": "#000000",
+      "slug": "malaga",
+      "name": "Málaga CF",
+      "shortName": "Boquerones",
+      "abbr": "MAL",
+      "accent": "#003DA5",
+      "secondary": "#FFFFFF",
       "titleYears": [],
       "lastTitle": null,
-      "firstGame": "1960-09-11",
+      "firstGame": "1999-08-22",
       "firstGameAs": null,
-      "firstGameNote": "Lost 2–0 at Betis in their 1960 debut; the league table has never read better than third, twice — and 2025–26 ended in final-day relegation.",
-      "finalsLosses": [],
-      "asterisk": {
-        "label": "Copa del Rey",
-        "years": [
-          2003
-        ]
-      }
+      "firstGameNote": "Beat Espanyol 1–0 at La Rosaleda on debut in 1999, six years after the club was refounded; a fourth-place finish in 2012 and a Champions League quarter-final the year after came just before a near-fatal financial collapse.",
+      "finalsLosses": []
     },
     {
       "slug": "osasuna",
@@ -266,6 +262,22 @@
       "firstGameAs": null,
       "firstGameNote": "Walloped 5–1 by reigning champions Betis in their 1935 debut, then avenged it 6–0 in Pamplona the same season — the Civil War, relegations and 90 years of waiting followed.",
       "finalsLosses": []
+    },
+    {
+      "slug": "racing-santander",
+      "name": "Racing Santander",
+      "shortName": "Racinguistas",
+      "abbr": "RAC",
+      "accent": "#009639",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "1929-02-12",
+      "firstGameAs": null,
+      "firstGameNote": "One of La Liga’s ten founding members in 1929, Racing marked matchday one by hosting Barcelona at El Sardinero and losing 2–0.",
+      "finalsLosses": [
+        1931
+      ]
     },
     {
       "slug": "rayo-vallecano",
@@ -352,20 +364,6 @@
         "asName": null,
         "clinch": "beat Cádiz 3–0 at the Bernabéu, then watched title number 36 arrive that evening as Barcelona fell 4–2 at Girona"
       }
-    },
-    {
-      "slug": "real-oviedo",
-      "name": "Real Oviedo",
-      "shortName": "Carbayones",
-      "abbr": "OVI",
-      "accent": "#094CA1",
-      "secondary": "#FFFFFF",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "1933-11-05",
-      "firstGameAs": null,
-      "firstGameNote": "Demolished Barcelona 7–3 at Buenavista in 1933 — still the greatest debut by a promoted club, with a Lángara second-half hat-trick — then returned in 2025 after 24 years away, only to go straight back down.",
-      "finalsLosses": []
     },
     {
       "slug": "real-sociedad",
