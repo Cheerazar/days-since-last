@@ -13,6 +13,11 @@
     },
     {
       "kind": "roster",
+      "from": "05-12",
+      "until": "06-02"
+    },
+    {
+      "kind": "roster",
       "from": "08-25",
       "until": "09-20"
     }

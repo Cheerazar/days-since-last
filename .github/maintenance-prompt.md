@@ -49,7 +49,12 @@ pattern). Bump the league's `updated` to today.
 - Replace the league `banner` with a one-line celebratory note and set `bannerUntil`
   ~7 days out (the validator rejects more than 30 days past `updated`).
 
-**Roster swap (promotion/relegation):**
+**Roster swap (promotion/relegation):** a swap may span two windows. The early
+"settle" window fires once promotion/relegation is mathematically final (after the
+play-offs) — do the swap then. A later "autumn" window catches any club that had to
+be deferred. Both runs are safe because of the idempotency check in Step 1: only act
+on what isn't already reflected, so re-runs and the second window converge cleanly.
+
 - Remove each relegated club's entire object.
 - Add each promoted club: research colors (official palette; add `accentLight` if the
   primary is pale/white), `abbr`, the nav `group`, and the **lineage-aware**

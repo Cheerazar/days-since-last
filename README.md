@@ -78,17 +78,26 @@ December.
 
 ### Promotion/relegation leagues: the annual roster swap
 
-The European leagues (EPL, La Liga, Bundesliga, Serie A, Ligue 1) change
-membership every summer once the season and the promotion play-offs end. In
-the league's JSON:
+The European men's and women's leagues change membership every summer. The
+auto-maintenance job handles this in up to two passes, gated by two `roster`
+`watch` windows per league:
 
-1. Delete the three relegated clubs' entries.
-2. Add the three promoted clubs. A club returning to the top flight keeps its
-   full history: titles from any earlier top-flight spell still count, and a
-   never-won club's `firstGame` is its first-ever top-flight match (which may
-   be decades old), not its return date. Only a club that has never played
-   top-flight football gets a fresh `firstGame` (its first PL fixture — wait
-   until it has been played, since clocks can't start in the future).
+- A **settle** window fires once promotion/relegation is mathematically final
+  (right after the play-offs, e.g. La Liga mid-to-late June): delete the
+  relegated clubs, add the promoted ones.
+- An **autumn** window (around the new season's first matchday) catches anything
+  the settle pass had to defer.
+
+By hand or in the agent, the rules are the same:
+
+1. Delete the relegated clubs' entries.
+2. Add the promoted clubs. A club returning to the top flight keeps its full
+   history: titles from any earlier spell still count, and its `firstGame` is
+   its first-ever top-flight match (often decades old), not its return date.
+   Only a club that has **never** played top-flight football gets a fresh
+   `firstGame` — its first fixture, and only once that has been played, since
+   clocks can't start in the future. Such a debutant is deferred from the
+   settle pass to the autumn pass.
 3. Update `EXPECTED_TEAM_COUNTS`/anchors in `tests/` if affected, then
    `node scripts/validate-data.mjs` and `npm test`.
 
