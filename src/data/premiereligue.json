@@ -4,8 +4,8 @@
   "group": "football-womens",
   "finalsName": "the play-off final",
   "competitionNoun": "top-flight",
-  "updated": "2026-06-11",
-  "footnote": "Titles count the whole French women's championship back to 1974–75 — the group-stage era included; the title has been decided by play-offs since 2024. Honours follow club continuity: Paris FC carry Juvisy's six titles, while FC Lyon's four stay with FC Lyon despite the 2004 section transfer to OL. The 12 clubs shown are the 2025–26 season's until debutants Saint-Malo kick off in the autumn.",
+  "updated": "2026-08-25",
+  "footnote": "Titles count the whole French women's championship back to 1974–75 — the group-stage era included; the title has been decided by play-offs since 2024. Honours follow club continuity: Paris FC carry Juvisy's six titles, while FC Lyon's four stay with FC Lyon despite the 2004 section transfer to OL. The 11 clubs shown are the 2026–27 season's; debutants Saint-Malo (first match 5 September 2026) will be added once their opening fixture is played.",
   "watch": [
     {
       "kind": "champion",
@@ -65,20 +65,6 @@
       "firstGame": "2020-09-05",
       "firstGameAs": null,
       "firstGameNote": "France's oldest club won its 2020 top-flight debut 4–0 at Issy — then took eight more points all season and went straight down; back and established since 2022.",
-      "finalsLosses": []
-    },
-    {
-      "slug": "lens",
-      "name": "RC Lens",
-      "shortName": "Sang et Or",
-      "abbr": "LEN",
-      "accent": "#EC1C24",
-      "secondary": "#FFF200",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "2012-09-09",
-      "firstGameAs": "Arras FCF",
-      "firstGameNote": "Thrashed 6–0 at Juvisy in the lineage's 2012 debut as Arras FCF, the club Lens absorbed in 2020; the Lens-branded elite debut in 2025 drew a record 10,712 to Bollaert — and ended in relegation anyway.",
       "finalsLosses": []
     },
     {
@@ -213,26 +199,6 @@
       }
     },
     {
-      "slug": "saint-etienne",
-      "name": "AS Saint-Étienne",
-      "shortName": "Vertes",
-      "abbr": "STE",
-      "accent": "#009E60",
-      "secondary": "#FFFFFF",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "2007-09-02",
-      "firstGameAs": "RC Saint-Étienne",
-      "firstGameNote": "Beat Soyaux 1–0 in the lineage's verifiable 2007 debut as Racing Club de Saint-Étienne — a club founded the day after ASSE shut its women's section in 1977, folded back in by 2009; relegated again in 2026.",
-      "finalsLosses": [],
-      "asterisk": {
-        "label": "Coupe de France",
-        "years": [
-          2011
-        ]
-      }
-    },
-    {
       "slug": "strasbourg",
       "name": "RC Strasbourg",
       "shortName": "Alsaciennes",
@@ -245,6 +211,29 @@
       "firstGameAs": null,
       "firstGameNote": "Drew 1–1 with Dijon at the Meinau in the club's first-ever top-flight match in 2024 — regional football to the Première Ligue in eight years — then leapt to seventh in season two.",
       "finalsLosses": []
+    },
+    {
+      "slug": "toulouse",
+      "name": "Toulouse FC",
+      "shortName": "Violettes",
+      "abbr": "TOU",
+      "accent": "#745990",
+      "accentLight": "#3E2C56",
+      "secondary": "#FFFFFF",
+      "titleYears": [
+        1999,
+        2000,
+        2001,
+        2002
+      ],
+      "lastTitle": {
+        "date": "2002-06-30",
+        "opponent": "FC Lyon",
+        "series": "3–0",
+        "asName": null,
+        "clinch": "beat FC Lyon 3–0 in the final-tournament decider at Stade des Fontaines, Toulouse — Sandrine Rouquet twice, Blouin — to complete four straight championships, the first four-peat in French women's football"
+      },
+      "lineage": "The first three titles (1999–2001) were won as Toulouse OAC; the club became a section of Toulouse FC in 2001. Relegated in 2011, returning for 2026–27 is the club's first top-flight season in 15 years."
     }
   ]
 }

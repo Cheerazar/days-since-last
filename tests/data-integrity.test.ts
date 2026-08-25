@@ -26,7 +26,7 @@ const EXPECTED_TEAM_COUNTS: Record<string, number> = {
   ligaf: 16,
   frauenbundesliga: 14,
   'seriea-femminile': 12,
-  premiereligue: 12,
+  premiereligue: 11,
 };
 
 describe('league registry shape', () => {
