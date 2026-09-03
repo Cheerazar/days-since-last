@@ -3,8 +3,8 @@
   "slug": "bundesliga",
   "group": "football-mens",
   "finalsName": "the title race",
-  "updated": "2026-06-10",
-  "footnote": "Titles count every German championship back to 1903 — the pre-Bundesliga finals era included, just like the stars on the shirts. Never-champions count from their first Bundesliga match; the single national league began in 1963. The 18 clubs shown are the 2025–26 season's until the newcomers kick off in August.",
+  "updated": "2026-08-16",
+  "footnote": "Titles count every German championship back to 1903 — the pre-Bundesliga finals era included, just like the stars on the shirts. Never-champions count from their first Bundesliga match; the single national league began in 1963. 17 of the 18 clubs in the 2026–27 season are shown; SV Elversberg, promoted for the first time in club history, will be added once their opening Bundesliga fixture has been played.",
   "watch": [
     {
       "kind": "champion",
@@ -210,20 +210,6 @@
       }
     },
     {
-      "slug": "heidenheim",
-      "name": "1. FC Heidenheim",
-      "shortName": "Heidenheimer",
-      "abbr": "FCH",
-      "accent": "#E2001A",
-      "secondary": "#003B79",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "2023-08-19",
-      "firstGameAs": null,
-      "firstGameNote": "Lost 2–0 at Wolfsburg in their 2023 debut, 177 years after the founding date in the club's name; year one brought eighth place and Europe, year three brought relegation.",
-      "finalsLosses": []
-    },
-    {
       "slug": "hoffenheim",
       "name": "TSG Hoffenheim",
       "shortName": "Kraichgauer",
@@ -272,6 +258,20 @@
       "finalsLosses": []
     },
     {
+      "slug": "paderborn",
+      "name": "SC Paderborn 07",
+      "shortName": "Paderborn",
+      "abbr": "SCP",
+      "accent": "#005CA8",
+      "secondary": "#000000",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2014-08-24",
+      "firstGameAs": null,
+      "firstGameNote": "Led 2–1 into stoppage time in their 2014 debut before a Koo penalty earned Mainz 05 a 2–2 draw at the Benteler-Arena; four weeks later Stoppelkamp's 82-metre free-kick against Hannover set the record for the longest-range goal in Bundesliga history — and Paderborn are back for a third top-flight season.",
+      "finalsLosses": []
+    },
+    {
       "slug": "rb-leipzig",
       "name": "RB Leipzig",
       "shortName": "Red Bulls",
@@ -296,18 +296,28 @@
       }
     },
     {
-      "slug": "st-pauli",
-      "name": "FC St. Pauli",
-      "shortName": "Buccaneers",
-      "abbr": "STP",
-      "accent": "#E2001A",
-      "secondary": "#4E3629",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "1977-08-06",
-      "firstGameAs": null,
-      "firstGameNote": "Beat Werder Bremen 3–1 at the Millerntor in their 1977 debut; five decades of Jolly Roger culture later, the Buccaneers' best top-flight finish is still tenth.",
-      "finalsLosses": []
+      "slug": "schalke-04",
+      "name": "FC Schalke 04",
+      "shortName": "Knappen",
+      "abbr": "S04",
+      "accent": "#004D9E",
+      "secondary": "#FFFFFF",
+      "titleYears": [
+        1934,
+        1935,
+        1937,
+        1939,
+        1940,
+        1942,
+        1958
+      ],
+      "lastTitle": {
+        "date": "1958-05-18",
+        "opponent": "Hamburger SV",
+        "series": "3–0",
+        "asName": null,
+        "clinch": "beat Hamburger SV 3–0 in the championship final — four wins from four, 19 goals scored, one conceded — for a seventh and, as it proved, last German title, 68 years before the club's return to the Bundesliga"
+      }
     },
     {
       "slug": "stuttgart",
@@ -370,24 +380,6 @@
         "series": "3–1",
         "asName": null,
         "clinch": "won 3–1 at Bayern Munich with two games to spare — Klasnić, Micoud and Aílton all scoring inside 35 minutes"
-      }
-    },
-    {
-      "slug": "wolfsburg",
-      "name": "VfL Wolfsburg",
-      "shortName": "Wolfsburg",
-      "abbr": "WOB",
-      "accent": "#65B32E",
-      "secondary": "#FFFFFF",
-      "titleYears": [
-        2009
-      ],
-      "lastTitle": {
-        "date": "2009-05-23",
-        "opponent": "Werder Bremen",
-        "series": "5–1",
-        "asName": null,
-        "clinch": "beat Werder Bremen 5–1 on the final day, two more goals for 28-goal Grafite, to land a first title in club history"
       }
     }
   ]
