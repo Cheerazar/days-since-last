@@ -3,8 +3,8 @@
   "slug": "frauenbundesliga",
   "group": "football-womens",
   "finalsName": "the title race",
-  "updated": "2026-06-11",
-  "footnote": "Titles count every German women's championship back to 1974 — the pre-Bundesliga finals era included; East German titles don't count. Never-champions count from their first Frauen-Bundesliga match (the national league began in 1990). The 14 clubs shown are the 2025–26 season's until newcomers Stuttgart and Mainz — both first-time top-flight clubs — kick off in the autumn.",
+  "updated": "2026-08-25",
+  "footnote": "Titles count every German women's championship back to 1974 — the pre-Bundesliga finals era included; East German titles don't count. Never-champions count from their first Frauen-Bundesliga match (the national league began in 1990). The 14 clubs shown are the 2026–27 season's.",
   "watch": [
     {
       "kind": "champion",
@@ -62,26 +62,6 @@
         "clinch": "won 3–2 at Union Berlin's Alte Försterei — Giulia Gwinn's 84th-minute winner — for the earliest title clinch in league history, mid-unbeaten-season"
       },
       "lineage": "The 1976 championship predates the Bundesliga — a 4–2 extra-time final win over Tennis Borussia Berlin in Siegen."
-    },
-    {
-      "slug": "carl-zeiss-jena",
-      "name": "Carl Zeiss Jena",
-      "shortName": "Zeissianerinnen",
-      "abbr": "CZJ",
-      "accent": "#0058A5",
-      "secondary": "#FFD500",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "2008-09-07",
-      "firstGameAs": "FF USV Jena",
-      "firstGameNote": "Lost 3–2 to Hamburg in FF USV Jena's 2008 Bundesliga debut; the lineage won the last-ever East German championship in 1991 — a title no one can win again — and went back down in 2026.",
-      "finalsLosses": [],
-      "asterisk": {
-        "label": "East German championship",
-        "years": [
-          1991
-        ]
-      }
     },
     {
       "slug": "eintracht-frankfurt",
@@ -165,6 +145,20 @@
       "finalsLosses": []
     },
     {
+      "slug": "mainz-05",
+      "name": "1. FSV Mainz 05",
+      "shortName": "Nullfünferinnen",
+      "abbr": "M05",
+      "accent": "#C3141E",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2026-08-24",
+      "firstGameAs": null,
+      "firstGameNote": "Lost 1–2 to Werder Bremen on their Bundesliga debut at Bruchwegstadion — Shimada and Jaron scoring for Bremen after a missed penalty, Matheis pulling one back — promoted from the second tier two years after the section was born.",
+      "finalsLosses": []
+    },
+    {
       "slug": "nurnberg",
       "name": "1. FC Nürnberg",
       "shortName": "Club-Frauen",
@@ -193,20 +187,6 @@
       "finalsLosses": []
     },
     {
-      "slug": "sgs-essen",
-      "name": "SGS Essen",
-      "shortName": "Lila-Weißen",
-      "abbr": "ESS",
-      "accent": "#5B2B82",
-      "secondary": "#FFFFFF",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "2004-09-05",
-      "firstGameAs": "SG Essen-Schönebeck",
-      "firstGameNote": "Lost 4–0 at Turbine Potsdam in their 2004 debut as SG Essen-Schönebeck; 22 straight top-flight seasons and Germany's finest academy later, 2026 relegation hit the league's last independent women's club.",
-      "finalsLosses": []
-    },
-    {
       "slug": "union-berlin",
       "name": "Union Berlin",
       "shortName": "Unionerinnen",
@@ -218,6 +198,20 @@
       "firstGame": "2025-09-07",
       "firstGameAs": null,
       "firstGameNote": "Drew 1–1 with Nürnberg before 11,242 at the Alte Försterei in their 2025 debut — promoted with the best crowds in Germany while still a second-division club.",
+      "finalsLosses": []
+    },
+    {
+      "slug": "vfb-stuttgart",
+      "name": "VfB Stuttgart",
+      "shortName": "Schwäbinnen",
+      "abbr": "VFB",
+      "accent": "#E32219",
+      "secondary": "#FFFFFF",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2026-08-23",
+      "firstGameAs": null,
+      "firstGameNote": "Won 2–1 away at Hoffenheim in their 2026 debut — Maxi Rall scoring twice to overturn a deficit — three consecutive promotions from the fourth tier completed in just five years since the section was founded.",
       "finalsLosses": []
     },
     {
