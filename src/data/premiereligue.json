@@ -4,8 +4,8 @@
   "group": "football-womens",
   "finalsName": "the play-off final",
   "competitionNoun": "top-flight",
-  "updated": "2026-08-25",
-  "footnote": "Titles count the whole French women's championship back to 1974–75 — the group-stage era included; the title has been decided by play-offs since 2024. Honours follow club continuity: Paris FC carry Juvisy's six titles, while FC Lyon's four stay with FC Lyon despite the 2004 section transfer to OL. The 11 clubs shown are the 2026–27 season's; debutants Saint-Malo (first match 5 September 2026) will be added once their opening fixture is played.",
+  "updated": "2026-09-04",
+  "footnote": "Titles count the whole French women's championship back to 1974–75 — the group-stage era included; the title has been decided by play-offs since 2024. Honours follow club continuity: Paris FC carry Juvisy's six titles, while FC Lyon's four stay with FC Lyon despite the 2004 section transfer to OL. The 11 clubs shown are the 2026–27 season's; Dijon FCO were excluded by the DNCG and relegated RC Lens were repêchéd in their place. Debutants Saint-Malo (first match 5 September 2026) will be added once their opening fixture is played.",
   "watch": [
     {
       "kind": "champion",
@@ -24,20 +24,6 @@
     }
   ],
   "teams": [
-    {
-      "slug": "dijon",
-      "name": "Dijon FCO",
-      "shortName": "Dijonnaises",
-      "abbr": "DIJ",
-      "accent": "#D2122E",
-      "secondary": "#FFFFFF",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "2018-08-25",
-      "firstGameAs": null,
-      "firstGameNote": "Lost 1–0 to Montpellier at the Poussots in their 2018 debut; never relegated since, with a fourth place in 2025 that put them in the league's first play-offs.",
-      "finalsLosses": []
-    },
     {
       "slug": "fleury-91",
       "name": "FC Fleury 91",
@@ -197,6 +183,20 @@
         "asName": null,
         "clinch": "beat Dijon 3–0 at Jean-Bouin on the final day to finish a point ahead of Lyon, unbeaten — the only interruption to two decades of Lyon"
       }
+    },
+    {
+      "slug": "rc-lens",
+      "name": "RC Lens",
+      "shortName": "Lensoise",
+      "abbr": "RCL",
+      "accent": "#EC1C24",
+      "secondary": "#FFF200",
+      "titleYears": [],
+      "lastTitle": null,
+      "firstGame": "2025-09-06",
+      "firstGameAs": null,
+      "firstGameNote": "Drew 1–1 with PSG before 10,712 at Bollaert-Delelis in the club's first-ever Première Ligue match in 2025 — Jeudy's 84th-minute header cancelling Ganjinga's opener — then relegated after one season and immediately repêchéd when Dijon were excluded by the DNCG.",
+      "finalsLosses": []
     },
     {
       "slug": "strasbourg",
