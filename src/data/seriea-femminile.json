@@ -4,8 +4,8 @@
   "slug": "seriea-femminile",
   "group": "football-womens",
   "finalsName": "the title race",
-  "updated": "2026-06-11",
-  "footnote": "Titles follow the historical albo d'oro back to 1968 — the pre-FIGC federations included. Honours follow legal continuity: sporting-title purchases don't transfer them, so today's Milan and Lazio carry none of the historic Milan- and Lazio-named crowns. The 12 clubs shown are the 2025–26 season's until newcomers Como 1907 debut in the autumn.",
+  "updated": "2026-09-20",
+  "footnote": "Titles follow the historical albo d'oro back to 1968 — the pre-FIGC federations included. Honours follow legal continuity: sporting-title purchases don't transfer them, so today's Milan and Lazio carry none of the historic Milan- and Lazio-named crowns. The 11 clubs shown are the 2026–27 season's; debutants Como 1907 Femminile (first match 26 September 2026) will be added once their opening fixture is played.",
   "watch": [
     {
       "kind": "champion",
@@ -56,20 +56,6 @@
         "asName": null,
         "clinch": "beat Tavagnacco 2–0 before 9,000 at the Franchi to clinch with a matchday to spare — the title carried into ACF Fiorentina when the women's club was absorbed in 2020"
       }
-    },
-    {
-      "slug": "genoa",
-      "name": "Genoa",
-      "shortName": "Rossoblù",
-      "abbr": "GEN",
-      "accent": "#AD1919",
-      "secondary": "#05232F",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "2025-10-05",
-      "firstGameAs": null,
-      "firstGameNote": "Lost 2–1 to Milan at La Sciorba in their 2025 debut after climbing from the regional leagues in six seasons — then went straight back down, the drop sealed in May 2026.",
-      "finalsLosses": []
     },
     {
       "slug": "inter",
