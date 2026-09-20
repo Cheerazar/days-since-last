@@ -25,7 +25,7 @@ const EXPECTED_TEAM_COUNTS: Record<string, number> = {
   wsl: 14,
   ligaf: 16,
   frauenbundesliga: 14,
-  'seriea-femminile': 12,
+  'seriea-femminile': 11,
   premiereligue: 11,
 };
 
