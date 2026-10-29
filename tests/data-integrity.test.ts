@@ -106,7 +106,7 @@ describe('reigning champions', () => {
     expect(champs).toEqual({
       nfl: 'seattle-seahawks',
       nba: 'new-york-knicks',
-      mlb: 'los-angeles-dodgers',
+      mlb: 'milwaukee-brewers',
       nhl: 'carolina-hurricanes',
       mls: 'inter-miami-cf',
       wnba: 'las-vegas-aces',
@@ -144,6 +144,7 @@ describe('anchor dates', () => {
     ['nba', 'oklahoma-city-thunder', '2025-06-22'],
     ['mlb', 'cleveland-guardians', '1948-10-11'],
     ['mlb', 'los-angeles-dodgers', '2025-11-01'],
+    ['mlb', 'milwaukee-brewers', '2026-10-28'],
     ['nhl', 'toronto-maple-leafs', '1967-05-02'],
     ['wnba', 'las-vegas-aces', '2025-10-10'],
     ['nwsl', 'nj-ny-gotham-fc', '2025-11-22'],

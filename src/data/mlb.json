@@ -2,7 +2,9 @@
   "league": "MLB",
   "slug": "mlb",
   "finalsName": "the World Series",
-  "updated": "2026-06-10",
+  "updated": "2026-10-29",
+  "banner": "The Milwaukee Brewers have won their first World Series title in 57 years of trying!",
+  "bannerUntil": "2026-11-05",
   "watch": [
     {
       "kind": "champion",
@@ -346,14 +348,15 @@
       "accent": "#FFC52F",
       "secondary": "#12284B",
       "accentLight": "#12284B",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "1969-04-08",
-      "firstGameAs": "Seattle Pilots",
-      "firstGameNote": "Born as the Seattle Pilots, who beat the Angels 4–3 in their debut, went bankrupt after one season, and became the Brewers a week before Opening Day 1970.",
-      "finalsLosses": [
-        1982
+      "titleYears": [
+        2026
       ],
+      "lastTitle": {
+        "date": "2026-10-28",
+        "opponent": "Tampa Bay Rays",
+        "series": "4–1",
+        "asName": null
+      },
       "lineage": "Seattle Pilots (1969) → Milwaukee Brewers (1970– )"
     },
     {
