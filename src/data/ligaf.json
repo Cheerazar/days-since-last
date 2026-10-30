@@ -4,7 +4,7 @@
   "group": "football-womens",
   "finalsName": "the title race",
   "competitionNoun": "top-flight",
-  "updated": "2026-06-10",
+  "updated": "2026-09-06",
   "footnote": "Titles count the whole Spanish women's top flight back to 1988–89 — Liga Nacional, División de Honor, Superliga, Primera División and Liga F are one continuous championship. Never-champions count from their club's own first top-flight match. The 16 clubs shown are the 2026–27 season's.",
   "watch": [
     {
@@ -153,8 +153,8 @@
       "finalsLosses": []
     },
     {
-      "slug": "dux-logrono",
-      "name": "DUX Logroño",
+      "slug": "logrono-united",
+      "name": "Logroño United",
       "shortName": "Vinotinto",
       "abbr": "LOG",
       "accent": "#6D1F2C",
