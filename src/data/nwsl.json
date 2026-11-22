@@ -2,7 +2,9 @@
   "league": "NWSL",
   "slug": "nwsl",
   "finalsName": "the NWSL Championship",
-  "updated": "2026-06-10",
+  "updated": "2026-11-22",
+  "banner": "The Kansas City Current have won their first NWSL Championship, defeating the Washington Spirit 2–1!",
+  "bannerUntil": "2026-11-29",
   "watch": [
     {
       "kind": "champion",
@@ -117,14 +119,15 @@
       "accent": "#64CCC9",
       "secondary": "#091F2C",
       "accentLight": "#CB333B",
-      "titleYears": [],
-      "lastTitle": null,
-      "firstGame": "2021-05-15",
-      "firstGameAs": "Kansas City NWSL",
-      "firstGameNote": "Opened with a 0–0 draw in 2021, lost the 2022 final, then turned a record-smashing 2025 Shield season into a playoff exit.",
-      "finalsLosses": [
-        2022
+      "titleYears": [
+        2026
       ],
+      "lastTitle": {
+        "date": "2026-11-21",
+        "opponent": "Washington Spirit",
+        "series": "2–1",
+        "asName": null
+      },
       "asterisk": {
         "label": "NWSL Shield",
         "years": [
